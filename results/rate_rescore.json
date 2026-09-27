@@ -1,0 +1,5264 @@
+{
+ "n_boot": 10000,
+ "seed": 42,
+ "perm_seed": 4242,
+ "n_common_stimuli": 1992,
+ "n_anchors": 24,
+ "arms": [
+  "native",
+  "nn33",
+  "nn75",
+  "pool33",
+  "pool75"
+ ],
+ "keys_per_arm": {
+  "native": [
+   "acestep15",
+   "acestep15_xl",
+   "cqt",
+   "diffrhythm12",
+   "fe_acestep_vae",
+   "fe_diffrhythm_vae",
+   "fe_encodec32_pre",
+   "fe_encodec32_rvq",
+   "fe_lac_pre",
+   "fe_lac_rvq",
+   "fe_pupujepa_logmel",
+   "fe_samel",
+   "fe_spectrostream_rvq",
+   "gammatone",
+   "logmel",
+   "magenta_rt2_base",
+   "magenta_rt2_small",
+   "magnet_medium",
+   "magnet_small",
+   "mert",
+   "mert_95m",
+   "muq",
+   "musicgen_large",
+   "musicgen_medium",
+   "musicgen_small",
+   "pupujepa_large",
+   "stableaudio3_medium",
+   "vampnet"
+  ],
+  "pool75": [
+   "cqt",
+   "fe_acestep_vae",
+   "fe_encodec32_pre",
+   "fe_encodec32_rvq",
+   "fe_lac_pre",
+   "fe_lac_rvq",
+   "fe_pupujepa_logmel",
+   "fe_spectrostream_rvq",
+   "gammatone",
+   "logmel",
+   "magenta_rt2_base",
+   "magenta_rt2_small",
+   "magnet_medium",
+   "magnet_small",
+   "mert",
+   "mert_95m",
+   "muq",
+   "musicgen_large",
+   "musicgen_medium",
+   "musicgen_small",
+   "pupujepa_large",
+   "vampnet"
+  ],
+  "pool33": [
+   "acestep15",
+   "acestep15_xl",
+   "cqt",
+   "diffrhythm12",
+   "fe_acestep_vae",
+   "fe_diffrhythm_vae",
+   "fe_encodec32_pre",
+   "fe_encodec32_rvq",
+   "fe_lac_pre",
+   "fe_lac_rvq",
+   "fe_pupujepa_logmel",
+   "fe_samel",
+   "fe_spectrostream_rvq",
+   "gammatone",
+   "logmel",
+   "magenta_rt2_base",
+   "magenta_rt2_small",
+   "magnet_medium",
+   "magnet_small",
+   "mert",
+   "mert_95m",
+   "muq",
+   "musicgen_large",
+   "musicgen_medium",
+   "musicgen_small",
+   "pupujepa_large",
+   "stableaudio3_medium",
+   "vampnet"
+  ],
+  "nn75": [
+   "cqt",
+   "fe_acestep_vae",
+   "fe_encodec32_pre",
+   "fe_encodec32_rvq",
+   "fe_lac_pre",
+   "fe_lac_rvq",
+   "fe_pupujepa_logmel",
+   "fe_spectrostream_rvq",
+   "gammatone",
+   "logmel",
+   "magenta_rt2_base",
+   "magenta_rt2_small",
+   "magnet_medium",
+   "magnet_small",
+   "mert",
+   "mert_95m",
+   "muq",
+   "musicgen_large",
+   "musicgen_medium",
+   "musicgen_small",
+   "pupujepa_large",
+   "vampnet"
+  ],
+  "nn33": [
+   "acestep15",
+   "acestep15_xl",
+   "cqt",
+   "diffrhythm12",
+   "fe_acestep_vae",
+   "fe_diffrhythm_vae",
+   "fe_encodec32_pre",
+   "fe_encodec32_rvq",
+   "fe_lac_pre",
+   "fe_lac_rvq",
+   "fe_pupujepa_logmel",
+   "fe_samel",
+   "fe_spectrostream_rvq",
+   "gammatone",
+   "logmel",
+   "magenta_rt2_base",
+   "magenta_rt2_small",
+   "magnet_medium",
+   "magnet_small",
+   "mert",
+   "mert_95m",
+   "muq",
+   "musicgen_large",
+   "musicgen_medium",
+   "musicgen_small",
+   "pupujepa_large",
+   "stableaudio3_medium",
+   "vampnet"
+  ]
+ },
+ "n_nonfinite_anchor_rho_cells": 0,
+ "n_deg_rows": {
+  "native": {
+   "mert": 0,
+   "mert_95m": 0,
+   "muq": 0,
+   "musicgen_small": 0,
+   "musicgen_medium": 0,
+   "musicgen_large": 0,
+   "magnet_small": 0,
+   "magnet_medium": 0,
+   "vampnet": 0,
+   "acestep15": 0,
+   "acestep15_xl": 0,
+   "diffrhythm12": 0,
+   "pupujepa_large": 0,
+   "magenta_rt2_small": 0,
+   "magenta_rt2_base": 0,
+   "stableaudio3_medium": 0,
+   "logmel": 0,
+   "cqt": 0,
+   "gammatone": 0,
+   "fe_pupujepa_logmel": 0,
+   "fe_encodec32_pre": 0,
+   "fe_encodec32_rvq": 0,
+   "fe_lac_pre": 0,
+   "fe_lac_rvq": 0,
+   "fe_acestep_vae": 0,
+   "fe_diffrhythm_vae": 0,
+   "fe_samel": 0,
+   "fe_spectrostream_rvq": 0
+  },
+  "pool75": {
+   "mert": 0,
+   "mert_95m": 0,
+   "muq": 0,
+   "musicgen_small": 0,
+   "musicgen_medium": 0,
+   "musicgen_large": 0,
+   "magnet_small": 0,
+   "magnet_medium": 0,
+   "vampnet": 0,
+   "pupujepa_large": 0,
+   "magenta_rt2_small": 0,
+   "magenta_rt2_base": 0,
+   "logmel": 0,
+   "cqt": 0,
+   "gammatone": 0,
+   "fe_pupujepa_logmel": 0,
+   "fe_encodec32_pre": 0,
+   "fe_encodec32_rvq": 0,
+   "fe_lac_pre": 0,
+   "fe_lac_rvq": 0,
+   "fe_acestep_vae": 0,
+   "fe_spectrostream_rvq": 0
+  },
+  "pool33": {
+   "mert": 0,
+   "mert_95m": 0,
+   "muq": 0,
+   "musicgen_small": 0,
+   "musicgen_medium": 0,
+   "musicgen_large": 0,
+   "magnet_small": 0,
+   "magnet_medium": 0,
+   "vampnet": 0,
+   "acestep15": 0,
+   "acestep15_xl": 0,
+   "diffrhythm12": 0,
+   "pupujepa_large": 0,
+   "magenta_rt2_small": 0,
+   "magenta_rt2_base": 0,
+   "stableaudio3_medium": 0,
+   "logmel": 0,
+   "cqt": 0,
+   "gammatone": 0,
+   "fe_pupujepa_logmel": 0,
+   "fe_encodec32_pre": 0,
+   "fe_encodec32_rvq": 0,
+   "fe_lac_pre": 0,
+   "fe_lac_rvq": 0,
+   "fe_acestep_vae": 0,
+   "fe_diffrhythm_vae": 0,
+   "fe_samel": 0,
+   "fe_spectrostream_rvq": 0
+  },
+  "nn75": {
+   "mert": 0,
+   "mert_95m": 0,
+   "muq": 0,
+   "musicgen_small": 0,
+   "musicgen_medium": 0,
+   "musicgen_large": 0,
+   "magnet_small": 0,
+   "magnet_medium": 0,
+   "vampnet": 0,
+   "pupujepa_large": 0,
+   "magenta_rt2_small": 0,
+   "magenta_rt2_base": 0,
+   "logmel": 0,
+   "cqt": 0,
+   "gammatone": 0,
+   "fe_pupujepa_logmel": 0,
+   "fe_encodec32_pre": 0,
+   "fe_encodec32_rvq": 0,
+   "fe_lac_pre": 0,
+   "fe_lac_rvq": 0,
+   "fe_acestep_vae": 0,
+   "fe_spectrostream_rvq": 0
+  },
+  "nn33": {
+   "mert": 0,
+   "mert_95m": 0,
+   "muq": 0,
+   "musicgen_small": 0,
+   "musicgen_medium": 0,
+   "musicgen_large": 0,
+   "magnet_small": 0,
+   "magnet_medium": 0,
+   "vampnet": 0,
+   "acestep15": 0,
+   "acestep15_xl": 0,
+   "diffrhythm12": 0,
+   "pupujepa_large": 0,
+   "magenta_rt2_small": 0,
+   "magenta_rt2_base": 0,
+   "stableaudio3_medium": 0,
+   "logmel": 0,
+   "cqt": 0,
+   "gammatone": 0,
+   "fe_pupujepa_logmel": 0,
+   "fe_encodec32_pre": 0,
+   "fe_encodec32_rvq": 0,
+   "fe_lac_pre": 0,
+   "fe_lac_rvq": 0,
+   "fe_acestep_vae": 0,
+   "fe_diffrhythm_vae": 0,
+   "fe_samel": 0,
+   "fe_spectrostream_rvq": 0
+  }
+ },
+ "collision": {
+  "native": {
+   "mert": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "mert_95m": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "muq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "vampnet": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "acestep15": {
+    "within": 0.1103448275862069,
+    "between": 0.030460624071322436,
+    "t_native": null
+   },
+   "acestep15_xl": {
+    "within": 0.1103448275862069,
+    "between": 0.030460624071322436,
+    "t_native": null
+   },
+   "diffrhythm12": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "pupujepa_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_base": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "stableaudio3_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "cqt": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "gammatone": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_pupujepa_logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_acestep_vae": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_diffrhythm_vae": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_samel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_spectrostream_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   }
+  },
+  "pool75": {
+   "mert": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "mert_95m": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "muq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "vampnet": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "pupujepa_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_base": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "cqt": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "gammatone": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_pupujepa_logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_acestep_vae": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_spectrostream_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   }
+  },
+  "pool33": {
+   "mert": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "mert_95m": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "muq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_large": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magnet_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magnet_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "vampnet": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "acestep15": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "acestep15_xl": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "diffrhythm12": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "pupujepa_large": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magenta_rt2_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magenta_rt2_base": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "stableaudio3_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "logmel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "cqt": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "gammatone": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_pupujepa_logmel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_encodec32_pre": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_encodec32_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_lac_pre": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_lac_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_acestep_vae": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_diffrhythm_vae": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_samel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_spectrostream_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   }
+  },
+  "nn75": {
+   "mert": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "mert_95m": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "muq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "musicgen_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magnet_medium": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "vampnet": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "pupujepa_large": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_small": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "magenta_rt2_base": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "cqt": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "gammatone": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_pupujepa_logmel": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_encodec32_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_pre": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_lac_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_acestep_vae": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   },
+   "fe_spectrostream_rvq": {
+    "within": 0.0,
+    "between": 0.0,
+    "t_native": null
+   }
+  },
+  "nn33": {
+   "mert": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "mert_95m": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "muq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "musicgen_large": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magnet_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magnet_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "vampnet": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "acestep15": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "acestep15_xl": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "diffrhythm12": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "pupujepa_large": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magenta_rt2_small": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "magenta_rt2_base": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "stableaudio3_medium": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "logmel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "cqt": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "gammatone": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_pupujepa_logmel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_encodec32_pre": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_encodec32_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_lac_pre": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_lac_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_acestep_vae": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_diffrhythm_vae": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_samel": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   },
+   "fe_spectrostream_rvq": {
+    "within": 0.18746081504702194,
+    "between": 0.03937592867756315,
+    "t_native": null
+   }
+  }
+ },
+ "cells": {
+  "native|mert|auc": {
+   "arm": "native",
+   "key": "mert",
+   "summary": "auc",
+   "value": 0.29961851389802524,
+   "ci_low": 0.18983496022790358,
+   "ci_high": 0.4006846218948025,
+   "boot_sd": 0.05302443685473631
+  },
+  "native|mert|rho9": {
+   "arm": "native",
+   "key": "mert",
+   "summary": "rho9",
+   "value": 0.2934824714905974,
+   "ci_low": 0.18314141517267019,
+   "ci_high": 0.39435379647455593,
+   "boot_sd": 0.053117234892277994
+  },
+  "native|mert_95m|auc": {
+   "arm": "native",
+   "key": "mert_95m",
+   "summary": "auc",
+   "value": 0.09805151530074861,
+   "ci_low": -0.025919484664594063,
+   "ci_high": 0.22240358313950392,
+   "boot_sd": 0.0637839058608839
+  },
+  "native|mert_95m|rho9": {
+   "arm": "native",
+   "key": "mert_95m",
+   "summary": "rho9",
+   "value": 0.09372657650055854,
+   "ci_low": -0.028961870291499086,
+   "ci_high": 0.21772692794407997,
+   "boot_sd": 0.06320708644768265
+  },
+  "native|muq|auc": {
+   "arm": "native",
+   "key": "muq",
+   "summary": "auc",
+   "value": 0.32887305865578037,
+   "ci_low": 0.17535502560054664,
+   "ci_high": 0.4788232409076695,
+   "boot_sd": 0.07797691377890582
+  },
+  "native|muq|rho9": {
+   "arm": "native",
+   "key": "muq",
+   "summary": "rho9",
+   "value": 0.319513026927957,
+   "ci_low": 0.1690663305480604,
+   "ci_high": 0.46711681235967184,
+   "boot_sd": 0.07683963225626624
+  },
+  "native|musicgen_small|auc": {
+   "arm": "native",
+   "key": "musicgen_small",
+   "summary": "auc",
+   "value": -0.736180131634479,
+   "ci_low": -0.7683903981877955,
+   "ci_high": -0.6977936976661014,
+   "boot_sd": 0.01797721784436896
+  },
+  "native|musicgen_small|rho9": {
+   "arm": "native",
+   "key": "musicgen_small",
+   "summary": "rho9",
+   "value": -0.685708642521519,
+   "ci_low": -0.7205647100202485,
+   "ci_high": -0.6472426740415588,
+   "boot_sd": 0.018563523469459695
+  },
+  "native|musicgen_medium|auc": {
+   "arm": "native",
+   "key": "musicgen_medium",
+   "summary": "auc",
+   "value": -0.10876511939059941,
+   "ci_low": -0.20805073222188591,
+   "ci_high": 0.00010091771954572852,
+   "boot_sd": 0.05330568382863353
+  },
+  "native|musicgen_medium|rho9": {
+   "arm": "native",
+   "key": "musicgen_medium",
+   "summary": "rho9",
+   "value": -0.08141580495106553,
+   "ci_low": -0.18134570517689755,
+   "ci_high": 0.027835363957638706,
+   "boot_sd": 0.05337608724213439
+  },
+  "native|musicgen_large|auc": {
+   "arm": "native",
+   "key": "musicgen_large",
+   "summary": "auc",
+   "value": -0.22968001881993141,
+   "ci_low": -0.2925814230643037,
+   "ci_high": -0.1668622395310649,
+   "boot_sd": 0.03245113180416999
+  },
+  "native|musicgen_large|rho9": {
+   "arm": "native",
+   "key": "musicgen_large",
+   "summary": "rho9",
+   "value": -0.19850245464786345,
+   "ci_low": -0.26384240174937257,
+   "ci_high": -0.13284913188176686,
+   "boot_sd": 0.03373583703796049
+  },
+  "native|magnet_small|auc": {
+   "arm": "native",
+   "key": "magnet_small",
+   "summary": "auc",
+   "value": 0.08415446365435825,
+   "ci_low": 0.0012142442156686055,
+   "ci_high": 0.1717098329714979,
+   "boot_sd": 0.04413718480494604
+  },
+  "native|magnet_small|rho9": {
+   "arm": "native",
+   "key": "magnet_small",
+   "summary": "rho9",
+   "value": 0.09375212808777426,
+   "ci_low": 0.011573636719364625,
+   "ci_high": 0.1805456915606136,
+   "boot_sd": 0.04365791171170451
+  },
+  "native|magnet_medium|auc": {
+   "arm": "native",
+   "key": "magnet_medium",
+   "summary": "auc",
+   "value": -0.09000518211560345,
+   "ci_low": -0.16059663000498733,
+   "ci_high": -0.020370117185062316,
+   "boot_sd": 0.035735896630962716
+  },
+  "native|magnet_medium|rho9": {
+   "arm": "native",
+   "key": "magnet_medium",
+   "summary": "rho9",
+   "value": -0.06981388944799848,
+   "ci_low": -0.1390941140222162,
+   "ci_high": -0.0012987930033872177,
+   "boot_sd": 0.03506262855696468
+  },
+  "native|vampnet|auc": {
+   "arm": "native",
+   "key": "vampnet",
+   "summary": "auc",
+   "value": 0.054962907507859295,
+   "ci_low": -0.03127611671041497,
+   "ci_high": 0.14218813906580202,
+   "boot_sd": 0.044612559274793843
+  },
+  "native|vampnet|rho9": {
+   "arm": "native",
+   "key": "vampnet",
+   "summary": "rho9",
+   "value": 0.04945282663191459,
+   "ci_low": -0.03571118556959693,
+   "ci_high": 0.13622265382846582,
+   "boot_sd": 0.04439707322309164
+  },
+  "native|acestep15|auc": {
+   "arm": "native",
+   "key": "acestep15",
+   "summary": "auc",
+   "value": 0.2823656639927082,
+   "ci_low": 0.14907613971962785,
+   "ci_high": 0.4148977385686258,
+   "boot_sd": 0.067518712395614
+  },
+  "native|acestep15|rho9": {
+   "arm": "native",
+   "key": "acestep15",
+   "summary": "rho9",
+   "value": 0.28045105792416664,
+   "ci_low": 0.1474295511513227,
+   "ci_high": 0.41252786948282555,
+   "boot_sd": 0.06726174002399989
+  },
+  "native|acestep15_xl|auc": {
+   "arm": "native",
+   "key": "acestep15_xl",
+   "summary": "auc",
+   "value": 0.2338055842645819,
+   "ci_low": 0.102215539543282,
+   "ci_high": 0.36326054652269,
+   "boot_sd": 0.06701119146471768
+  },
+  "native|acestep15_xl|rho9": {
+   "arm": "native",
+   "key": "acestep15_xl",
+   "summary": "rho9",
+   "value": 0.2248954360767548,
+   "ci_low": 0.09549255631117518,
+   "ci_high": 0.35237500360248214,
+   "boot_sd": 0.06606234198091775
+  },
+  "native|diffrhythm12|auc": {
+   "arm": "native",
+   "key": "diffrhythm12",
+   "summary": "auc",
+   "value": 0.1107424390780068,
+   "ci_low": -0.008367157864054326,
+   "ci_high": 0.22085312620996436,
+   "boot_sd": 0.05835229462102224
+  },
+  "native|diffrhythm12|rho9": {
+   "arm": "native",
+   "key": "diffrhythm12",
+   "summary": "rho9",
+   "value": 0.10893394838622728,
+   "ci_low": -0.009331875830203503,
+   "ci_high": 0.21886339644812516,
+   "boot_sd": 0.05800867458463648
+  },
+  "native|pupujepa_large|auc": {
+   "arm": "native",
+   "key": "pupujepa_large",
+   "summary": "auc",
+   "value": 0.3111074476511003,
+   "ci_low": 0.1713327781329806,
+   "ci_high": 0.44264026364877845,
+   "boot_sd": 0.06866456025420009
+  },
+  "native|pupujepa_large|rho9": {
+   "arm": "native",
+   "key": "pupujepa_large",
+   "summary": "rho9",
+   "value": 0.2956915374902038,
+   "ci_low": 0.15846433264987148,
+   "ci_high": 0.424094562453824,
+   "boot_sd": 0.06749298836522435
+  },
+  "native|magenta_rt2_small|auc": {
+   "arm": "native",
+   "key": "magenta_rt2_small",
+   "summary": "auc",
+   "value": -0.04897932722081119,
+   "ci_low": -0.12392088624068263,
+   "ci_high": 0.0262490899795744,
+   "boot_sd": 0.038644840798240924
+  },
+  "native|magenta_rt2_small|rho9": {
+   "arm": "native",
+   "key": "magenta_rt2_small",
+   "summary": "rho9",
+   "value": -0.05219253708898234,
+   "ci_low": -0.1263672803533844,
+   "ci_high": 0.022636026752839752,
+   "boot_sd": 0.038302196845387264
+  },
+  "native|magenta_rt2_base|auc": {
+   "arm": "native",
+   "key": "magenta_rt2_base",
+   "summary": "auc",
+   "value": 0.06464941856406375,
+   "ci_low": -0.016098626697169497,
+   "ci_high": 0.14723534899705207,
+   "boot_sd": 0.041486623962484606
+  },
+  "native|magenta_rt2_base|rho9": {
+   "arm": "native",
+   "key": "magenta_rt2_base",
+   "summary": "rho9",
+   "value": 0.06844051220402862,
+   "ci_low": -0.012695729897439985,
+   "ci_high": 0.150343898347959,
+   "boot_sd": 0.041450025173554506
+  },
+  "native|stableaudio3_medium|auc": {
+   "arm": "native",
+   "key": "stableaudio3_medium",
+   "summary": "auc",
+   "value": 0.21242931132512963,
+   "ci_low": 0.060064555971926725,
+   "ci_high": 0.3579988459180568,
+   "boot_sd": 0.07580892032229275
+  },
+  "native|stableaudio3_medium|rho9": {
+   "arm": "native",
+   "key": "stableaudio3_medium",
+   "summary": "rho9",
+   "value": 0.21717695314732144,
+   "ci_low": 0.06586777400783073,
+   "ci_high": 0.361186173420332,
+   "boot_sd": 0.07531842226127729
+  },
+  "native|logmel|auc": {
+   "arm": "native",
+   "key": "logmel",
+   "summary": "auc",
+   "value": 0.009259751111268118,
+   "ci_low": -0.1506936068540549,
+   "ci_high": 0.16586278633772344,
+   "boot_sd": 0.08128809813346692
+  },
+  "native|logmel|rho9": {
+   "arm": "native",
+   "key": "logmel",
+   "summary": "rho9",
+   "value": 0.009259751111268118,
+   "ci_low": -0.1506936068540549,
+   "ci_high": 0.16586278633772344,
+   "boot_sd": 0.08128809813346692
+  },
+  "native|cqt|auc": {
+   "arm": "native",
+   "key": "cqt",
+   "summary": "auc",
+   "value": -0.011676700930108993,
+   "ci_low": -0.1429382568592149,
+   "ci_high": 0.12219902360060231,
+   "boot_sd": 0.06877331303853798
+  },
+  "native|cqt|rho9": {
+   "arm": "native",
+   "key": "cqt",
+   "summary": "rho9",
+   "value": -0.011676700930108993,
+   "ci_low": -0.1429382568592149,
+   "ci_high": 0.12219902360060231,
+   "boot_sd": 0.06877331303853798
+  },
+  "native|gammatone|auc": {
+   "arm": "native",
+   "key": "gammatone",
+   "summary": "auc",
+   "value": 0.02308400787286119,
+   "ci_low": -0.12474613229225184,
+   "ci_high": 0.16377691260078342,
+   "boot_sd": 0.07371331100675602
+  },
+  "native|gammatone|rho9": {
+   "arm": "native",
+   "key": "gammatone",
+   "summary": "rho9",
+   "value": 0.02308400787286119,
+   "ci_low": -0.12474613229225184,
+   "ci_high": 0.16377691260078342,
+   "boot_sd": 0.07371331100675602
+  },
+  "native|fe_pupujepa_logmel|auc": {
+   "arm": "native",
+   "key": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "value": -0.20270411792454493,
+   "ci_low": -0.32184316369904187,
+   "ci_high": -0.08187627401958437,
+   "boot_sd": 0.06091171588677096
+  },
+  "native|fe_pupujepa_logmel|rho9": {
+   "arm": "native",
+   "key": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "value": -0.20270411792454493,
+   "ci_low": -0.32184316369904187,
+   "ci_high": -0.08187627401958437,
+   "boot_sd": 0.06091171588677096
+  },
+  "native|fe_encodec32_pre|auc": {
+   "arm": "native",
+   "key": "fe_encodec32_pre",
+   "summary": "auc",
+   "value": -0.07428205091597546,
+   "ci_low": -0.146641212248007,
+   "ci_high": -0.0010234426616546844,
+   "boot_sd": 0.03741049949940035
+  },
+  "native|fe_encodec32_pre|rho9": {
+   "arm": "native",
+   "key": "fe_encodec32_pre",
+   "summary": "rho9",
+   "value": -0.07428205091597546,
+   "ci_low": -0.146641212248007,
+   "ci_high": -0.0010234426616546844,
+   "boot_sd": 0.03741049949940035
+  },
+  "native|fe_encodec32_rvq|auc": {
+   "arm": "native",
+   "key": "fe_encodec32_rvq",
+   "summary": "auc",
+   "value": -0.09448316274202634,
+   "ci_low": -0.17109718884236486,
+   "ci_high": -0.018331471280338518,
+   "boot_sd": 0.039079384437200056
+  },
+  "native|fe_encodec32_rvq|rho9": {
+   "arm": "native",
+   "key": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "value": -0.09448316274202634,
+   "ci_low": -0.17109718884236486,
+   "ci_high": -0.018331471280338518,
+   "boot_sd": 0.039079384437200056
+  },
+  "native|fe_lac_pre|auc": {
+   "arm": "native",
+   "key": "fe_lac_pre",
+   "summary": "auc",
+   "value": 0.09587989388348739,
+   "ci_low": -0.0001693066142435384,
+   "ci_high": 0.19528308481533674,
+   "boot_sd": 0.05008132546608174
+  },
+  "native|fe_lac_pre|rho9": {
+   "arm": "native",
+   "key": "fe_lac_pre",
+   "summary": "rho9",
+   "value": 0.09587989388348739,
+   "ci_low": -0.0001693066142435384,
+   "ci_high": 0.19528308481533674,
+   "boot_sd": 0.05008132546608174
+  },
+  "native|fe_lac_rvq|auc": {
+   "arm": "native",
+   "key": "fe_lac_rvq",
+   "summary": "auc",
+   "value": 0.05070596261542937,
+   "ci_low": -0.027506987024431204,
+   "ci_high": 0.13116595518475666,
+   "boot_sd": 0.04056915307395731
+  },
+  "native|fe_lac_rvq|rho9": {
+   "arm": "native",
+   "key": "fe_lac_rvq",
+   "summary": "rho9",
+   "value": 0.05070596261542937,
+   "ci_low": -0.027506987024431204,
+   "ci_high": 0.13116595518475666,
+   "boot_sd": 0.04056915307395731
+  },
+  "native|fe_acestep_vae|auc": {
+   "arm": "native",
+   "key": "fe_acestep_vae",
+   "summary": "auc",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "native|fe_acestep_vae|rho9": {
+   "arm": "native",
+   "key": "fe_acestep_vae",
+   "summary": "rho9",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "native|fe_diffrhythm_vae|auc": {
+   "arm": "native",
+   "key": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "value": -0.10726895945982985,
+   "ci_low": -0.2356047458661038,
+   "ci_high": 0.020941325443586196,
+   "boot_sd": 0.06527728077538812
+  },
+  "native|fe_diffrhythm_vae|rho9": {
+   "arm": "native",
+   "key": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "value": -0.10726895945982985,
+   "ci_low": -0.2356047458661038,
+   "ci_high": 0.020941325443586196,
+   "boot_sd": 0.06527728077538812
+  },
+  "native|fe_samel|auc": {
+   "arm": "native",
+   "key": "fe_samel",
+   "summary": "auc",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "native|fe_samel|rho9": {
+   "arm": "native",
+   "key": "fe_samel",
+   "summary": "rho9",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "native|fe_spectrostream_rvq|auc": {
+   "arm": "native",
+   "key": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "native|fe_spectrostream_rvq|rho9": {
+   "arm": "native",
+   "key": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "pool75|mert|auc": {
+   "arm": "pool75",
+   "key": "mert",
+   "summary": "auc",
+   "value": 0.2974303891301216,
+   "ci_low": 0.17470611462275448,
+   "ci_high": 0.41136887421410573,
+   "boot_sd": 0.05955636527491692
+  },
+  "pool75|mert|rho9": {
+   "arm": "pool75",
+   "key": "mert",
+   "summary": "rho9",
+   "value": 0.2948747517211441,
+   "ci_low": 0.1733490363537736,
+   "ci_high": 0.4083674265260355,
+   "boot_sd": 0.059263450734147405
+  },
+  "pool75|mert_95m|auc": {
+   "arm": "pool75",
+   "key": "mert_95m",
+   "summary": "auc",
+   "value": 0.18449847119985788,
+   "ci_low": 0.08272626756260679,
+   "ci_high": 0.2840468355628507,
+   "boot_sd": 0.051526589043417975
+  },
+  "pool75|mert_95m|rho9": {
+   "arm": "pool75",
+   "key": "mert_95m",
+   "summary": "rho9",
+   "value": 0.1708411614181539,
+   "ci_low": 0.06900150259366368,
+   "ci_high": 0.2704458526105538,
+   "boot_sd": 0.05157279526430261
+  },
+  "pool75|muq|auc": {
+   "arm": "pool75",
+   "key": "muq",
+   "summary": "auc",
+   "value": 0.32887305865578037,
+   "ci_low": 0.17535502560054664,
+   "ci_high": 0.4788232409076695,
+   "boot_sd": 0.07797691377890582
+  },
+  "pool75|muq|rho9": {
+   "arm": "pool75",
+   "key": "muq",
+   "summary": "rho9",
+   "value": 0.319513026927957,
+   "ci_low": 0.1690663305480604,
+   "ci_high": 0.46711681235967184,
+   "boot_sd": 0.07683963225626624
+  },
+  "pool75|musicgen_small|auc": {
+   "arm": "pool75",
+   "key": "musicgen_small",
+   "summary": "auc",
+   "value": -0.725809072296812,
+   "ci_low": -0.7658452655069905,
+   "ci_high": -0.6803117115891207,
+   "boot_sd": 0.022221759004978445
+  },
+  "pool75|musicgen_small|rho9": {
+   "arm": "pool75",
+   "key": "musicgen_small",
+   "summary": "rho9",
+   "value": -0.6826367179505125,
+   "ci_low": -0.7255522624281722,
+   "ci_high": -0.6359786267412005,
+   "boot_sd": 0.02327975725280657
+  },
+  "pool75|musicgen_medium|auc": {
+   "arm": "pool75",
+   "key": "musicgen_medium",
+   "summary": "auc",
+   "value": -0.0022797193433680084,
+   "ci_low": -0.1046757967573757,
+   "ci_high": 0.10484812681315328,
+   "boot_sd": 0.05357772911279621
+  },
+  "pool75|musicgen_medium|rho9": {
+   "arm": "pool75",
+   "key": "musicgen_medium",
+   "summary": "rho9",
+   "value": 0.012942210847333125,
+   "ci_low": -0.09003361443670017,
+   "ci_high": 0.12095744024098093,
+   "boot_sd": 0.05415468558391004
+  },
+  "pool75|musicgen_large|auc": {
+   "arm": "pool75",
+   "key": "musicgen_large",
+   "summary": "auc",
+   "value": -0.12108626731729899,
+   "ci_low": -0.18633383288931238,
+   "ci_high": -0.05718931185429599,
+   "boot_sd": 0.03313220356848026
+  },
+  "pool75|musicgen_large|rho9": {
+   "arm": "pool75",
+   "key": "musicgen_large",
+   "summary": "rho9",
+   "value": -0.09688775910983055,
+   "ci_low": -0.16431713860741748,
+   "ci_high": -0.029751617779100185,
+   "boot_sd": 0.034639515228857984
+  },
+  "pool75|magnet_small|auc": {
+   "arm": "pool75",
+   "key": "magnet_small",
+   "summary": "auc",
+   "value": 0.14954482438687994,
+   "ci_low": 0.052732477907099784,
+   "ci_high": 0.2457160773063285,
+   "boot_sd": 0.04901799467022284
+  },
+  "pool75|magnet_small|rho9": {
+   "arm": "pool75",
+   "key": "magnet_small",
+   "summary": "rho9",
+   "value": 0.15934962807092726,
+   "ci_low": 0.06301983022262364,
+   "ci_high": 0.25439818862543817,
+   "boot_sd": 0.04869378315752304
+  },
+  "pool75|magnet_medium|auc": {
+   "arm": "pool75",
+   "key": "magnet_medium",
+   "summary": "auc",
+   "value": -0.036770636167799256,
+   "ci_low": -0.11220517091569591,
+   "ci_high": 0.04023913924357808,
+   "boot_sd": 0.03872523953479747
+  },
+  "pool75|magnet_medium|rho9": {
+   "arm": "pool75",
+   "key": "magnet_medium",
+   "summary": "rho9",
+   "value": -0.012022943441211057,
+   "ci_low": -0.08648107191616414,
+   "ci_high": 0.06383286422271715,
+   "boot_sd": 0.03830335682982435
+  },
+  "pool75|vampnet|auc": {
+   "arm": "pool75",
+   "key": "vampnet",
+   "summary": "auc",
+   "value": 0.01283364751795136,
+   "ci_low": -0.07456384586884231,
+   "ci_high": 0.10107448822524692,
+   "boot_sd": 0.04499501302073827
+  },
+  "pool75|vampnet|rho9": {
+   "arm": "pool75",
+   "key": "vampnet",
+   "summary": "rho9",
+   "value": 0.002324419761911291,
+   "ci_low": -0.08311271382011053,
+   "ci_high": 0.0893030633766171,
+   "boot_sd": 0.04408605346171992
+  },
+  "pool75|pupujepa_large|auc": {
+   "arm": "pool75",
+   "key": "pupujepa_large",
+   "summary": "auc",
+   "value": 0.3111074476511003,
+   "ci_low": 0.1713327781329806,
+   "ci_high": 0.44264026364877845,
+   "boot_sd": 0.06866456025420009
+  },
+  "pool75|pupujepa_large|rho9": {
+   "arm": "pool75",
+   "key": "pupujepa_large",
+   "summary": "rho9",
+   "value": 0.2956915374902038,
+   "ci_low": 0.15846433264987148,
+   "ci_high": 0.424094562453824,
+   "boot_sd": 0.06749298836522435
+  },
+  "pool75|magenta_rt2_small|auc": {
+   "arm": "pool75",
+   "key": "magenta_rt2_small",
+   "summary": "auc",
+   "value": -0.04897932722081119,
+   "ci_low": -0.12392088624068263,
+   "ci_high": 0.0262490899795744,
+   "boot_sd": 0.038644840798240924
+  },
+  "pool75|magenta_rt2_small|rho9": {
+   "arm": "pool75",
+   "key": "magenta_rt2_small",
+   "summary": "rho9",
+   "value": -0.05219253708898234,
+   "ci_low": -0.1263672803533844,
+   "ci_high": 0.022636026752839752,
+   "boot_sd": 0.038302196845387264
+  },
+  "pool75|magenta_rt2_base|auc": {
+   "arm": "pool75",
+   "key": "magenta_rt2_base",
+   "summary": "auc",
+   "value": 0.06464941856406375,
+   "ci_low": -0.016098626697169497,
+   "ci_high": 0.14723534899705207,
+   "boot_sd": 0.041486623962484606
+  },
+  "pool75|magenta_rt2_base|rho9": {
+   "arm": "pool75",
+   "key": "magenta_rt2_base",
+   "summary": "rho9",
+   "value": 0.06844051220402862,
+   "ci_low": -0.012695729897439985,
+   "ci_high": 0.150343898347959,
+   "boot_sd": 0.041450025173554506
+  },
+  "pool75|logmel|auc": {
+   "arm": "pool75",
+   "key": "logmel",
+   "summary": "auc",
+   "value": 0.08600613284483749,
+   "ci_low": -0.06415369345402654,
+   "ci_high": 0.2369240669905909,
+   "boot_sd": 0.07710189600993024
+  },
+  "pool75|logmel|rho9": {
+   "arm": "pool75",
+   "key": "logmel",
+   "summary": "rho9",
+   "value": 0.08600613284483749,
+   "ci_low": -0.06415369345402654,
+   "ci_high": 0.2369240669905909,
+   "boot_sd": 0.07710189600993024
+  },
+  "pool75|cqt|auc": {
+   "arm": "pool75",
+   "key": "cqt",
+   "summary": "auc",
+   "value": 0.04511149086875915,
+   "ci_low": -0.07155923105443605,
+   "ci_high": 0.16458458517554153,
+   "boot_sd": 0.060958857907329085
+  },
+  "pool75|cqt|rho9": {
+   "arm": "pool75",
+   "key": "cqt",
+   "summary": "rho9",
+   "value": 0.04511149086875915,
+   "ci_low": -0.07155923105443605,
+   "ci_high": 0.16458458517554153,
+   "boot_sd": 0.060958857907329085
+  },
+  "pool75|gammatone|auc": {
+   "arm": "pool75",
+   "key": "gammatone",
+   "summary": "auc",
+   "value": 0.10767206122940343,
+   "ci_low": -0.02791885034277731,
+   "ci_high": 0.24798526128866,
+   "boot_sd": 0.07047979807819293
+  },
+  "pool75|gammatone|rho9": {
+   "arm": "pool75",
+   "key": "gammatone",
+   "summary": "rho9",
+   "value": 0.10767206122940343,
+   "ci_low": -0.02791885034277731,
+   "ci_high": 0.24798526128866,
+   "boot_sd": 0.07047979807819293
+  },
+  "pool75|fe_pupujepa_logmel|auc": {
+   "arm": "pool75",
+   "key": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "value": -0.08288852304790773,
+   "ci_low": -0.2082540535575322,
+   "ci_high": 0.050094631029068526,
+   "boot_sd": 0.06534911683581715
+  },
+  "pool75|fe_pupujepa_logmel|rho9": {
+   "arm": "pool75",
+   "key": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "value": -0.08288852304790773,
+   "ci_low": -0.2082540535575322,
+   "ci_high": 0.050094631029068526,
+   "boot_sd": 0.06534911683581715
+  },
+  "pool75|fe_encodec32_pre|auc": {
+   "arm": "pool75",
+   "key": "fe_encodec32_pre",
+   "summary": "auc",
+   "value": -0.057608299788033925,
+   "ci_low": -0.13902842461834347,
+   "ci_high": 0.026058602463183807,
+   "boot_sd": 0.042227540676601207
+  },
+  "pool75|fe_encodec32_pre|rho9": {
+   "arm": "pool75",
+   "key": "fe_encodec32_pre",
+   "summary": "rho9",
+   "value": -0.057608299788033925,
+   "ci_low": -0.13902842461834347,
+   "ci_high": 0.026058602463183807,
+   "boot_sd": 0.042227540676601207
+  },
+  "pool75|fe_encodec32_rvq|auc": {
+   "arm": "pool75",
+   "key": "fe_encodec32_rvq",
+   "summary": "auc",
+   "value": -0.07245776913462018,
+   "ci_low": -0.1588515978930321,
+   "ci_high": 0.016088866821709638,
+   "boot_sd": 0.044197689294302754
+  },
+  "pool75|fe_encodec32_rvq|rho9": {
+   "arm": "pool75",
+   "key": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "value": -0.07245776913462018,
+   "ci_low": -0.1588515978930321,
+   "ci_high": 0.016088866821709638,
+   "boot_sd": 0.044197689294302754
+  },
+  "pool75|fe_lac_pre|auc": {
+   "arm": "pool75",
+   "key": "fe_lac_pre",
+   "summary": "auc",
+   "value": -0.06778419909601015,
+   "ci_low": -0.17415632777249496,
+   "ci_high": 0.03981269579802514,
+   "boot_sd": 0.05536729839658694
+  },
+  "pool75|fe_lac_pre|rho9": {
+   "arm": "pool75",
+   "key": "fe_lac_pre",
+   "summary": "rho9",
+   "value": -0.06778419909601015,
+   "ci_low": -0.17415632777249496,
+   "ci_high": 0.03981269579802514,
+   "boot_sd": 0.05536729839658694
+  },
+  "pool75|fe_lac_rvq|auc": {
+   "arm": "pool75",
+   "key": "fe_lac_rvq",
+   "summary": "auc",
+   "value": -0.035480265623472965,
+   "ci_low": -0.11302825847705533,
+   "ci_high": 0.04668759886103303,
+   "boot_sd": 0.04042132685257916
+  },
+  "pool75|fe_lac_rvq|rho9": {
+   "arm": "pool75",
+   "key": "fe_lac_rvq",
+   "summary": "rho9",
+   "value": -0.035480265623472965,
+   "ci_low": -0.11302825847705533,
+   "ci_high": 0.04668759886103303,
+   "boot_sd": 0.04042132685257916
+  },
+  "pool75|fe_acestep_vae|auc": {
+   "arm": "pool75",
+   "key": "fe_acestep_vae",
+   "summary": "auc",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "pool75|fe_acestep_vae|rho9": {
+   "arm": "pool75",
+   "key": "fe_acestep_vae",
+   "summary": "rho9",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "pool75|fe_spectrostream_rvq|auc": {
+   "arm": "pool75",
+   "key": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "pool75|fe_spectrostream_rvq|rho9": {
+   "arm": "pool75",
+   "key": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "pool33|mert|auc": {
+   "arm": "pool33",
+   "key": "mert",
+   "summary": "auc",
+   "value": 0.5744675427217705,
+   "ci_low": 0.4718689604368696,
+   "ci_high": 0.6698245161608458,
+   "boot_sd": 0.050556332756778954
+  },
+  "pool33|mert|rho9": {
+   "arm": "pool33",
+   "key": "mert",
+   "summary": "rho9",
+   "value": 0.5725811738620558,
+   "ci_low": 0.472131699649666,
+   "ci_high": 0.6663334652427201,
+   "boot_sd": 0.04959563537635701
+  },
+  "pool33|mert_95m|auc": {
+   "arm": "pool33",
+   "key": "mert_95m",
+   "summary": "auc",
+   "value": 0.6049018133329173,
+   "ci_low": 0.5115245951962257,
+   "ci_high": 0.6905518677026882,
+   "boot_sd": 0.0462607611496689
+  },
+  "pool33|mert_95m|rho9": {
+   "arm": "pool33",
+   "key": "mert_95m",
+   "summary": "rho9",
+   "value": 0.5836283953469161,
+   "ci_low": 0.48798738882231113,
+   "ci_high": 0.6711279606892244,
+   "boot_sd": 0.04743645675925326
+  },
+  "pool33|muq|auc": {
+   "arm": "pool33",
+   "key": "muq",
+   "summary": "auc",
+   "value": 0.4822821179517918,
+   "ci_low": 0.3398730159254524,
+   "ci_high": 0.6098299562461506,
+   "boot_sd": 0.06900198727794007
+  },
+  "pool33|muq|rho9": {
+   "arm": "pool33",
+   "key": "muq",
+   "summary": "rho9",
+   "value": 0.47553639594927805,
+   "ci_low": 0.333931149001141,
+   "ci_high": 0.6028288895414559,
+   "boot_sd": 0.06883528335694454
+  },
+  "pool33|musicgen_small|auc": {
+   "arm": "pool33",
+   "key": "musicgen_small",
+   "summary": "auc",
+   "value": -0.4910899911626773,
+   "ci_low": -0.5643168762418047,
+   "ci_high": -0.40745999752395806,
+   "boot_sd": 0.04065884667246259
+  },
+  "pool33|musicgen_small|rho9": {
+   "arm": "pool33",
+   "key": "musicgen_small",
+   "summary": "rho9",
+   "value": -0.45546733613754625,
+   "ci_low": -0.5288876073401368,
+   "ci_high": -0.37178445629545676,
+   "boot_sd": 0.040523524431123226
+  },
+  "pool33|musicgen_medium|auc": {
+   "arm": "pool33",
+   "key": "musicgen_medium",
+   "summary": "auc",
+   "value": 0.2442315084350507,
+   "ci_low": 0.14785690907780236,
+   "ci_high": 0.334499335848976,
+   "boot_sd": 0.04754390895410849
+  },
+  "pool33|musicgen_medium|rho9": {
+   "arm": "pool33",
+   "key": "musicgen_medium",
+   "summary": "rho9",
+   "value": 0.2484063274682374,
+   "ci_low": 0.15209104107918536,
+   "ci_high": 0.3383303295941251,
+   "boot_sd": 0.04741324252555388
+  },
+  "pool33|musicgen_large|auc": {
+   "arm": "pool33",
+   "key": "musicgen_large",
+   "summary": "auc",
+   "value": 0.11331371423175796,
+   "ci_low": 0.033626616007314064,
+   "ci_high": 0.18922144199426885,
+   "boot_sd": 0.039264389882558766
+  },
+  "pool33|musicgen_large|rho9": {
+   "arm": "pool33",
+   "key": "musicgen_large",
+   "summary": "rho9",
+   "value": 0.13692891549391492,
+   "ci_low": 0.05887106013478839,
+   "ci_high": 0.21012692812199976,
+   "boot_sd": 0.0384284657775708
+  },
+  "pool33|magnet_small|auc": {
+   "arm": "pool33",
+   "key": "magnet_small",
+   "summary": "auc",
+   "value": 0.2527481276872499,
+   "ci_low": 0.14779693140433384,
+   "ci_high": 0.3581548814492128,
+   "boot_sd": 0.053301169820070694
+  },
+  "pool33|magnet_small|rho9": {
+   "arm": "pool33",
+   "key": "magnet_small",
+   "summary": "rho9",
+   "value": 0.2629496299090482,
+   "ci_low": 0.1606998545589887,
+   "ci_high": 0.3655264899613222,
+   "boot_sd": 0.05170828261176327
+  },
+  "pool33|magnet_medium|auc": {
+   "arm": "pool33",
+   "key": "magnet_medium",
+   "summary": "auc",
+   "value": 0.090309035178796,
+   "ci_low": -0.002158846393662594,
+   "ci_high": 0.17993460291098992,
+   "boot_sd": 0.04645025787923143
+  },
+  "pool33|magnet_medium|rho9": {
+   "arm": "pool33",
+   "key": "magnet_medium",
+   "summary": "rho9",
+   "value": 0.12045643409721894,
+   "ci_low": 0.03258014376550477,
+   "ci_high": 0.20587262892483757,
+   "boot_sd": 0.04411617716503134
+  },
+  "pool33|vampnet|auc": {
+   "arm": "pool33",
+   "key": "vampnet",
+   "summary": "auc",
+   "value": 0.17498129474822757,
+   "ci_low": 0.06303862023421918,
+   "ci_high": 0.2839320986518413,
+   "boot_sd": 0.056442069400936705
+  },
+  "pool33|vampnet|rho9": {
+   "arm": "pool33",
+   "key": "vampnet",
+   "summary": "rho9",
+   "value": 0.16032563330004346,
+   "ci_low": 0.049865388456227705,
+   "ci_high": 0.26753271572319287,
+   "boot_sd": 0.05574256035173553
+  },
+  "pool33|acestep15|auc": {
+   "arm": "pool33",
+   "key": "acestep15",
+   "summary": "auc",
+   "value": 0.22167744029563452,
+   "ci_low": 0.09921669480211913,
+   "ci_high": 0.3408778580307287,
+   "boot_sd": 0.06234809860745162
+  },
+  "pool33|acestep15|rho9": {
+   "arm": "pool33",
+   "key": "acestep15",
+   "summary": "rho9",
+   "value": 0.21959911599368107,
+   "ci_low": 0.09792433193783673,
+   "ci_high": 0.33839105697937816,
+   "boot_sd": 0.06201543442144785
+  },
+  "pool33|acestep15_xl|auc": {
+   "arm": "pool33",
+   "key": "acestep15_xl",
+   "summary": "auc",
+   "value": 0.19895601297984533,
+   "ci_low": 0.07944529936982382,
+   "ci_high": 0.3073122912758833,
+   "boot_sd": 0.05823139890854473
+  },
+  "pool33|acestep15_xl|rho9": {
+   "arm": "pool33",
+   "key": "acestep15_xl",
+   "summary": "rho9",
+   "value": 0.19625883629177535,
+   "ci_low": 0.07926261349201427,
+   "ci_high": 0.3028665009736956,
+   "boot_sd": 0.0570291314657505
+  },
+  "pool33|diffrhythm12|auc": {
+   "arm": "pool33",
+   "key": "diffrhythm12",
+   "summary": "auc",
+   "value": 0.1952868736743569,
+   "ci_low": 0.044594496073904207,
+   "ci_high": 0.3334734038378054,
+   "boot_sd": 0.07428656914530551
+  },
+  "pool33|diffrhythm12|rho9": {
+   "arm": "pool33",
+   "key": "diffrhythm12",
+   "summary": "rho9",
+   "value": 0.19315721443927794,
+   "ci_low": 0.04413289529076721,
+   "ci_high": 0.3287183227197449,
+   "boot_sd": 0.07338427654580973
+  },
+  "pool33|pupujepa_large|auc": {
+   "arm": "pool33",
+   "key": "pupujepa_large",
+   "summary": "auc",
+   "value": 0.447711367161081,
+   "ci_low": 0.3218409714901967,
+   "ci_high": 0.563940650015694,
+   "boot_sd": 0.06172991387779641
+  },
+  "pool33|pupujepa_large|rho9": {
+   "arm": "pool33",
+   "key": "pupujepa_large",
+   "summary": "rho9",
+   "value": 0.43348930592971113,
+   "ci_low": 0.3080515734763325,
+   "ci_high": 0.5486101772155193,
+   "boot_sd": 0.06142629956455095
+  },
+  "pool33|magenta_rt2_small|auc": {
+   "arm": "pool33",
+   "key": "magenta_rt2_small",
+   "summary": "auc",
+   "value": 0.23049282402294358,
+   "ci_low": 0.1614711115769722,
+   "ci_high": 0.2968818863160007,
+   "boot_sd": 0.03466465189009765
+  },
+  "pool33|magenta_rt2_small|rho9": {
+   "arm": "pool33",
+   "key": "magenta_rt2_small",
+   "summary": "rho9",
+   "value": 0.22307924583887898,
+   "ci_low": 0.15449323971068746,
+   "ci_high": 0.28922643571754447,
+   "boot_sd": 0.03448335338842701
+  },
+  "pool33|magenta_rt2_base|auc": {
+   "arm": "pool33",
+   "key": "magenta_rt2_base",
+   "summary": "auc",
+   "value": 0.34496267083042836,
+   "ci_low": 0.27979239485506724,
+   "ci_high": 0.40861629043107256,
+   "boot_sd": 0.03289690912200786
+  },
+  "pool33|magenta_rt2_base|rho9": {
+   "arm": "pool33",
+   "key": "magenta_rt2_base",
+   "summary": "rho9",
+   "value": 0.3386818616992903,
+   "ci_low": 0.27364744057185264,
+   "ci_high": 0.402162910855691,
+   "boot_sd": 0.03280876454735184
+  },
+  "pool33|stableaudio3_medium|auc": {
+   "arm": "pool33",
+   "key": "stableaudio3_medium",
+   "summary": "auc",
+   "value": 0.21242931132512963,
+   "ci_low": 0.060064555971926725,
+   "ci_high": 0.3579988459180568,
+   "boot_sd": 0.07580892032229275
+  },
+  "pool33|stableaudio3_medium|rho9": {
+   "arm": "pool33",
+   "key": "stableaudio3_medium",
+   "summary": "rho9",
+   "value": 0.21717695314732144,
+   "ci_low": 0.06586777400783073,
+   "ci_high": 0.361186173420332,
+   "boot_sd": 0.07531842226127729
+  },
+  "pool33|logmel|auc": {
+   "arm": "pool33",
+   "key": "logmel",
+   "summary": "auc",
+   "value": 0.031724882447790474,
+   "ci_low": -0.11109648641665794,
+   "ci_high": 0.1668620096973313,
+   "boot_sd": 0.07177672357795017
+  },
+  "pool33|logmel|rho9": {
+   "arm": "pool33",
+   "key": "logmel",
+   "summary": "rho9",
+   "value": 0.031724882447790474,
+   "ci_low": -0.11109648641665794,
+   "ci_high": 0.1668620096973313,
+   "boot_sd": 0.07177672357795017
+  },
+  "pool33|cqt|auc": {
+   "arm": "pool33",
+   "key": "cqt",
+   "summary": "auc",
+   "value": 0.07409082457336971,
+   "ci_low": -0.06721603975821207,
+   "ci_high": 0.208787274200718,
+   "boot_sd": 0.07135629072046577
+  },
+  "pool33|cqt|rho9": {
+   "arm": "pool33",
+   "key": "cqt",
+   "summary": "rho9",
+   "value": 0.07409082457336971,
+   "ci_low": -0.06721603975821207,
+   "ci_high": 0.208787274200718,
+   "boot_sd": 0.07135629072046577
+  },
+  "pool33|gammatone|auc": {
+   "arm": "pool33",
+   "key": "gammatone",
+   "summary": "auc",
+   "value": 0.07209042963158964,
+   "ci_low": -0.07271681583414305,
+   "ci_high": 0.21032817065989326,
+   "boot_sd": 0.07248196963321944
+  },
+  "pool33|gammatone|rho9": {
+   "arm": "pool33",
+   "key": "gammatone",
+   "summary": "rho9",
+   "value": 0.07209042963158964,
+   "ci_low": -0.07271681583414305,
+   "ci_high": 0.21032817065989326,
+   "boot_sd": 0.07248196963321944
+  },
+  "pool33|fe_pupujepa_logmel|auc": {
+   "arm": "pool33",
+   "key": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "value": 0.060797530339373525,
+   "ci_low": -0.10073733267158544,
+   "ci_high": 0.2088576886843077,
+   "boot_sd": 0.07974099521349472
+  },
+  "pool33|fe_pupujepa_logmel|rho9": {
+   "arm": "pool33",
+   "key": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "value": 0.060797530339373525,
+   "ci_low": -0.10073733267158544,
+   "ci_high": 0.2088576886843077,
+   "boot_sd": 0.07974099521349472
+  },
+  "pool33|fe_encodec32_pre|auc": {
+   "arm": "pool33",
+   "key": "fe_encodec32_pre",
+   "summary": "auc",
+   "value": 0.04738608655978063,
+   "ci_low": -0.057124177179027444,
+   "ci_high": 0.15390677190481872,
+   "boot_sd": 0.05365724994890547
+  },
+  "pool33|fe_encodec32_pre|rho9": {
+   "arm": "pool33",
+   "key": "fe_encodec32_pre",
+   "summary": "rho9",
+   "value": 0.04738608655978063,
+   "ci_low": -0.057124177179027444,
+   "ci_high": 0.15390677190481872,
+   "boot_sd": 0.05365724994890547
+  },
+  "pool33|fe_encodec32_rvq|auc": {
+   "arm": "pool33",
+   "key": "fe_encodec32_rvq",
+   "summary": "auc",
+   "value": 0.030903265242304852,
+   "ci_low": -0.07298358549834487,
+   "ci_high": 0.13301088522039944,
+   "boot_sd": 0.052470637764036564
+  },
+  "pool33|fe_encodec32_rvq|rho9": {
+   "arm": "pool33",
+   "key": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "value": 0.030903265242304852,
+   "ci_low": -0.07298358549834487,
+   "ci_high": 0.13301088522039944,
+   "boot_sd": 0.052470637764036564
+  },
+  "pool33|fe_lac_pre|auc": {
+   "arm": "pool33",
+   "key": "fe_lac_pre",
+   "summary": "auc",
+   "value": -0.05545176181039307,
+   "ci_low": -0.16944957159662288,
+   "ci_high": 0.05978743403498999,
+   "boot_sd": 0.05853705694756838
+  },
+  "pool33|fe_lac_pre|rho9": {
+   "arm": "pool33",
+   "key": "fe_lac_pre",
+   "summary": "rho9",
+   "value": -0.05545176181039307,
+   "ci_low": -0.16944957159662288,
+   "ci_high": 0.05978743403498999,
+   "boot_sd": 0.05853705694756838
+  },
+  "pool33|fe_lac_rvq|auc": {
+   "arm": "pool33",
+   "key": "fe_lac_rvq",
+   "summary": "auc",
+   "value": -0.013747282813614902,
+   "ci_low": -0.10876637152418632,
+   "ci_high": 0.08362561129807397,
+   "boot_sd": 0.048941195870877086
+  },
+  "pool33|fe_lac_rvq|rho9": {
+   "arm": "pool33",
+   "key": "fe_lac_rvq",
+   "summary": "rho9",
+   "value": -0.013747282813614902,
+   "ci_low": -0.10876637152418632,
+   "ci_high": 0.08362561129807397,
+   "boot_sd": 0.048941195870877086
+  },
+  "pool33|fe_acestep_vae|auc": {
+   "arm": "pool33",
+   "key": "fe_acestep_vae",
+   "summary": "auc",
+   "value": -0.0063059077983759265,
+   "ci_low": -0.11648276832232955,
+   "ci_high": 0.10514138403384361,
+   "boot_sd": 0.056628438700358594
+  },
+  "pool33|fe_acestep_vae|rho9": {
+   "arm": "pool33",
+   "key": "fe_acestep_vae",
+   "summary": "rho9",
+   "value": -0.0063059077983759265,
+   "ci_low": -0.11648276832232955,
+   "ci_high": 0.10514138403384361,
+   "boot_sd": 0.056628438700358594
+  },
+  "pool33|fe_diffrhythm_vae|auc": {
+   "arm": "pool33",
+   "key": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "value": -0.11746659458009645,
+   "ci_low": -0.24348385958681437,
+   "ci_high": 0.00942566213004703,
+   "boot_sd": 0.06435071752437362
+  },
+  "pool33|fe_diffrhythm_vae|rho9": {
+   "arm": "pool33",
+   "key": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "value": -0.11746659458009645,
+   "ci_low": -0.24348385958681437,
+   "ci_high": 0.00942566213004703,
+   "boot_sd": 0.06435071752437362
+  },
+  "pool33|fe_samel|auc": {
+   "arm": "pool33",
+   "key": "fe_samel",
+   "summary": "auc",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "pool33|fe_samel|rho9": {
+   "arm": "pool33",
+   "key": "fe_samel",
+   "summary": "rho9",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "pool33|fe_spectrostream_rvq|auc": {
+   "arm": "pool33",
+   "key": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "value": 0.2565927563358546,
+   "ci_low": 0.10392665295837683,
+   "ci_high": 0.4078021353010641,
+   "boot_sd": 0.07730050612786274
+  },
+  "pool33|fe_spectrostream_rvq|rho9": {
+   "arm": "pool33",
+   "key": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "value": 0.2565927563358546,
+   "ci_low": 0.10392665295837683,
+   "ci_high": 0.4078021353010641,
+   "boot_sd": 0.07730050612786274
+  },
+  "nn75|mert|auc": {
+   "arm": "nn75",
+   "key": "mert",
+   "summary": "auc",
+   "value": 0.04938066065302959,
+   "ci_low": -0.05935020593347043,
+   "ci_high": 0.15411095490042526,
+   "boot_sd": 0.05465801640658414
+  },
+  "nn75|mert|rho9": {
+   "arm": "nn75",
+   "key": "mert",
+   "summary": "rho9",
+   "value": 0.048575490955180496,
+   "ci_low": -0.06063763272198104,
+   "ci_high": 0.15336348971239216,
+   "boot_sd": 0.05460155209364377
+  },
+  "nn75|mert_95m|auc": {
+   "arm": "nn75",
+   "key": "mert_95m",
+   "summary": "auc",
+   "value": -0.01270581122823177,
+   "ci_low": -0.12415382100335286,
+   "ci_high": 0.09801527403221066,
+   "boot_sd": 0.057280354925572145
+  },
+  "nn75|mert_95m|rho9": {
+   "arm": "nn75",
+   "key": "mert_95m",
+   "summary": "rho9",
+   "value": -0.017656909245421033,
+   "ci_low": -0.12932793402585624,
+   "ci_high": 0.09340110604493243,
+   "boot_sd": 0.057471884237981774
+  },
+  "nn75|muq|auc": {
+   "arm": "nn75",
+   "key": "muq",
+   "summary": "auc",
+   "value": 0.32887305865578037,
+   "ci_low": 0.17535502560054664,
+   "ci_high": 0.4788232409076695,
+   "boot_sd": 0.07797691377890582
+  },
+  "nn75|muq|rho9": {
+   "arm": "nn75",
+   "key": "muq",
+   "summary": "rho9",
+   "value": 0.319513026927957,
+   "ci_low": 0.1690663305480604,
+   "ci_high": 0.46711681235967184,
+   "boot_sd": 0.07683963225626624
+  },
+  "nn75|musicgen_small|auc": {
+   "arm": "nn75",
+   "key": "musicgen_small",
+   "summary": "auc",
+   "value": -0.7504228421015121,
+   "ci_low": -0.7811476617955309,
+   "ci_high": -0.7121886912649232,
+   "boot_sd": 0.017712725583232444
+  },
+  "nn75|musicgen_small|rho9": {
+   "arm": "nn75",
+   "key": "musicgen_small",
+   "summary": "rho9",
+   "value": -0.7008479908143395,
+   "ci_low": -0.7289648645438507,
+   "ci_high": -0.6659538248247036,
+   "boot_sd": 0.016052861024633717
+  },
+  "nn75|musicgen_medium|auc": {
+   "arm": "nn75",
+   "key": "musicgen_medium",
+   "summary": "auc",
+   "value": -0.13294133148719073,
+   "ci_low": -0.22066398902545667,
+   "ci_high": -0.04223425256296839,
+   "boot_sd": 0.04569235693305454
+  },
+  "nn75|musicgen_medium|rho9": {
+   "arm": "nn75",
+   "key": "musicgen_medium",
+   "summary": "rho9",
+   "value": -0.10223036995174649,
+   "ci_low": -0.1904052214105472,
+   "ci_high": -0.01147439068845211,
+   "boot_sd": 0.045739817331033675
+  },
+  "nn75|musicgen_large|auc": {
+   "arm": "nn75",
+   "key": "musicgen_large",
+   "summary": "auc",
+   "value": -0.2633529314574857,
+   "ci_low": -0.3217409902634242,
+   "ci_high": -0.20444033162594577,
+   "boot_sd": 0.02989910750630685
+  },
+  "nn75|musicgen_large|rho9": {
+   "arm": "nn75",
+   "key": "musicgen_large",
+   "summary": "rho9",
+   "value": -0.23174381123261326,
+   "ci_low": -0.2930083646804429,
+   "ci_high": -0.16923972089293057,
+   "boot_sd": 0.03155737296191933
+  },
+  "nn75|magnet_small|auc": {
+   "arm": "nn75",
+   "key": "magnet_small",
+   "summary": "auc",
+   "value": 0.05935887320438776,
+   "ci_low": -0.029143892316288732,
+   "ci_high": 0.149778839513169,
+   "boot_sd": 0.04602809231788223
+  },
+  "nn75|magnet_small|rho9": {
+   "arm": "nn75",
+   "key": "magnet_small",
+   "summary": "rho9",
+   "value": 0.06872002879599012,
+   "ci_low": -0.019424047169194693,
+   "ci_high": 0.15824787796552758,
+   "boot_sd": 0.045726918118396125
+  },
+  "nn75|magnet_medium|auc": {
+   "arm": "nn75",
+   "key": "magnet_medium",
+   "summary": "auc",
+   "value": -0.043978051490968804,
+   "ci_low": -0.13700800347915837,
+   "ci_high": 0.05235207479672301,
+   "boot_sd": 0.0486764812604756
+  },
+  "nn75|magnet_medium|rho9": {
+   "arm": "nn75",
+   "key": "magnet_medium",
+   "summary": "rho9",
+   "value": -0.02866640341496708,
+   "ci_low": -0.12090632777319618,
+   "ci_high": 0.0663607080014913,
+   "boot_sd": 0.04820487742552591
+  },
+  "nn75|vampnet|auc": {
+   "arm": "nn75",
+   "key": "vampnet",
+   "summary": "auc",
+   "value": -0.011616632788551228,
+   "ci_low": -0.10461565991158672,
+   "ci_high": 0.08630210336561753,
+   "boot_sd": 0.04917225737754848
+  },
+  "nn75|vampnet|rho9": {
+   "arm": "nn75",
+   "key": "vampnet",
+   "summary": "rho9",
+   "value": -0.01711984495882778,
+   "ci_low": -0.10896812952097414,
+   "ci_high": 0.0798950432610737,
+   "boot_sd": 0.04869633795163348
+  },
+  "nn75|pupujepa_large|auc": {
+   "arm": "nn75",
+   "key": "pupujepa_large",
+   "summary": "auc",
+   "value": 0.3111074476511003,
+   "ci_low": 0.1713327781329806,
+   "ci_high": 0.44264026364877845,
+   "boot_sd": 0.06866456025420009
+  },
+  "nn75|pupujepa_large|rho9": {
+   "arm": "nn75",
+   "key": "pupujepa_large",
+   "summary": "rho9",
+   "value": 0.2956915374902038,
+   "ci_low": 0.15846433264987148,
+   "ci_high": 0.424094562453824,
+   "boot_sd": 0.06749298836522435
+  },
+  "nn75|magenta_rt2_small|auc": {
+   "arm": "nn75",
+   "key": "magenta_rt2_small",
+   "summary": "auc",
+   "value": -0.04897932722081119,
+   "ci_low": -0.12392088624068263,
+   "ci_high": 0.0262490899795744,
+   "boot_sd": 0.038644840798240924
+  },
+  "nn75|magenta_rt2_small|rho9": {
+   "arm": "nn75",
+   "key": "magenta_rt2_small",
+   "summary": "rho9",
+   "value": -0.05219253708898234,
+   "ci_low": -0.1263672803533844,
+   "ci_high": 0.022636026752839752,
+   "boot_sd": 0.038302196845387264
+  },
+  "nn75|magenta_rt2_base|auc": {
+   "arm": "nn75",
+   "key": "magenta_rt2_base",
+   "summary": "auc",
+   "value": 0.06464941856406375,
+   "ci_low": -0.016098626697169497,
+   "ci_high": 0.14723534899705207,
+   "boot_sd": 0.041486623962484606
+  },
+  "nn75|magenta_rt2_base|rho9": {
+   "arm": "nn75",
+   "key": "magenta_rt2_base",
+   "summary": "rho9",
+   "value": 0.06844051220402862,
+   "ci_low": -0.012695729897439985,
+   "ci_high": 0.150343898347959,
+   "boot_sd": 0.041450025173554506
+  },
+  "nn75|logmel|auc": {
+   "arm": "nn75",
+   "key": "logmel",
+   "summary": "auc",
+   "value": 0.027165923122491786,
+   "ci_low": -0.10568173998402426,
+   "ci_high": 0.15991730420252914,
+   "boot_sd": 0.06785019187134758
+  },
+  "nn75|logmel|rho9": {
+   "arm": "nn75",
+   "key": "logmel",
+   "summary": "rho9",
+   "value": 0.027165923122491786,
+   "ci_low": -0.10568173998402426,
+   "ci_high": 0.15991730420252914,
+   "boot_sd": 0.06785019187134758
+  },
+  "nn75|cqt|auc": {
+   "arm": "nn75",
+   "key": "cqt",
+   "summary": "auc",
+   "value": 0.03029864089248799,
+   "ci_low": -0.06941985464829534,
+   "ci_high": 0.1331468760442138,
+   "boot_sd": 0.0519804303190508
+  },
+  "nn75|cqt|rho9": {
+   "arm": "nn75",
+   "key": "cqt",
+   "summary": "rho9",
+   "value": 0.03029864089248799,
+   "ci_low": -0.06941985464829534,
+   "ci_high": 0.1331468760442138,
+   "boot_sd": 0.0519804303190508
+  },
+  "nn75|gammatone|auc": {
+   "arm": "nn75",
+   "key": "gammatone",
+   "summary": "auc",
+   "value": 0.032894717849213,
+   "ci_low": -0.1102074873856871,
+   "ci_high": 0.1775784367893855,
+   "boot_sd": 0.07402596523032459
+  },
+  "nn75|gammatone|rho9": {
+   "arm": "nn75",
+   "key": "gammatone",
+   "summary": "rho9",
+   "value": 0.032894717849213,
+   "ci_low": -0.1102074873856871,
+   "ci_high": 0.1775784367893855,
+   "boot_sd": 0.07402596523032459
+  },
+  "nn75|fe_pupujepa_logmel|auc": {
+   "arm": "nn75",
+   "key": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "value": -0.06656014312597736,
+   "ci_low": -0.19381953623768722,
+   "ci_high": 0.06275947418641606,
+   "boot_sd": 0.06514555075755761
+  },
+  "nn75|fe_pupujepa_logmel|rho9": {
+   "arm": "nn75",
+   "key": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "value": -0.06656014312597736,
+   "ci_low": -0.19381953623768722,
+   "ci_high": 0.06275947418641606,
+   "boot_sd": 0.06514555075755761
+  },
+  "nn75|fe_encodec32_pre|auc": {
+   "arm": "nn75",
+   "key": "fe_encodec32_pre",
+   "summary": "auc",
+   "value": -0.042819569968873095,
+   "ci_low": -0.13042838294268416,
+   "ci_high": 0.05059640624272483,
+   "boot_sd": 0.0460931466909625
+  },
+  "nn75|fe_encodec32_pre|rho9": {
+   "arm": "nn75",
+   "key": "fe_encodec32_pre",
+   "summary": "rho9",
+   "value": -0.042819569968873095,
+   "ci_low": -0.13042838294268416,
+   "ci_high": 0.05059640624272483,
+   "boot_sd": 0.0460931466909625
+  },
+  "nn75|fe_encodec32_rvq|auc": {
+   "arm": "nn75",
+   "key": "fe_encodec32_rvq",
+   "summary": "auc",
+   "value": -0.05067246972519427,
+   "ci_low": -0.14665554275164733,
+   "ci_high": 0.05043537449816951,
+   "boot_sd": 0.049883328527461766
+  },
+  "nn75|fe_encodec32_rvq|rho9": {
+   "arm": "nn75",
+   "key": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "value": -0.05067246972519427,
+   "ci_low": -0.14665554275164733,
+   "ci_high": 0.05043537449816951,
+   "boot_sd": 0.049883328527461766
+  },
+  "nn75|fe_lac_pre|auc": {
+   "arm": "nn75",
+   "key": "fe_lac_pre",
+   "summary": "auc",
+   "value": -0.030556347028413477,
+   "ci_low": -0.15471172018426585,
+   "ci_high": 0.0963796364016537,
+   "boot_sd": 0.06440640018935807
+  },
+  "nn75|fe_lac_pre|rho9": {
+   "arm": "nn75",
+   "key": "fe_lac_pre",
+   "summary": "rho9",
+   "value": -0.030556347028413477,
+   "ci_low": -0.15471172018426585,
+   "ci_high": 0.0963796364016537,
+   "boot_sd": 0.06440640018935807
+  },
+  "nn75|fe_lac_rvq|auc": {
+   "arm": "nn75",
+   "key": "fe_lac_rvq",
+   "summary": "auc",
+   "value": -0.030849688486713604,
+   "ci_low": -0.09931204567758811,
+   "ci_high": 0.04184079524259866,
+   "boot_sd": 0.03604380129990965
+  },
+  "nn75|fe_lac_rvq|rho9": {
+   "arm": "nn75",
+   "key": "fe_lac_rvq",
+   "summary": "rho9",
+   "value": -0.030849688486713604,
+   "ci_low": -0.09931204567758811,
+   "ci_high": 0.04184079524259866,
+   "boot_sd": 0.03604380129990965
+  },
+  "nn75|fe_acestep_vae|auc": {
+   "arm": "nn75",
+   "key": "fe_acestep_vae",
+   "summary": "auc",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "nn75|fe_acestep_vae|rho9": {
+   "arm": "nn75",
+   "key": "fe_acestep_vae",
+   "summary": "rho9",
+   "value": -0.13545893558180516,
+   "ci_low": -0.20856919415311076,
+   "ci_high": -0.059413639373617065,
+   "boot_sd": 0.038127733400004284
+  },
+  "nn75|fe_spectrostream_rvq|auc": {
+   "arm": "nn75",
+   "key": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "nn75|fe_spectrostream_rvq|rho9": {
+   "arm": "nn75",
+   "key": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "value": 0.023867128154075625,
+   "ci_low": -0.10410256751738145,
+   "ci_high": 0.15638797061251855,
+   "boot_sd": 0.06722243491486865
+  },
+  "nn33|mert|auc": {
+   "arm": "nn33",
+   "key": "mert",
+   "summary": "auc",
+   "value": 0.11064980475519524,
+   "ci_low": -0.023776009938506617,
+   "ci_high": 0.23563602769877992,
+   "boot_sd": 0.06632393394993243
+  },
+  "nn33|mert|rho9": {
+   "arm": "nn33",
+   "key": "mert",
+   "summary": "rho9",
+   "value": 0.11153310636486435,
+   "ci_low": -0.02283971478733453,
+   "ci_high": 0.23676791313707404,
+   "boot_sd": 0.06631153253180916
+  },
+  "nn33|mert_95m|auc": {
+   "arm": "nn33",
+   "key": "mert_95m",
+   "summary": "auc",
+   "value": 0.09091373963671101,
+   "ci_low": -0.03844212724495784,
+   "ci_high": 0.21926518025240108,
+   "boot_sd": 0.06592037439303164
+  },
+  "nn33|mert_95m|rho9": {
+   "arm": "nn33",
+   "key": "mert_95m",
+   "summary": "rho9",
+   "value": 0.08812050020305305,
+   "ci_low": -0.04053601538661194,
+   "ci_high": 0.2154357126272984,
+   "boot_sd": 0.06574215703662142
+  },
+  "nn33|muq|auc": {
+   "arm": "nn33",
+   "key": "muq",
+   "summary": "auc",
+   "value": 0.23437697508412003,
+   "ci_low": 0.09494583617084602,
+   "ci_high": 0.3617029587768996,
+   "boot_sd": 0.0678963306649957
+  },
+  "nn33|muq|rho9": {
+   "arm": "nn33",
+   "key": "muq",
+   "summary": "rho9",
+   "value": 0.2313640132715363,
+   "ci_low": 0.0925188487772202,
+   "ci_high": 0.35841691065778175,
+   "boot_sd": 0.06778314573597835
+  },
+  "nn33|musicgen_small|auc": {
+   "arm": "nn33",
+   "key": "musicgen_small",
+   "summary": "auc",
+   "value": 0.21058584547431936,
+   "ci_low": 0.09121045215289439,
+   "ci_high": 0.3295550534076272,
+   "boot_sd": 0.060506785660565866
+  },
+  "nn33|musicgen_small|rho9": {
+   "arm": "nn33",
+   "key": "musicgen_small",
+   "summary": "rho9",
+   "value": 0.19965033385811215,
+   "ci_low": 0.08032332444285402,
+   "ci_high": 0.3187700248310421,
+   "boot_sd": 0.0604633058239712
+  },
+  "nn33|musicgen_medium|auc": {
+   "arm": "nn33",
+   "key": "musicgen_medium",
+   "summary": "auc",
+   "value": 0.1456222355873382,
+   "ci_low": 0.03308020728345367,
+   "ci_high": 0.25822861943827474,
+   "boot_sd": 0.05780610115861099
+  },
+  "nn33|musicgen_medium|rho9": {
+   "arm": "nn33",
+   "key": "musicgen_medium",
+   "summary": "rho9",
+   "value": 0.15149992797790876,
+   "ci_low": 0.03849474600130511,
+   "ci_high": 0.26483476815473167,
+   "boot_sd": 0.057962156345322056
+  },
+  "nn33|musicgen_large|auc": {
+   "arm": "nn33",
+   "key": "musicgen_large",
+   "summary": "auc",
+   "value": 0.23663430971475274,
+   "ci_low": 0.11091054540574773,
+   "ci_high": 0.3611170843162458,
+   "boot_sd": 0.06380037974846132
+  },
+  "nn33|musicgen_large|rho9": {
+   "arm": "nn33",
+   "key": "musicgen_large",
+   "summary": "rho9",
+   "value": 0.22841704733556714,
+   "ci_low": 0.10363297917090285,
+   "ci_high": 0.35190469599500057,
+   "boot_sd": 0.06330691247664591
+  },
+  "nn33|magnet_small|auc": {
+   "arm": "nn33",
+   "key": "magnet_small",
+   "summary": "auc",
+   "value": 0.15975717383191626,
+   "ci_low": 0.041170752092484296,
+   "ci_high": 0.27795579541287596,
+   "boot_sd": 0.06071342511438919
+  },
+  "nn33|magnet_small|rho9": {
+   "arm": "nn33",
+   "key": "magnet_small",
+   "summary": "rho9",
+   "value": 0.16304766221974473,
+   "ci_low": 0.04605529829645081,
+   "ci_high": 0.2795498465579382,
+   "boot_sd": 0.0596678304619339
+  },
+  "nn33|magnet_medium|auc": {
+   "arm": "nn33",
+   "key": "magnet_medium",
+   "summary": "auc",
+   "value": 0.09866163979284231,
+   "ci_low": -0.009106830026232193,
+   "ci_high": 0.20655800160406004,
+   "boot_sd": 0.05525776610266376
+  },
+  "nn33|magnet_medium|rho9": {
+   "arm": "nn33",
+   "key": "magnet_medium",
+   "summary": "rho9",
+   "value": 0.10861598919415734,
+   "ci_low": 0.00156094193716283,
+   "ci_high": 0.2160297068601353,
+   "boot_sd": 0.05476242521303436
+  },
+  "nn33|vampnet|auc": {
+   "arm": "nn33",
+   "key": "vampnet",
+   "summary": "auc",
+   "value": 0.11313168683543172,
+   "ci_low": -0.016751071176555492,
+   "ci_high": 0.24628323658288007,
+   "boot_sd": 0.06682583306900199
+  },
+  "nn33|vampnet|rho9": {
+   "arm": "nn33",
+   "key": "vampnet",
+   "summary": "rho9",
+   "value": 0.10891097564085694,
+   "ci_low": -0.0201144517007913,
+   "ci_high": 0.24094096785686955,
+   "boot_sd": 0.06622449797263513
+  },
+  "nn33|acestep15|auc": {
+   "arm": "nn33",
+   "key": "acestep15",
+   "summary": "auc",
+   "value": 0.2981885460983387,
+   "ci_low": 0.15588789669816108,
+   "ci_high": 0.42874732839151564,
+   "boot_sd": 0.07012497447435224
+  },
+  "nn33|acestep15|rho9": {
+   "arm": "nn33",
+   "key": "acestep15",
+   "summary": "rho9",
+   "value": 0.2950380663360714,
+   "ci_low": 0.1542171352542699,
+   "ci_high": 0.42488927438104035,
+   "boot_sd": 0.0697785750692754
+  },
+  "nn33|acestep15_xl|auc": {
+   "arm": "nn33",
+   "key": "acestep15_xl",
+   "summary": "auc",
+   "value": 0.2256585683112771,
+   "ci_low": 0.09158395896483072,
+   "ci_high": 0.3447340625781535,
+   "boot_sd": 0.06457085195073368
+  },
+  "nn33|acestep15_xl|rho9": {
+   "arm": "nn33",
+   "key": "acestep15_xl",
+   "summary": "rho9",
+   "value": 0.22115289099328525,
+   "ci_low": 0.088964983392074,
+   "ci_high": 0.3392369952822241,
+   "boot_sd": 0.0639266256239225
+  },
+  "nn33|diffrhythm12|auc": {
+   "arm": "nn33",
+   "key": "diffrhythm12",
+   "summary": "auc",
+   "value": 0.22724793927627143,
+   "ci_low": 0.09047667902477663,
+   "ci_high": 0.35949315478887406,
+   "boot_sd": 0.06843014167012863
+  },
+  "nn33|diffrhythm12|rho9": {
+   "arm": "nn33",
+   "key": "diffrhythm12",
+   "summary": "rho9",
+   "value": 0.2266747740066201,
+   "ci_low": 0.09068601528742651,
+   "ci_high": 0.35847441407214625,
+   "boot_sd": 0.0680238764121961
+  },
+  "nn33|pupujepa_large|auc": {
+   "arm": "nn33",
+   "key": "pupujepa_large",
+   "summary": "auc",
+   "value": 0.2714399598896425,
+   "ci_low": 0.13813293405554122,
+   "ci_high": 0.3933833974120403,
+   "boot_sd": 0.06553228308699642
+  },
+  "nn33|pupujepa_large|rho9": {
+   "arm": "nn33",
+   "key": "pupujepa_large",
+   "summary": "rho9",
+   "value": 0.26700019591390106,
+   "ci_low": 0.13464704800753105,
+   "ci_high": 0.38765697478673367,
+   "boot_sd": 0.06480898711237791
+  },
+  "nn33|magenta_rt2_small|auc": {
+   "arm": "nn33",
+   "key": "magenta_rt2_small",
+   "summary": "auc",
+   "value": 0.1811942657846141,
+   "ci_low": 0.10149291800169294,
+   "ci_high": 0.26072925086803783,
+   "boot_sd": 0.04023326890985725
+  },
+  "nn33|magenta_rt2_small|rho9": {
+   "arm": "nn33",
+   "key": "magenta_rt2_small",
+   "summary": "rho9",
+   "value": 0.17771418873215183,
+   "ci_low": 0.09852781480389713,
+   "ci_high": 0.2570616380981496,
+   "boot_sd": 0.040053684705130786
+  },
+  "nn33|magenta_rt2_base|auc": {
+   "arm": "nn33",
+   "key": "magenta_rt2_base",
+   "summary": "auc",
+   "value": 0.24893861907560952,
+   "ci_low": 0.17005780407880033,
+   "ci_high": 0.32725318730877695,
+   "boot_sd": 0.039967520664172675
+  },
+  "nn33|magenta_rt2_base|rho9": {
+   "arm": "nn33",
+   "key": "magenta_rt2_base",
+   "summary": "rho9",
+   "value": 0.243462174240908,
+   "ci_low": 0.1643855464400634,
+   "ci_high": 0.3224116039938296,
+   "boot_sd": 0.04010539406319074
+  },
+  "nn33|stableaudio3_medium|auc": {
+   "arm": "nn33",
+   "key": "stableaudio3_medium",
+   "summary": "auc",
+   "value": 0.21242931132512963,
+   "ci_low": 0.060064555971926725,
+   "ci_high": 0.3579988459180568,
+   "boot_sd": 0.07580892032229275
+  },
+  "nn33|stableaudio3_medium|rho9": {
+   "arm": "nn33",
+   "key": "stableaudio3_medium",
+   "summary": "rho9",
+   "value": 0.21717695314732144,
+   "ci_low": 0.06586777400783073,
+   "ci_high": 0.361186173420332,
+   "boot_sd": 0.07531842226127729
+  },
+  "nn33|logmel|auc": {
+   "arm": "nn33",
+   "key": "logmel",
+   "summary": "auc",
+   "value": 0.043908149762954034,
+   "ci_low": -0.11003850693646755,
+   "ci_high": 0.19792396477185137,
+   "boot_sd": 0.07882241285529652
+  },
+  "nn33|logmel|rho9": {
+   "arm": "nn33",
+   "key": "logmel",
+   "summary": "rho9",
+   "value": 0.043908149762954034,
+   "ci_low": -0.11003850693646755,
+   "ci_high": 0.19792396477185137,
+   "boot_sd": 0.07882241285529652
+  },
+  "nn33|cqt|auc": {
+   "arm": "nn33",
+   "key": "cqt",
+   "summary": "auc",
+   "value": 0.01361089075316572,
+   "ci_low": -0.1476033518914853,
+   "ci_high": 0.17817425943129714,
+   "boot_sd": 0.08436860916688411
+  },
+  "nn33|cqt|rho9": {
+   "arm": "nn33",
+   "key": "cqt",
+   "summary": "rho9",
+   "value": 0.01361089075316572,
+   "ci_low": -0.1476033518914853,
+   "ci_high": 0.17817425943129714,
+   "boot_sd": 0.08436860916688411
+  },
+  "nn33|gammatone|auc": {
+   "arm": "nn33",
+   "key": "gammatone",
+   "summary": "auc",
+   "value": 0.05301538827804339,
+   "ci_low": -0.0885214430349056,
+   "ci_high": 0.19227604039132407,
+   "boot_sd": 0.07224078305845547
+  },
+  "nn33|gammatone|rho9": {
+   "arm": "nn33",
+   "key": "gammatone",
+   "summary": "rho9",
+   "value": 0.05301538827804339,
+   "ci_low": -0.0885214430349056,
+   "ci_high": 0.19227604039132407,
+   "boot_sd": 0.07224078305845547
+  },
+  "nn33|fe_pupujepa_logmel|auc": {
+   "arm": "nn33",
+   "key": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "value": 0.02087700979399862,
+   "ci_low": -0.14335947070871108,
+   "ci_high": 0.1884897578170028,
+   "boot_sd": 0.08520879039302684
+  },
+  "nn33|fe_pupujepa_logmel|rho9": {
+   "arm": "nn33",
+   "key": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "value": 0.02087700979399862,
+   "ci_low": -0.14335947070871108,
+   "ci_high": 0.1884897578170028,
+   "boot_sd": 0.08520879039302684
+  },
+  "nn33|fe_encodec32_pre|auc": {
+   "arm": "nn33",
+   "key": "fe_encodec32_pre",
+   "summary": "auc",
+   "value": 0.05210992797910501,
+   "ci_low": -0.06813267098275215,
+   "ci_high": 0.17670371126331225,
+   "boot_sd": 0.06278105027174337
+  },
+  "nn33|fe_encodec32_pre|rho9": {
+   "arm": "nn33",
+   "key": "fe_encodec32_pre",
+   "summary": "rho9",
+   "value": 0.05210992797910501,
+   "ci_low": -0.06813267098275215,
+   "ci_high": 0.17670371126331225,
+   "boot_sd": 0.06278105027174337
+  },
+  "nn33|fe_encodec32_rvq|auc": {
+   "arm": "nn33",
+   "key": "fe_encodec32_rvq",
+   "summary": "auc",
+   "value": 0.0416923063330679,
+   "ci_low": -0.07917976951428768,
+   "ci_high": 0.16246662265659456,
+   "boot_sd": 0.061857979905979826
+  },
+  "nn33|fe_encodec32_rvq|rho9": {
+   "arm": "nn33",
+   "key": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "value": 0.0416923063330679,
+   "ci_low": -0.07917976951428768,
+   "ci_high": 0.16246662265659456,
+   "boot_sd": 0.061857979905979826
+  },
+  "nn33|fe_lac_pre|auc": {
+   "arm": "nn33",
+   "key": "fe_lac_pre",
+   "summary": "auc",
+   "value": 0.01626797477055224,
+   "ci_low": -0.11867996089860394,
+   "ci_high": 0.15532425498622626,
+   "boot_sd": 0.07038892559614096
+  },
+  "nn33|fe_lac_pre|rho9": {
+   "arm": "nn33",
+   "key": "fe_lac_pre",
+   "summary": "rho9",
+   "value": 0.01626797477055224,
+   "ci_low": -0.11867996089860394,
+   "ci_high": 0.15532425498622626,
+   "boot_sd": 0.07038892559614096
+  },
+  "nn33|fe_lac_rvq|auc": {
+   "arm": "nn33",
+   "key": "fe_lac_rvq",
+   "summary": "auc",
+   "value": 0.09412838047035477,
+   "ci_low": -0.020330134246837533,
+   "ci_high": 0.20670787525604226,
+   "boot_sd": 0.05800531191763701
+  },
+  "nn33|fe_lac_rvq|rho9": {
+   "arm": "nn33",
+   "key": "fe_lac_rvq",
+   "summary": "rho9",
+   "value": 0.09412838047035477,
+   "ci_low": -0.020330134246837533,
+   "ci_high": 0.20670787525604226,
+   "boot_sd": 0.05800531191763701
+  },
+  "nn33|fe_acestep_vae|auc": {
+   "arm": "nn33",
+   "key": "fe_acestep_vae",
+   "summary": "auc",
+   "value": 0.08020796080636487,
+   "ci_low": -0.04734775532819204,
+   "ci_high": 0.20813280447730947,
+   "boot_sd": 0.0649410215076992
+  },
+  "nn33|fe_acestep_vae|rho9": {
+   "arm": "nn33",
+   "key": "fe_acestep_vae",
+   "summary": "rho9",
+   "value": 0.08020796080636487,
+   "ci_low": -0.04734775532819204,
+   "ci_high": 0.20813280447730947,
+   "boot_sd": 0.0649410215076992
+  },
+  "nn33|fe_diffrhythm_vae|auc": {
+   "arm": "nn33",
+   "key": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "value": 0.12119309573131676,
+   "ci_low": -0.004134266931730519,
+   "ci_high": 0.24315521476048577,
+   "boot_sd": 0.06285764065116499
+  },
+  "nn33|fe_diffrhythm_vae|rho9": {
+   "arm": "nn33",
+   "key": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "value": 0.12119309573131676,
+   "ci_low": -0.004134266931730519,
+   "ci_high": 0.24315521476048577,
+   "boot_sd": 0.06285764065116499
+  },
+  "nn33|fe_samel|auc": {
+   "arm": "nn33",
+   "key": "fe_samel",
+   "summary": "auc",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "nn33|fe_samel|rho9": {
+   "arm": "nn33",
+   "key": "fe_samel",
+   "summary": "rho9",
+   "value": 0.23490327149559198,
+   "ci_low": 0.1179723508748738,
+   "ci_high": 0.34359039945776815,
+   "boot_sd": 0.05732940013974663
+  },
+  "nn33|fe_spectrostream_rvq|auc": {
+   "arm": "nn33",
+   "key": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "value": 0.1638013823103854,
+   "ci_low": 0.009129026243292308,
+   "ci_high": 0.31433999072492175,
+   "boot_sd": 0.07782901646698973
+  },
+  "nn33|fe_spectrostream_rvq|rho9": {
+   "arm": "nn33",
+   "key": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "value": 0.1638013823103854,
+   "ci_low": 0.009129026243292308,
+   "ci_high": 0.31433999072492175,
+   "boot_sd": 0.07782901646698973
+  }
+ },
+ "paired": {
+  "native|acestep15|auc": {
+   "arm": "native",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.4178245995745133,
+   "ci_low": 0.25770264992376574,
+   "ci_high": 0.5783456390937739,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|acestep15|rho9": {
+   "arm": "native",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.41590999350597163,
+   "ci_low": 0.256187784765671,
+   "ci_high": 0.5762204504504456,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "nn33|acestep15|auc": {
+   "arm": "nn33",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.21798058529197384,
+   "ci_low": 0.0645801410632746,
+   "ci_high": 0.3682309210295837,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0096990300969903
+  },
+  "nn33|acestep15|rho9": {
+   "arm": "nn33",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.21483010552970652,
+   "ci_low": 0.06164041208104356,
+   "ci_high": 0.36495097064366205,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0110988901109889
+  },
+  "pool33|acestep15|auc": {
+   "arm": "pool33",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.22798334809401044,
+   "ci_low": 0.06721916802464205,
+   "ci_high": 0.3578502556586281,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.006099390060993901
+  },
+  "pool33|acestep15|rho9": {
+   "arm": "pool33",
+   "model": "acestep15",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.22590502379205693,
+   "ci_low": 0.0657784873666035,
+   "ci_high": 0.355782021822258,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.006399360063993601
+  },
+  "native|acestep15_xl|auc": {
+   "arm": "native",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.3692645198463871,
+   "ci_low": 0.21049823779781723,
+   "ci_high": 0.5226898133058733,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|acestep15_xl|rho9": {
+   "arm": "native",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.36035437165855994,
+   "ci_low": 0.20372423543219983,
+   "ci_high": 0.5130143524565922,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "nn33|acestep15_xl|auc": {
+   "arm": "nn33",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.14545060750491223,
+   "ci_low": -0.0012936950898995618,
+   "ci_high": 0.2890415896453617,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.06359364063593641
+  },
+  "nn33|acestep15_xl|rho9": {
+   "arm": "nn33",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.14094493018692036,
+   "ci_low": -0.005062913634305823,
+   "ci_high": 0.2836539292673284,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.0700929907009299
+  },
+  "pool33|acestep15_xl|auc": {
+   "arm": "pool33",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "auc",
+   "delta": 0.20526192077822125,
+   "ci_low": 0.0380137378743086,
+   "ci_high": 0.34464036728148084,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.016798320167983202
+  },
+  "pool33|acestep15_xl|rho9": {
+   "arm": "pool33",
+   "model": "acestep15_xl",
+   "front_end": "fe_acestep_vae",
+   "summary": "rho9",
+   "delta": 0.20256474409015124,
+   "ci_low": 0.03793942734128737,
+   "ci_high": 0.3405519519675986,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.016998300169983
+  },
+  "native|diffrhythm12|auc": {
+   "arm": "native",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "delta": 0.2180113985378366,
+   "ci_low": 0.12618592105475177,
+   "ci_high": 0.3140378710853335,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|diffrhythm12|rho9": {
+   "arm": "native",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "delta": 0.2162029078460571,
+   "ci_low": 0.12669569965011296,
+   "ci_high": 0.31012013651873854,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn33|diffrhythm12|auc": {
+   "arm": "nn33",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "delta": 0.10605484354495472,
+   "ci_low": 0.05020023451258918,
+   "ci_high": 0.1714677506212271,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0006999300069993001
+  },
+  "nn33|diffrhythm12|rho9": {
+   "arm": "nn33",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "delta": 0.10548167827530334,
+   "ci_low": 0.049932778095731385,
+   "ci_high": 0.17106790618582607,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0010998900109989002
+  },
+  "pool33|diffrhythm12|auc": {
+   "arm": "pool33",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "auc",
+   "delta": 0.3127534682544534,
+   "ci_low": 0.21575431077114984,
+   "ci_high": 0.41154986249045505,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|diffrhythm12|rho9": {
+   "arm": "pool33",
+   "model": "diffrhythm12",
+   "front_end": "fe_diffrhythm_vae",
+   "summary": "rho9",
+   "delta": 0.31062380901937436,
+   "ci_low": 0.2157572886559791,
+   "ci_high": 0.40745968974278957,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "native|magenta_rt2_base|auc": {
+   "arm": "native",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.04078229040998812,
+   "ci_low": -0.09676844218217505,
+   "ci_high": 0.1790818204541348,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5668433156684332
+  },
+  "native|magenta_rt2_base|rho9": {
+   "arm": "native",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.04457338404995298,
+   "ci_low": -0.0928350845544623,
+   "ci_high": 0.18314702690794638,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5333466653334666
+  },
+  "nn33|magenta_rt2_base|auc": {
+   "arm": "nn33",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.08513723676522415,
+   "ci_low": -0.05972665568160839,
+   "ci_high": 0.23609379188786841,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2693730626937306
+  },
+  "nn33|magenta_rt2_base|rho9": {
+   "arm": "nn33",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.07966079193052254,
+   "ci_low": -0.06491752706078145,
+   "ci_high": 0.23017433944986007,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2977702229777022
+  },
+  "nn75|magenta_rt2_base|auc": {
+   "arm": "nn75",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.04078229040998812,
+   "ci_low": -0.09676844218217505,
+   "ci_high": 0.1790818204541348,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5668433156684332
+  },
+  "nn75|magenta_rt2_base|rho9": {
+   "arm": "nn75",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.04457338404995298,
+   "ci_low": -0.0928350845544623,
+   "ci_high": 0.18314702690794638,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5333466653334666
+  },
+  "pool33|magenta_rt2_base|auc": {
+   "arm": "pool33",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.08836991449457386,
+   "ci_low": -0.07641447134378414,
+   "ci_high": 0.24904343871524953,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.3053694630536946
+  },
+  "pool33|magenta_rt2_base|rho9": {
+   "arm": "pool33",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.08208910536343576,
+   "ci_low": -0.0821567319568489,
+   "ci_high": 0.242763280611316,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.33696630336966304
+  },
+  "pool75|magenta_rt2_base|auc": {
+   "arm": "pool75",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.04078229040998812,
+   "ci_low": -0.09676844218217505,
+   "ci_high": 0.1790818204541348,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5668433156684332
+  },
+  "pool75|magenta_rt2_base|rho9": {
+   "arm": "pool75",
+   "model": "magenta_rt2_base",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.04457338404995298,
+   "ci_low": -0.0928350845544623,
+   "ci_high": 0.18314702690794638,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5333466653334666
+  },
+  "native|magenta_rt2_small|auc": {
+   "arm": "native",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": -0.07284645537488683,
+   "ci_low": -0.21375638504969524,
+   "ci_high": 0.07018308038107232,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.32196780321967805
+  },
+  "native|magenta_rt2_small|rho9": {
+   "arm": "native",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": -0.07605966524305798,
+   "ci_low": -0.21699459872415203,
+   "ci_high": 0.06670459258373854,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2999700029997
+  },
+  "nn33|magenta_rt2_small|auc": {
+   "arm": "nn33",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": 0.017392883474228675,
+   "ci_low": -0.1273515938811374,
+   "ci_high": 0.17241063686036484,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.8134186581341866
+  },
+  "nn33|magenta_rt2_small|rho9": {
+   "arm": "nn33",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": 0.013912806421766443,
+   "ci_low": -0.1309868733340176,
+   "ci_high": 0.16846578800461068,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.8474152584741526
+  },
+  "nn75|magenta_rt2_small|auc": {
+   "arm": "nn75",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": -0.07284645537488683,
+   "ci_low": -0.21375638504969524,
+   "ci_high": 0.07018308038107232,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.32196780321967805
+  },
+  "nn75|magenta_rt2_small|rho9": {
+   "arm": "nn75",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": -0.07605966524305798,
+   "ci_low": -0.21699459872415203,
+   "ci_high": 0.06670459258373854,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2999700029997
+  },
+  "pool33|magenta_rt2_small|auc": {
+   "arm": "pool33",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": -0.026099932312911023,
+   "ci_low": -0.18881814107293532,
+   "ci_high": 0.13234243715105268,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.7530246975302469
+  },
+  "pool33|magenta_rt2_small|rho9": {
+   "arm": "pool33",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": -0.033513510496975575,
+   "ci_low": -0.19535530452244032,
+   "ci_high": 0.12417678397656082,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.6906309369063094
+  },
+  "pool75|magenta_rt2_small|auc": {
+   "arm": "pool75",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "auc",
+   "delta": -0.07284645537488683,
+   "ci_low": -0.21375638504969524,
+   "ci_high": 0.07018308038107232,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.32196780321967805
+  },
+  "pool75|magenta_rt2_small|rho9": {
+   "arm": "pool75",
+   "model": "magenta_rt2_small",
+   "front_end": "fe_spectrostream_rvq",
+   "summary": "rho9",
+   "delta": -0.07605966524305798,
+   "ci_low": -0.21699459872415203,
+   "ci_high": 0.06670459258373854,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2999700029997
+  },
+  "native|magnet_medium|auc": {
+   "arm": "native",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.004477980626422895,
+   "ci_low": -0.06402357089222208,
+   "ci_high": 0.07053665673999376,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.891010898910109
+  },
+  "native|magnet_medium|rho9": {
+   "arm": "native",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.024669273294027867,
+   "ci_low": -0.041509853041502245,
+   "ci_high": 0.08946106335372005,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.45155484451554845
+  },
+  "nn33|magnet_medium|auc": {
+   "arm": "nn33",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.05696933345977442,
+   "ci_low": 0.011132847439062636,
+   "ci_high": 0.1025994112594067,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0174982501749825
+  },
+  "nn33|magnet_medium|rho9": {
+   "arm": "nn33",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.06692368286108945,
+   "ci_low": 0.020126722910972398,
+   "ci_high": 0.11357450030578785,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.007999200079992
+  },
+  "nn75|magnet_medium|auc": {
+   "arm": "nn75",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.006694418234225477,
+   "ci_low": -0.049741308742657836,
+   "ci_high": 0.060737282129700025,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.7994200579942006
+  },
+  "nn75|magnet_medium|rho9": {
+   "arm": "nn75",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.022006066310227196,
+   "ci_low": -0.033645858138305056,
+   "ci_high": 0.07513735214663267,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.39706029397060294
+  },
+  "pool33|magnet_medium|auc": {
+   "arm": "pool33",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.05940576993649113,
+   "ci_low": -0.008531823702981807,
+   "ci_high": 0.12348271084617427,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.0684931506849315
+  },
+  "pool33|magnet_medium|rho9": {
+   "arm": "pool33",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.08955316885491409,
+   "ci_low": 0.02289557074934156,
+   "ci_high": 0.1540806408575838,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.008099190080991902
+  },
+  "pool75|magnet_medium|auc": {
+   "arm": "pool75",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.03568713296682094,
+   "ci_low": -0.024370699576486615,
+   "ci_high": 0.09979629249009721,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.22377762223777622
+  },
+  "pool75|magnet_medium|rho9": {
+   "arm": "pool75",
+   "model": "magnet_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.06043482569340913,
+   "ci_low": 0.00010747819492516683,
+   "ci_high": 0.12422627771152356,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.04739526047395261
+  },
+  "native|magnet_small|auc": {
+   "arm": "native",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.17863762639638459,
+   "ci_low": 0.10071440870815444,
+   "ci_high": 0.2567147918545609,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|magnet_small|rho9": {
+   "arm": "native",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.18823529082980062,
+   "ci_low": 0.11085390214765638,
+   "ci_high": 0.26561695311319966,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "nn33|magnet_small|auc": {
+   "arm": "nn33",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.11806486749884838,
+   "ci_low": 0.07884439591010313,
+   "ci_high": 0.1582060164878247,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn33|magnet_small|rho9": {
+   "arm": "nn33",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.1213553558866768,
+   "ci_low": 0.08156851579725245,
+   "ci_high": 0.16132555338487473,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn75|magnet_small|auc": {
+   "arm": "nn75",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.11003134292958205,
+   "ci_low": 0.0334294013684951,
+   "ci_high": 0.1849896103560461,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0081991800819918
+  },
+  "nn75|magnet_small|rho9": {
+   "arm": "nn75",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.1193924985211844,
+   "ci_low": 0.042807097934550065,
+   "ci_high": 0.19439763499050816,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.004899510048995101
+  },
+  "pool33|magnet_small|auc": {
+   "arm": "pool33",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.22184486244494508,
+   "ci_low": 0.14693946516366727,
+   "ci_high": 0.2911662501120036,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|magnet_small|rho9": {
+   "arm": "pool33",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.2320463646667433,
+   "ci_low": 0.1599628337795844,
+   "ci_high": 0.2996018648588052,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|magnet_small|auc": {
+   "arm": "pool75",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.22200259352150012,
+   "ci_low": 0.13303705889528117,
+   "ci_high": 0.3058733646013041,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|magnet_small|rho9": {
+   "arm": "pool75",
+   "model": "magnet_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.23180739720554752,
+   "ci_low": 0.14451813252426537,
+   "ci_high": 0.3139643535664784,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "native|musicgen_large|auc": {
+   "arm": "native",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.13519685607790508,
+   "ci_low": -0.20259945769857823,
+   "ci_high": -0.06911898538765765,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|musicgen_large|rho9": {
+   "arm": "native",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.10401929190583709,
+   "ci_low": -0.1705512044469525,
+   "ci_high": -0.03867708013722507,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 0.0014998500149985001
+  },
+  "nn33|musicgen_large|auc": {
+   "arm": "nn33",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.19494200338168488,
+   "ci_low": 0.13670847717608392,
+   "ci_high": 0.2550730236152543,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn33|musicgen_large|rho9": {
+   "arm": "nn33",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.18672474100249925,
+   "ci_low": 0.12859733890639524,
+   "ci_high": 0.24719370169621907,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn75|musicgen_large|auc": {
+   "arm": "nn75",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.2126804617322914,
+   "ci_low": -0.28862505581806547,
+   "ci_high": -0.13991982805621797,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn75|musicgen_large|rho9": {
+   "arm": "nn75",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.18107134150741902,
+   "ci_low": -0.2549310901622069,
+   "ci_high": -0.110703770050775,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 0.00019998000199980003
+  },
+  "pool33|musicgen_large|auc": {
+   "arm": "pool33",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.08241044898945309,
+   "ci_low": 0.00048052400079762496,
+   "ci_high": 0.16006627188440142,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.036996300369963
+  },
+  "pool33|musicgen_large|rho9": {
+   "arm": "pool33",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.10602565025161009,
+   "ci_low": 0.02481666646326182,
+   "ci_high": 0.18285616574819671,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0098990100989901
+  },
+  "pool75|musicgen_large|auc": {
+   "arm": "pool75",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.04862849818267881,
+   "ci_low": -0.11347542401309808,
+   "ci_high": 0.01611664963319104,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.09919008099190081
+  },
+  "pool75|musicgen_large|rho9": {
+   "arm": "pool75",
+   "model": "musicgen_large",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.024429989975210332,
+   "ci_low": -0.08641737006701472,
+   "ci_high": 0.03746518705530003,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.37766223377662234
+  },
+  "native|musicgen_medium|auc": {
+   "arm": "native",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.014281956648573063,
+   "ci_low": -0.11760117892167199,
+   "ci_high": 0.09466928257925311,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.7871212878712128
+  },
+  "native|musicgen_medium|rho9": {
+   "arm": "native",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.013067357790960826,
+   "ci_low": -0.090020896055012,
+   "ci_high": 0.12170585441742968,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.8035196480351965
+  },
+  "nn33|musicgen_medium|auc": {
+   "arm": "nn33",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.10392992925427026,
+   "ci_low": 0.037359415464603134,
+   "ci_high": 0.16805832039096022,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.006099390060993901
+  },
+  "nn33|musicgen_medium|rho9": {
+   "arm": "nn33",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.10980762164484087,
+   "ci_low": 0.044029119163201166,
+   "ci_high": 0.17341650468044534,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0040995900409959
+  },
+  "nn75|musicgen_medium|auc": {
+   "arm": "nn75",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.08226886176199644,
+   "ci_low": -0.19588521062324843,
+   "ci_high": 0.03426749258166007,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.1725827417258274
+  },
+  "nn75|musicgen_medium|rho9": {
+   "arm": "nn75",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.05155790022655218,
+   "ci_low": -0.16291296190351326,
+   "ci_high": 0.06261474521202347,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.37376262373762625
+  },
+  "pool33|musicgen_medium|auc": {
+   "arm": "pool33",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.2133282431927459,
+   "ci_low": 0.12098907812766548,
+   "ci_high": 0.2991097145278648,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00029997000299970003
+  },
+  "pool33|musicgen_medium|rho9": {
+   "arm": "pool33",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.21750306222593255,
+   "ci_low": 0.12575968430946605,
+   "ci_high": 0.30272565379125665,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "pool75|musicgen_medium|auc": {
+   "arm": "pool75",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.07017804979125218,
+   "ci_low": -0.018727874140420805,
+   "ci_high": 0.16064991260510197,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.11038896110388961
+  },
+  "pool75|musicgen_medium|rho9": {
+   "arm": "pool75",
+   "model": "musicgen_medium",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.08539997998195333,
+   "ci_low": -0.0026051061755919696,
+   "ci_high": 0.1750416637710483,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.05039496050394961
+  },
+  "native|musicgen_small|auc": {
+   "arm": "native",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.6416969688924526,
+   "ci_low": -0.7223192132265228,
+   "ci_high": -0.5610817250444335,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "native|musicgen_small|rho9": {
+   "arm": "native",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.5912254797794925,
+   "ci_low": -0.6703980479824165,
+   "ci_high": -0.5127950385007645,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn33|musicgen_small|auc": {
+   "arm": "nn33",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": 0.16889353914125138,
+   "ci_low": 0.10788361336867312,
+   "ci_high": 0.2325014775138567,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00029997000299970003
+  },
+  "nn33|musicgen_small|rho9": {
+   "arm": "nn33",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": 0.15795802752504426,
+   "ci_low": 0.09525064743689003,
+   "ci_high": 0.2227272122906565,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00029997000299970003
+  },
+  "nn75|musicgen_small|auc": {
+   "arm": "nn75",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.6997503723763178,
+   "ci_low": -0.8004068637128655,
+   "ci_high": -0.6042167904774616,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "nn75|musicgen_small|rho9": {
+   "arm": "nn75",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.6501755210891451,
+   "ci_low": -0.7470075745715146,
+   "ci_high": -0.558546692507511,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|musicgen_small|auc": {
+   "arm": "pool33",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.5219932564049821,
+   "ci_low": -0.6032428019117836,
+   "ci_high": -0.43940152970064866,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|musicgen_small|rho9": {
+   "arm": "pool33",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.486370601379851,
+   "ci_low": -0.5653718822395619,
+   "ci_high": -0.40643361209554,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|musicgen_small|auc": {
+   "arm": "pool75",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "auc",
+   "delta": -0.6533513031621919,
+   "ci_low": -0.7428610041692912,
+   "ci_high": -0.5651520063681575,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|musicgen_small|rho9": {
+   "arm": "pool75",
+   "model": "musicgen_small",
+   "front_end": "fe_encodec32_rvq",
+   "summary": "rho9",
+   "delta": -0.6101789488158923,
+   "ci_low": -0.6956827783212093,
+   "ci_high": -0.5250586295343377,
+   "resolves_above": false,
+   "resolves_below": true,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "native|pupujepa_large|auc": {
+   "arm": "native",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "delta": 0.5138115655756451,
+   "ci_low": 0.31699293367204595,
+   "ci_high": 0.7064363067385669,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "native|pupujepa_large|rho9": {
+   "arm": "native",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "delta": 0.4983956554147488,
+   "ci_low": 0.3047189334333363,
+   "ci_high": 0.6875331213750681,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00019998000199980003
+  },
+  "nn33|pupujepa_large|auc": {
+   "arm": "nn33",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "delta": 0.25056295009564383,
+   "ci_low": 0.07283157774165797,
+   "ci_high": 0.41810766911503455,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0117988201179882
+  },
+  "nn33|pupujepa_large|rho9": {
+   "arm": "nn33",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "delta": 0.2461231861199024,
+   "ci_low": 0.06994180213500914,
+   "ci_high": 0.41298632699546345,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0131986801319868
+  },
+  "nn75|pupujepa_large|auc": {
+   "arm": "nn75",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "delta": 0.3776675907770777,
+   "ci_low": 0.1773387236037897,
+   "ci_high": 0.5703528596475825,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0016998300169983002
+  },
+  "nn75|pupujepa_large|rho9": {
+   "arm": "nn75",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "delta": 0.3622516806161811,
+   "ci_low": 0.16502531592794467,
+   "ci_high": 0.5515744247864186,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.0024997500249975004
+  },
+  "pool33|pupujepa_large|auc": {
+   "arm": "pool33",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "delta": 0.3869138368217073,
+   "ci_low": 0.27902840246498667,
+   "ci_high": 0.5006970899488592,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|pupujepa_large|rho9": {
+   "arm": "pool33",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "delta": 0.3726917755903376,
+   "ci_low": 0.2657211105772041,
+   "ci_high": 0.4855354635489875,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|pupujepa_large|auc": {
+   "arm": "pool75",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "auc",
+   "delta": 0.393995970699008,
+   "ci_low": 0.2521087700989212,
+   "ci_high": 0.5303377403889261,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool75|pupujepa_large|rho9": {
+   "arm": "pool75",
+   "model": "pupujepa_large",
+   "front_end": "fe_pupujepa_logmel",
+   "summary": "rho9",
+   "delta": 0.3785800605381115,
+   "ci_low": 0.24029730043869232,
+   "ci_high": 0.5106337951501967,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "native|stableaudio3_medium|auc": {
+   "arm": "native",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "auc",
+   "delta": -0.022473960170462312,
+   "ci_low": -0.10424864083083764,
+   "ci_high": 0.06136908081892419,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5864413558644136
+  },
+  "native|stableaudio3_medium|rho9": {
+   "arm": "native",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "rho9",
+   "delta": -0.017726318348270542,
+   "ci_low": -0.09748670202988903,
+   "ci_high": 0.06364204007700336,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.659034096590341
+  },
+  "nn33|stableaudio3_medium|auc": {
+   "arm": "nn33",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "auc",
+   "delta": -0.022473960170462312,
+   "ci_low": -0.10424864083083764,
+   "ci_high": 0.06136908081892419,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5864413558644136
+  },
+  "nn33|stableaudio3_medium|rho9": {
+   "arm": "nn33",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "rho9",
+   "delta": -0.017726318348270542,
+   "ci_low": -0.09748670202988903,
+   "ci_high": 0.06364204007700336,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.659034096590341
+  },
+  "pool33|stableaudio3_medium|auc": {
+   "arm": "pool33",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "auc",
+   "delta": -0.022473960170462312,
+   "ci_low": -0.10424864083083764,
+   "ci_high": 0.06136908081892419,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5864413558644136
+  },
+  "pool33|stableaudio3_medium|rho9": {
+   "arm": "pool33",
+   "model": "stableaudio3_medium",
+   "front_end": "fe_samel",
+   "summary": "rho9",
+   "delta": -0.017726318348270542,
+   "ci_low": -0.09748670202988903,
+   "ci_high": 0.06364204007700336,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.659034096590341
+  },
+  "native|vampnet|auc": {
+   "arm": "native",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "auc",
+   "delta": 0.004256944892429923,
+   "ci_low": -0.03290264121274366,
+   "ci_high": 0.04170405052052837,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.8075192480751925
+  },
+  "native|vampnet|rho9": {
+   "arm": "native",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "rho9",
+   "delta": -0.0012531359835147732,
+   "ci_low": -0.03729075030104063,
+   "ci_high": 0.035703578556028036,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.9436056394360564
+  },
+  "nn33|vampnet|auc": {
+   "arm": "nn33",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "auc",
+   "delta": 0.019003306365076977,
+   "ci_low": -0.048114781576266336,
+   "ci_high": 0.08093285058287779,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.561943805619438
+  },
+  "nn33|vampnet|rho9": {
+   "arm": "nn33",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "rho9",
+   "delta": 0.014782595170502193,
+   "ci_low": -0.05070096477583015,
+   "ci_high": 0.07519118819638819,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.6437356264373563
+  },
+  "nn75|vampnet|auc": {
+   "arm": "nn75",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "auc",
+   "delta": 0.019233055698162384,
+   "ci_low": -0.04560794141537666,
+   "ci_high": 0.08744289324855536,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.5649435056494351
+  },
+  "nn75|vampnet|rho9": {
+   "arm": "nn75",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "rho9",
+   "delta": 0.013729843527885829,
+   "ci_low": -0.05040002085525353,
+   "ci_high": 0.08047228252078986,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.6734326567343266
+  },
+  "pool33|vampnet|auc": {
+   "arm": "pool33",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "auc",
+   "delta": 0.1887285775618425,
+   "ci_low": 0.10670678224800964,
+   "ci_high": 0.2731728343539141,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 9.999000099990002e-05
+  },
+  "pool33|vampnet|rho9": {
+   "arm": "pool33",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "rho9",
+   "delta": 0.17407291611365835,
+   "ci_low": 0.09582257515235933,
+   "ci_high": 0.2554815984953441,
+   "resolves_above": true,
+   "resolves_below": false,
+   "p_permutation": 0.00039996000399960006
+  },
+  "pool75|vampnet|auc": {
+   "arm": "pool75",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "auc",
+   "delta": 0.048313913141424324,
+   "ci_low": -0.03478471293837739,
+   "ci_high": 0.12859660832144698,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.2552744725527447
+  },
+  "pool75|vampnet|rho9": {
+   "arm": "pool75",
+   "model": "vampnet",
+   "front_end": "fe_lac_rvq",
+   "summary": "rho9",
+   "delta": 0.037804685385384264,
+   "ci_low": -0.04331815203604778,
+   "ci_high": 0.11551874588607523,
+   "resolves_above": false,
+   "resolves_below": false,
+   "p_permutation": 0.35326467353264673
+  }
+ },
+ "cross": {
+  "native|auc": {
+   "arm": "native",
+   "summary": "auc",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 1.0,
+   "spearman_vs_native_ci": [
+    1.0,
+    1.0
+   ],
+   "max_abs_change_vs_native": 0.0,
+   "mean_abs_change_vs_native": 0.0,
+   "sign_changes": [],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.37510891664475965,
+   "spearman_vs_log2_rate_ci": [
+    -0.5423261445466405,
+    -0.1506461512629557
+   ],
+   "gap_high_minus_low": -0.2883161311150594,
+   "gap_high_minus_low_ci": [
+    -0.3812271220450843,
+    -0.19250192188144746
+   ],
+   "gap_high_minus_low_native": -0.2883161311150594,
+   "gap_high_minus_low_minus_native": 0.0,
+   "gap_high_minus_low_minus_native_ci": [
+    0.0,
+    0.0
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.24239303086248604,
+   "gap_high_minus_mid_ci": [
+    -0.30871194789480455,
+    -0.1753287409890352
+   ],
+   "gap_high_minus_mid_native": -0.24239303086248604,
+   "gap_high_minus_mid_minus_native": 0.0,
+   "gap_high_minus_mid_minus_native_ci": [
+    0.0,
+    0.0
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "nn33|auc": {
+   "arm": "nn33",
+   "summary": "auc",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 0.3264705882352941,
+   "spearman_vs_native_ci": [
+    -0.1411764705882353,
+    0.5794117647058824
+   ],
+   "max_abs_change_vs_native": 0.9467659771087984,
+   "mean_abs_change_vs_native": 0.17969463874682207,
+   "sign_changes": [
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_medium",
+    "magenta_rt2_small"
+   ],
+   "sign_changes_above_0p20": [
+    "musicgen_small",
+    "musicgen_large"
+   ],
+   "spearman_vs_log2_rate": -0.7050239879106326,
+   "spearman_vs_log2_rate_ci": [
+    -0.8632024467367361,
+    -0.1777247969524725
+   ],
+   "gap_high_minus_low": -0.09513653679919087,
+   "gap_high_minus_low_ci": [
+    -0.17667288714800863,
+    -0.010296187536216037
+   ],
+   "gap_high_minus_low_native": -0.2883161311150594,
+   "gap_high_minus_low_minus_native": 0.1931795943158685,
+   "gap_high_minus_low_minus_native_ci": [
+    0.07074804926575069,
+    0.3119724918789937
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.08824290050493316,
+   "gap_high_minus_mid_ci": [
+    -0.15643633053975983,
+    -0.02251856500127297
+   ],
+   "gap_high_minus_mid_native": -0.24239303086248604,
+   "gap_high_minus_mid_minus_native": 0.15415013035755287,
+   "gap_high_minus_mid_minus_native_ci": [
+    0.05648983455332928,
+    0.25387327045517544
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "nn75|auc": {
+   "arm": "nn75",
+   "summary": "auc",
+   "n_checkpoints": 12,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base"
+   ],
+   "spearman_vs_native": 0.9090909090909091,
+   "spearman_vs_native_ci": [
+    0.7272727272727273,
+    0.986013986013986
+   ],
+   "max_abs_change_vs_native": 0.25023785324499564,
+   "mean_abs_change_vs_native": 0.04754077302884752,
+   "sign_changes": [
+    "mert_95m",
+    "vampnet"
+   ],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.3221559418096683,
+   "spearman_vs_log2_rate_ci": [
+    -0.5776589301414742,
+    -0.055544127898218665
+   ],
+   "gap_high_minus_low": null,
+   "gap_high_minus_low_reason": "no checkpoint of band LOW reaches this arm's target rate",
+   "gap_high_minus_mid": -0.3021974077495987,
+   "gap_high_minus_mid_ci": [
+    -0.37471889861430535,
+    -0.23188204565438295
+   ],
+   "gap_high_minus_mid_native": -0.24239303086248604,
+   "gap_high_minus_mid_minus_native": -0.059804376887112654,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.1407436934373114,
+    0.024813241301818258
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "pool33|auc": {
+   "arm": "pool33",
+   "summary": "auc",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 0.6058823529411764,
+   "spearman_vs_native_ci": [
+    0.3941176470588235,
+    0.7823529411764706
+   ],
+   "max_abs_change_vs_native": 0.5068502980321686,
+   "mean_abs_change_vs_native": 0.20134916929168664,
+   "sign_changes": [
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_medium",
+    "magenta_rt2_small"
+   ],
+   "sign_changes_above_0p20": [
+    "musicgen_large"
+   ],
+   "spearman_vs_log2_rate": 0.15516553580084436,
+   "spearman_vs_log2_rate_ci": [
+    -0.021090461176813798,
+    0.3118375331143183
+   ],
+   "gap_high_minus_low": -0.011604528922105006,
+   "gap_high_minus_low_ci": [
+    -0.07110865592946632,
+    0.05463477647179815
+   ],
+   "gap_high_minus_low_native": -0.2883161311150594,
+   "gap_high_minus_low_minus_native": 0.2767116021929544,
+   "gap_high_minus_low_minus_native_ci": [
+    0.18685890509982012,
+    0.36622951234643725
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.18087936434492458,
+   "gap_high_minus_mid_ci": [
+    -0.23312567515435234,
+    -0.12987359173729432
+   ],
+   "gap_high_minus_mid_native": -0.24239303086248604,
+   "gap_high_minus_mid_minus_native": 0.06151366651756146,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.02423906032140922,
+    0.14442288738999337
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "pool75|auc": {
+   "arm": "pool75",
+   "summary": "auc",
+   "n_checkpoints": 12,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base"
+   ],
+   "spearman_vs_native": 0.972027972027972,
+   "spearman_vs_native_ci": [
+    0.8671328671328671,
+    0.993006993006993
+   ],
+   "max_abs_change_vs_native": 0.10859375150263242,
+   "mean_abs_change_vs_native": 0.0395699548520648,
+   "sign_changes": [],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.04443530231857493,
+   "spearman_vs_log2_rate_ci": [
+    -0.21106768601323095,
+    0.14441473253536855
+   ],
+   "gap_high_minus_low": null,
+   "gap_high_minus_low_reason": "no checkpoint of band LOW reaches this arm's target rate",
+   "gap_high_minus_mid": -0.19411744477384174,
+   "gap_high_minus_mid_ci": [
+    -0.24103823847563577,
+    -0.14919603561351852
+   ],
+   "gap_high_minus_mid_native": -0.24239303086248604,
+   "gap_high_minus_mid_minus_native": 0.048275586088644296,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.018282748845678223,
+    0.11426418975171077
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "native|rho9": {
+   "arm": "native",
+   "summary": "rho9",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 1.0,
+   "spearman_vs_native_ci": [
+    1.0,
+    1.0
+   ],
+   "max_abs_change_vs_native": 0.0,
+   "mean_abs_change_vs_native": 0.0,
+   "sign_changes": [],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.3886670702584257,
+   "spearman_vs_log2_rate_ci": [
+    -0.5483519905971587,
+    -0.14612676672506703
+   ],
+   "gap_high_minus_low": -0.2709926974908177,
+   "gap_high_minus_low_ci": [
+    -0.3635271879168871,
+    -0.175975960100332
+   ],
+   "gap_high_minus_low_native": -0.2709926974908177,
+   "gap_high_minus_low_minus_native": 0.0,
+   "gap_high_minus_low_minus_native_ci": [
+    0.0,
+    0.0
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.22099148349050196,
+   "gap_high_minus_mid_ci": [
+    -0.28654324747513904,
+    -0.15472694793135422
+   ],
+   "gap_high_minus_mid_native": -0.22099148349050196,
+   "gap_high_minus_mid_minus_native": 0.0,
+   "gap_high_minus_mid_minus_native_ci": [
+    0.0,
+    0.0
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "nn33|rho9": {
+   "arm": "nn33",
+   "summary": "rho9",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 0.40588235294117647,
+   "spearman_vs_native_ci": [
+    -0.14411764705882352,
+    0.5941911764705872
+   ],
+   "max_abs_change_vs_native": 0.8853589763796311,
+   "mean_abs_change_vs_native": 0.16861077104405298,
+   "sign_changes": [
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_medium",
+    "magenta_rt2_small"
+   ],
+   "sign_changes_above_0p20": [
+    "musicgen_small"
+   ],
+   "spearman_vs_log2_rate": -0.71406275698641,
+   "spearman_vs_log2_rate_ci": [
+    -0.8797735233756612,
+    -0.18680122756606504
+   ],
+   "gap_high_minus_low": -0.09503622827154146,
+   "gap_high_minus_low_ci": [
+    -0.17687362081509875,
+    -0.010202791811929237
+   ],
+   "gap_high_minus_low_native": -0.2709926974908177,
+   "gap_high_minus_low_minus_native": 0.17595646921927627,
+   "gap_high_minus_low_minus_native_ci": [
+    0.0553400664602942,
+    0.29413848779838203
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.08491070019034122,
+   "gap_high_minus_mid_ci": [
+    -0.15260657206636308,
+    -0.019778566573199645
+   ],
+   "gap_high_minus_mid_native": -0.22099148349050196,
+   "gap_high_minus_mid_minus_native": 0.13608078330016074,
+   "gap_high_minus_mid_minus_native_ci": [
+    0.03918424042212174,
+    0.23414307630813105
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "nn75|rho9": {
+   "arm": "nn75",
+   "summary": "rho9",
+   "n_checkpoints": 12,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base"
+   ],
+   "spearman_vs_native": 0.9440559440559441,
+   "spearman_vs_native_ci": [
+    0.6993006993006993,
+    0.986013986013986
+   ],
+   "max_abs_change_vs_native": 0.24490698053541693,
+   "mean_abs_change_vs_native": 0.04651983275626714,
+   "sign_changes": [
+    "mert_95m",
+    "vampnet"
+   ],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.2888294650707371,
+   "spearman_vs_log2_rate_ci": [
+    -0.5998765813007616,
+    -0.0666529534778624
+   ],
+   "gap_high_minus_low": null,
+   "gap_high_minus_low_reason": "no checkpoint of band LOW reaches this arm's target rate",
+   "gap_high_minus_mid": -0.2804843611166449,
+   "gap_high_minus_mid_ci": [
+    -0.35179820707870446,
+    -0.21109043087018683
+   ],
+   "gap_high_minus_mid_native": -0.22099148349050196,
+   "gap_high_minus_mid_minus_native": -0.059492877626142915,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.1419853276312659,
+    0.026573230184319906
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "pool33|rho9": {
+   "arm": "pool33",
+   "summary": "rho9",
+   "n_checkpoints": 16,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "acestep15",
+    "acestep15_xl",
+    "diffrhythm12",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base",
+    "stableaudio3_medium"
+   ],
+   "spearman_vs_native": 0.5911764705882353,
+   "spearman_vs_native_ci": [
+    0.36764705882352944,
+    0.7794117647058824
+   ],
+   "max_abs_change_vs_native": 0.4899018188463576,
+   "mean_abs_change_vs_native": 0.19674262749062232,
+   "sign_changes": [
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_medium",
+    "magenta_rt2_small"
+   ],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": 0.15516553580084436,
+   "spearman_vs_log2_rate_ci": [
+    -0.012051692101036455,
+    0.3314215327785025
+   ],
+   "gap_high_minus_low": -0.0028218833005278776,
+   "gap_high_minus_low_ci": [
+    -0.06157703298422511,
+    0.06267697105173207
+   ],
+   "gap_high_minus_low_native": -0.2709926974908177,
+   "gap_high_minus_low_minus_native": 0.2681708141902899,
+   "gap_high_minus_low_minus_native_ci": [
+    0.17977100140299146,
+    0.3562893446802623
+   ],
+   "gap_high_minus_low_n": [
+    8,
+    4
+   ],
+   "gap_high_minus_mid": -0.16397055568680358,
+   "gap_high_minus_mid_ci": [
+    -0.21492439438873473,
+    -0.11461728782790008
+   ],
+   "gap_high_minus_mid_native": -0.22099148349050196,
+   "gap_high_minus_mid_minus_native": 0.057020927803698385,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.027432709088991782,
+    0.13917061041684517
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  },
+  "pool75|rho9": {
+   "arm": "pool75",
+   "summary": "rho9",
+   "n_checkpoints": 12,
+   "checkpoints": [
+    "mert",
+    "mert_95m",
+    "muq",
+    "musicgen_small",
+    "musicgen_medium",
+    "musicgen_large",
+    "magnet_small",
+    "magnet_medium",
+    "vampnet",
+    "pupujepa_large",
+    "magenta_rt2_small",
+    "magenta_rt2_base"
+   ],
+   "spearman_vs_native": 0.9440559440559441,
+   "spearman_vs_native_ci": [
+    0.8529720279720295,
+    0.986013986013986
+   ],
+   "max_abs_change_vs_native": 0.1016146955380329,
+   "mean_abs_change_vs_native": 0.037339029492960314,
+   "sign_changes": [
+    "musicgen_medium"
+   ],
+   "sign_changes_above_0p20": [],
+   "spearman_vs_log2_rate": -0.0666529534778624,
+   "spearman_vs_log2_rate_ci": [
+    -0.21106768601323095,
+    0.14441473253536855
+   ],
+   "gap_high_minus_low": null,
+   "gap_high_minus_low_reason": "no checkpoint of band LOW reaches this arm's target rate",
+   "gap_high_minus_mid": -0.17676504096856233,
+   "gap_high_minus_mid_ci": [
+    -0.22287552535832206,
+    -0.13318371902490825
+   ],
+   "gap_high_minus_mid_native": -0.22099148349050196,
+   "gap_high_minus_mid_minus_native": 0.044226442521939635,
+   "gap_high_minus_mid_minus_native_ci": [
+    -0.023194048442620224,
+    0.11096113746579961
+   ],
+   "gap_high_minus_mid_n": [
+    8,
+    4
+   ]
+  }
+ }
+}

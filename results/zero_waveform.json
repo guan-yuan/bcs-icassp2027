@@ -1,0 +1,79 @@
+{
+ "cells": {
+  "fe_encodec32_pre": {
+   "rho_zero": 0.9996212121212121,
+   "n_anchors_scored": 24,
+   "shape": [
+    1,
+    150,
+    128
+   ],
+   "frames_identical": false,
+   "n_distinct_frames": 150,
+   "norm_std_over_time_layer0": 0.886000048373368,
+   "recorded_silence": 0.9832652330870174,
+   "mean_trajectory_silence": 0.9996212121212121,
+   "recorded_original": -0.07428205091597546
+  },
+  "fe_encodec32_rvq": {
+   "rho_zero": 0.39487857038067276,
+   "n_anchors_scored": 24,
+   "shape": [
+    1,
+    150,
+    128
+   ],
+   "frames_identical": false,
+   "n_distinct_frames": 7,
+   "norm_std_over_time_layer0": 0.9106187138777128,
+   "recorded_silence": 0.7156782915445785,
+   "mean_trajectory_silence": 0.7434315057718704,
+   "recorded_original": -0.09448316274202635
+  },
+  "musicgen_small": {
+   "rho_zero": 0.8336581756720646,
+   "n_anchors_scored": 24,
+   "shape": [
+    9,
+    150,
+    1024
+   ],
+   "frames_identical": false,
+   "n_distinct_frames": 150,
+   "norm_std_over_time_layer0": 0.17678477164733417,
+   "recorded_silence": 0.8057823636884094,
+   "mean_trajectory_silence": 0.8717462321628989,
+   "recorded_original": -0.6857086425215186
+  },
+  "musicgen_medium": {
+   "rho_zero": 0.9130223573365934,
+   "n_anchors_scored": 24,
+   "shape": [
+    9,
+    150,
+    1536
+   ],
+   "frames_identical": false,
+   "n_distinct_frames": 150,
+   "norm_std_over_time_layer0": 1.4149818719267335,
+   "recorded_silence": 0.8803152405641276,
+   "mean_trajectory_silence": 0.9447004769921437,
+   "recorded_original": -0.08141580495106553
+  },
+  "musicgen_large": {
+   "rho_zero": 0.535158087154615,
+   "n_anchors_scored": 24,
+   "shape": [
+    9,
+    150,
+    2048
+   ],
+   "frames_identical": false,
+   "n_distinct_frames": 150,
+   "norm_std_over_time_layer0": 0.8584893297840778,
+   "recorded_silence": 0.5270033055555046,
+   "mean_trajectory_silence": 0.7698918542234514,
+   "recorded_original": -0.19850245464786342
+  }
+ }
+}

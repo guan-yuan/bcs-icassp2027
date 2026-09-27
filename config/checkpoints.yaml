@@ -1,0 +1,680 @@
+# The sixteen checkpoints scored in the paper (Table 2).
+# checkpoints: what was run and what was captured; retained_capture_ids are the
+#   exact-AUC knots (capture id 0 dropped); capture_rate_hz is the frame rate of
+#   the captured tensor; front_end_reference is the front-end output (tokenizer,
+#   VAE or fixed spectrogram) whose score is subtracted in Delta_E (null for
+#   MERT-95M, MERT-330M and MuQ, which take the waveform as input).
+# models: extraction settings.
+checkpoints:
+  mert_95m:
+    display_name: MERT-95M
+    hf_id: m-a-p/MERT-v1-95M
+    hf_revision: 12af15fef9d0ac838c3f475bfbbf26d2060dd4f5
+    inference_mode: plain forward
+    captured_module: MERTModel(..., output_hidden_states=True).hidden_states[i]
+    stored_capture_ids: &id001
+    - 0
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    retained_capture_ids:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    capture_rate_hz: 74.7
+    extractor: extraction/extract_mert.py
+    front_end_reference: null
+  mert:
+    display_name: MERT-330M
+    hf_id: m-a-p/MERT-v1-330M
+    hf_revision: 5240c2708a5acaee1007f43fb9735c7dcd0b78c9
+    inference_mode: plain forward
+    captured_module: MERTModel(..., output_hidden_states=True).hidden_states[i]
+    stored_capture_ids: &id002
+    - 0
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    retained_capture_ids:
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    capture_rate_hz: 74.7
+    extractor: extraction/extract_mert.py
+    front_end_reference: null
+  muq:
+    display_name: MuQ
+    hf_id: OpenMuQ/MuQ-large-msd-iter
+    hf_revision: 0562a57814f6f8bbd9fdea0a25921a2fce1a841a
+    inference_mode: plain forward
+    captured_module: MuQ(wavs, output_hidden_states=True).hidden_states[i]
+    stored_capture_ids: &id003
+    - 0
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    retained_capture_ids:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    capture_rate_hz: 25
+    extractor: extraction/extract_muq.py
+    front_end_reference: null
+  musicgen_small:
+    display_name: MusicGen-S
+    hf_id: facebook/musicgen-small
+    hf_revision: 4c8334b02c6ec4e8664a91979669a501ec497792
+    inference_mode: teacher-forced clean tokens, null text, sync. tokens (token ids, four codebooks aligned,
+      no delay pattern)
+    captured_module: decoder(input_ids=..., output_hidden_states=True).hidden_states[i + 1] (output of
+      model.decoder.model.decoder.layers[i]; for the last id, after the decoder's final layer norm)
+    stored_capture_ids: &id004
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 21
+    - 23
+    retained_capture_ids:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 21
+    - 23
+    capture_rate_hz: 50
+    extractor: extraction/extract_musicgen.py
+    front_end_reference:
+      key: fe_encodec32_rvq
+      name: EnCodec-32 kHz de-quantised RVQ, 4 codebooks (128-d)
+      rate_hz: 50
+    token_schedule: synchronized
+    token_schedule_note: MusicGen numbers use synchronized tokens unless marked native; the temporal cue was also run under
+      the native delay-pattern schedule (extraction/extract_musicgen_native.py, results/musicgen_native_schedule.json)
+  musicgen_medium:
+    display_name: MusicGen-M
+    hf_id: facebook/musicgen-medium
+    hf_revision: d3bd7b00761b78ad7a8a05145ee31e7832e9916c
+    inference_mode: teacher-forced clean tokens, null text, sync. tokens (token ids, four codebooks aligned,
+      no delay pattern)
+    captured_module: decoder(input_ids=..., output_hidden_states=True).hidden_states[i + 1] (output of
+      model.decoder.model.decoder.layers[i]; for the last id, after the decoder's final layer norm)
+    stored_capture_ids: &id005
+    - 0
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    retained_capture_ids:
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    capture_rate_hz: 50
+    extractor: extraction/extract_musicgen.py
+    front_end_reference:
+      key: fe_encodec32_rvq
+      name: EnCodec-32 kHz de-quantised RVQ, 4 codebooks (128-d)
+      rate_hz: 50
+    token_schedule: synchronized
+    token_schedule_note: MusicGen numbers use synchronized tokens unless marked native; the temporal cue was also run under
+      the native delay-pattern schedule (extraction/extract_musicgen_native.py, results/musicgen_native_schedule.json)
+  musicgen_large:
+    display_name: MusicGen-L
+    hf_id: facebook/musicgen-large
+    hf_revision: 15ccdc92099879e47b6da12c350cdb71d4eab3ca
+    inference_mode: teacher-forced clean tokens, null text, sync. tokens (token ids, four codebooks aligned,
+      no delay pattern)
+    captured_module: decoder(input_ids=..., output_hidden_states=True).hidden_states[i + 1] (output of
+      model.decoder.model.decoder.layers[i]; for the last id, after the decoder's final layer norm)
+    stored_capture_ids: &id006
+    - 0
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    retained_capture_ids:
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    capture_rate_hz: 50
+    extractor: extraction/extract_musicgen.py
+    front_end_reference:
+      key: fe_encodec32_rvq
+      name: EnCodec-32 kHz de-quantised RVQ, 4 codebooks (128-d)
+      rate_hz: 50
+    token_schedule: synchronized
+    token_schedule_note: MusicGen numbers use synchronized tokens unless marked native; the temporal cue was also run under
+      the native delay-pattern schedule (extraction/extract_musicgen_native.py, results/musicgen_native_schedule.json)
+  magnet_small:
+    display_name: MAGNeT-S
+    hf_id: facebook/magnet-small-10secs
+    hf_revision: 2c9084771bd2e83c5c7e36303e24550da30da8e0
+    inference_mode: 'unmasked: all codes visible'
+    captured_module: lm.transformer.layers[i] (forward hook, output)
+    stored_capture_ids: &id007
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 21
+    - 23
+    retained_capture_ids:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 21
+    - 23
+    capture_rate_hz: 50
+    extractor: extraction/extract_magnet.py
+    front_end_reference:
+      key: fe_encodec32_rvq
+      name: EnCodec-32 kHz de-quantised RVQ, 4 codebooks (128-d)
+      rate_hz: 50
+  magnet_medium:
+    display_name: MAGNeT-M
+    hf_id: facebook/magnet-medium-10secs
+    hf_revision: 3a112c2c343d839b45137cf30be63dec09c3a237
+    inference_mode: 'unmasked: all codes visible'
+    captured_module: lm.transformer.layers[i] (forward hook, output)
+    stored_capture_ids: &id008
+    - 0
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    retained_capture_ids:
+    - 6
+    - 12
+    - 18
+    - 24
+    - 30
+    - 36
+    - 42
+    - 47
+    capture_rate_hz: 50
+    extractor: extraction/extract_magnet.py
+    front_end_reference:
+      key: fe_encodec32_rvq
+      name: EnCodec-32 kHz de-quantised RVQ, 4 codebooks (128-d)
+      rate_hz: 50
+  vampnet:
+    display_name: VampNet
+    hf_id: hugggof/vampnet
+    hf_revision: 69e9c7dba72b54a45f93122ef91aa738d2e803ba
+    inference_mode: 'unmasked: all codes visible'
+    captured_module: iface.coarse(latents, return_activations=True)[1][i]
+    stored_capture_ids: &id009
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 19
+    retained_capture_ids:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 19
+    capture_rate_hz: 57.7
+    extractor: extraction/extract_vampnet.py
+    front_end_reference:
+      key: fe_lac_rvq
+      name: DAC-44.1 kHz coarse-4 code latents (32-d)
+      rate_hz: 57.7
+  acestep15:
+    display_name: ACE-Step 1.5
+    hf_id: ACE-Step/Ace-Step1.5
+    hf_revision: 19671f406d603126926c1b7e2adc169acbcade22
+    inference_mode: DiT, one forward at t = 0.01 on the VAE latent mean mixed with fixed-seed noise, x_t = (1 - t) z0 + t eps, null conditioning
+    captured_module: model.decoder.layers[i] (forward hook, output[0])
+    stored_capture_ids: &id010
+    - 0
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 23
+    retained_capture_ids:
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 23
+    capture_rate_hz: 12.7
+    extractor: extraction/extract_acestep15.py
+    front_end_reference:
+      key: fe_acestep_vae
+      name: ACE-Step Oobleck VAE posterior mean (64-d)
+      rate_hz: 25
+  acestep15_xl:
+    display_name: ACE-Step 1.5 XL
+    hf_id: ACE-Step/acestep-v15-xl-turbo
+    hf_revision: 4db96798883440de958876d9a424a84f2ff30eff
+    inference_mode: DiT, one forward at t = 0.01 on the VAE latent mean mixed with fixed-seed noise, x_t = (1 - t) z0 + t eps, null conditioning
+    captured_module: model.decoder.layers[i] (forward hook, output[0])
+    stored_capture_ids: &id011
+    - 0
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 31
+    retained_capture_ids:
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 31
+    capture_rate_hz: 12.7
+    extractor: extraction/extract_acestep15_xl.py
+    front_end_reference:
+      key: fe_acestep_vae
+      name: ACE-Step Oobleck VAE posterior mean (64-d)
+      rate_hz: 25
+  diffrhythm12:
+    display_name: DiffRhythm-v1.2
+    hf_id: ASLP-lab/DiffRhythm-1_2
+    hf_revision: 185bdeb80541b9260d266c5f041859017441f307
+    inference_mode: DiT, one forward at t = 0.01 on the VAE latent mean mixed with fixed-seed noise, x_t = (1 - t) z0 + t eps, text and reference audio dropped, style prompt = infer/example/vocal.npy of the DiffRhythm code (loaded there as its negative style prompt)
+    captured_module: cfm.transformer.transformer_blocks[i] (forward hook, output)
+    stored_capture_ids: &id012
+    - 0
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    - 15
+    retained_capture_ids:
+    - 2
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    - 15
+    capture_rate_hz: 21.3
+    extractor: extraction/extract_diffrhythm.py
+    front_end_reference:
+      key: fe_diffrhythm_vae
+      name: DiffRhythm VAE posterior mean (64-d)
+      rate_hz: 21.3
+  pupujepa_large:
+    display_name: PupuM2D-L
+    hf_id: spellbrush/PupuJEPA
+    hf_revision: 2ba230e41440c5b450a8dc8ad5d4a3cc9930f01d
+    inference_mode: plain forward, mask ratio 0 (all patches)
+    captured_module: model.student.blocks[i] (forward hook, output; frequency-patch axis averaged)
+    stored_capture_ids: &id013
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+    - 14
+    - 17
+    - 20
+    - 23
+    retained_capture_ids:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 14
+    - 17
+    - 20
+    - 23
+    capture_rate_hz: 25
+    extractor: extraction/extract_pupujepa.py
+    front_end_reference:
+      key: fe_pupujepa_logmel
+      name: PupuM2D log-spectrogram, 128 mel bins
+      rate_hz: 100
+  magenta_rt2_small:
+    display_name: Magenta-RT2-S
+    hf_id: google/magenta-realtime-2
+    hf_revision: 010aa0dcb0dfd27b24f0ad07b4dad63e8f9521cc
+    inference_mode: teacher-forced clean tokens, null style
+    captured_module: decoder.temporal_body.layers[0].layers[i] (frame-axis blocks; depth axis not taken)
+    stored_capture_ids: &id014
+    - 0
+    - 1
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 10
+    - 11
+    retained_capture_ids:
+    - 1
+    - 3
+    - 4
+    - 6
+    - 7
+    - 8
+    - 10
+    - 11
+    capture_rate_hz: 25
+    extractor: extraction/extract_magenta_rt2.py
+    front_end_reference:
+      key: fe_spectrostream_rvq
+      name: SpectroStream de-quantised RVQ, 12 levels (256-d)
+      rate_hz: 25
+  magenta_rt2_base:
+    display_name: Magenta-RT2-B
+    hf_id: google/magenta-realtime-2
+    hf_revision: 010aa0dcb0dfd27b24f0ad07b4dad63e8f9521cc
+    inference_mode: teacher-forced clean tokens, null style
+    captured_module: decoder.temporal_body.layers[0].layers[i] (frame-axis blocks; depth axis not taken)
+    stored_capture_ids: &id015
+    - 0
+    - 2
+    - 5
+    - 7
+    - 10
+    - 12
+    - 14
+    - 17
+    - 19
+    retained_capture_ids:
+    - 2
+    - 5
+    - 7
+    - 10
+    - 12
+    - 14
+    - 17
+    - 19
+    capture_rate_hz: 25
+    extractor: extraction/extract_magenta_rt2.py
+    front_end_reference:
+      key: fe_spectrostream_rvq
+      name: SpectroStream de-quantised RVQ, 12 levels (256-d)
+      rate_hz: 25
+  stableaudio3_medium:
+    display_name: Stable Audio 3
+    hf_id: stabilityai/stable-audio-3-medium
+    hf_revision: 27b5a21b791b1b033d193a9e1e3ce78493f102f9
+    inference_mode: DiT, one forward at t = 0.01 on the VAE latent mean mixed with fixed-seed noise, x_t = (1 - t) z0 + t eps, null conditioning
+    captured_module: dit.model.transformer.layers[i] (forward hook, output; 64 memory tokens removed)
+    stored_capture_ids: &id016
+    - 0
+    - 3
+    - 6
+    - 9
+    - 12
+    - 14
+    - 17
+    - 20
+    - 23
+    retained_capture_ids:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 14
+    - 17
+    - 20
+    - 23
+    capture_rate_hz: 11
+    extractor: extraction/extract_stable_audio3.py
+    front_end_reference:
+      key: fe_samel
+      name: SAME-L autoencoder mean (256-d)
+      rate_hz: 11
+models:
+  mert_95m:
+    hf_id: m-a-p/MERT-v1-95M
+    hf_revision: 12af15fef9d0ac838c3f475bfbbf26d2060dd4f5
+    sample_rate: 24000
+    layers_sample: *id001
+    layers_total: 12
+    hidden_dim: 768
+  mert:
+    hf_id: m-a-p/MERT-v1-330M
+    hf_revision: 5240c2708a5acaee1007f43fb9735c7dcd0b78c9
+    sample_rate: 24000
+    layers_sample: *id002
+    layers_total: 24
+    hidden_dim: 1024
+  muq:
+    hf_id: OpenMuQ/MuQ-large-msd-iter
+    hf_revision: 0562a57814f6f8bbd9fdea0a25921a2fce1a841a
+    sample_rate: 24000
+    layers_sample: *id003
+    layers_total: 12
+    hidden_dim: 1024
+  musicgen_small:
+    hf_id: facebook/musicgen-small
+    hf_revision: 4c8334b02c6ec4e8664a91979669a501ec497792
+    sample_rate: 32000
+    layers_sample: *id004
+    dtype_override: float32
+    layers_total: 24
+    hidden_dim: 1024
+  musicgen_medium:
+    hf_id: facebook/musicgen-medium
+    hf_revision: d3bd7b00761b78ad7a8a05145ee31e7832e9916c
+    sample_rate: 32000
+    layers_sample: *id005
+    layers_total: 48
+    hidden_dim: 1536
+  musicgen_large:
+    hf_id: facebook/musicgen-large
+    hf_revision: 15ccdc92099879e47b6da12c350cdb71d4eab3ca
+    sample_rate: 32000
+    layers_sample: *id006
+    layers_total: 48
+    hidden_dim: 2048
+  magnet_small:
+    hf_id: facebook/magnet-small-10secs
+    hf_revision: 2c9084771bd2e83c5c7e36303e24550da30da8e0
+    sample_rate: 32000
+    layers_sample: *id007
+    layers_total: 24
+    hidden_dim: 1024
+  magnet_medium:
+    hf_id: facebook/magnet-medium-10secs
+    hf_revision: 3a112c2c343d839b45137cf30be63dec09c3a237
+    sample_rate: 32000
+    layers_sample: *id008
+    layers_total: 48
+    hidden_dim: 1536
+  vampnet:
+    hf_id: hugggof/vampnet
+    hf_revision: 69e9c7dba72b54a45f93122ef91aa738d2e803ba
+    sample_rate: 44100
+    layers_sample: *id009
+    layers_total: 20
+    hidden_dim: 1280
+    n_coarse_codebooks: 4
+  acestep15:
+    hf_id: ACE-Step/Ace-Step1.5
+    hf_revision: 19671f406d603126926c1b7e2adc169acbcade22
+    sample_rate: 48000
+    layers_sample: *id010
+    patch_size: 2
+    latent_dim: 64
+    vae_hf_id: ACE-Step/Ace-Step1.5
+    vae_subfolder: vae
+    vae_hf_revision: 19671f406d603126926c1b7e2adc169acbcade22
+    dit_subfolder: acestep-v15-turbo
+    vae_mode: mean
+    layers_total: 24
+    hidden_dim: 2048
+  acestep15_xl:
+    hf_id: ACE-Step/acestep-v15-xl-turbo
+    hf_revision: 4db96798883440de958876d9a424a84f2ff30eff
+    sample_rate: 48000
+    layers_sample: *id011
+    dtype_override: bfloat16
+    patch_size: 2
+    latent_dim: 64
+    vae_hf_id: ACE-Step/Ace-Step1.5
+    vae_subfolder: vae
+    vae_hf_revision: 19671f406d603126926c1b7e2adc169acbcade22
+    vae_mode: mean
+    trust_remote_code: true
+    layers_total: 32
+    hidden_dim: 2560
+  diffrhythm12:
+    hf_id: ASLP-lab/DiffRhythm-1_2
+    hf_revision: 185bdeb80541b9260d266c5f041859017441f307
+    sample_rate: 44100
+    layers_sample: *id012
+    latent_dim: 64
+    vae_hf_id: ASLP-lab/DiffRhythm-vae
+    vae_hf_revision: 74e2afacfd91dd1b96662c96dcef763c1258768b
+    vae_mode: mean
+    layers_total: 16
+    hidden_dim: 2048
+  pupujepa_large:
+    hf_id: spellbrush/PupuJEPA
+    hf_revision: 2ba230e41440c5b450a8dc8ad5d4a3cc9930f01d
+    sample_rate: 24000
+    layers_sample: *id013
+    layers_total: 24
+    hidden_dim: 1024
+  magenta_rt2_small:
+    hf_id: google/magenta-realtime-2
+    hf_revision: 010aa0dcb0dfd27b24f0ad07b4dad63e8f9521cc
+    sample_rate: 48000
+    layers_sample: *id014
+    layers_total: 12
+    hidden_dim: 1024
+  magenta_rt2_base:
+    hf_id: google/magenta-realtime-2
+    hf_revision: 010aa0dcb0dfd27b24f0ad07b4dad63e8f9521cc
+    sample_rate: 48000
+    layers_sample: *id015
+    layers_total: 20
+    hidden_dim: 3072
+  stableaudio3_medium:
+    hf_id: stabilityai/stable-audio-3-medium
+    hf_revision: 27b5a21b791b1b033d193a9e1e3ce78493f102f9
+    sample_rate: 44100
+    layers_sample: *id016
+    dtype_override: bfloat16
+    layers_total: 24
+    hidden_dim: 1536
+  fe_encodec32_pre:
+    hf_id: facebook/encodec_32khz
+    hf_revision: d0c45384f6c44db055f78200cfdcb9c1c8706727
+    sample_rate: 32000
+    layers_sample:
+    - 0
+    layers_total: 1
+    hidden_dim: 128
+    frontend_stage: continuous_encoder_latent
+  fe_encodec32_rvq:
+    hf_id: facebook/encodec_32khz
+    hf_revision: d0c45384f6c44db055f78200cfdcb9c1c8706727
+    sample_rate: 32000
+    layers_sample:
+    - 0
+    layers_total: 1
+    hidden_dim: 128
+    frontend_stage: rvq_code_embedding
+  fe_lac_pre:
+    hf_id: hugggof/vampnet
+    hf_revision: 69e9c7dba72b54a45f93122ef91aa738d2e803ba
+    sample_rate: 44100
+    layers_sample:
+    - 0
+    layers_total: 1
+    hidden_dim: 1024
+    frontend_stage: continuous_encoder_latent
+  fe_lac_rvq:
+    hf_id: hugggof/vampnet
+    hf_revision: 69e9c7dba72b54a45f93122ef91aa738d2e803ba
+    sample_rate: 44100
+    layers_sample:
+    - 0
+    layers_total: 1
+    hidden_dim: 32
+    frontend_stage: rvq_code_embedding
+  fe_acestep_vae:
+    hf_id: ACE-Step/Ace-Step1.5
+    hf_revision: 19671f406d603126926c1b7e2adc169acbcade22
+    sample_rate: 48000
+    layers_sample:
+    - 0
+    vae_subfolder: vae
+    layers_total: 1
+    hidden_dim: 64
+    frontend_stage: vae_latent_mean
+  fe_diffrhythm_vae:
+    hf_id: ASLP-lab/DiffRhythm-vae
+    hf_revision: 74e2afacfd91dd1b96662c96dcef763c1258768b
+    sample_rate: 44100
+    layers_sample:
+    - 0
+    layers_total: 1
+    hidden_dim: 64
+    frontend_stage: vae_latent_mean

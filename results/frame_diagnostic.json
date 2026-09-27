@@ -1,0 +1,1687 @@
+{
+  "description": "Frame-grid diagnostic per (read-out, cue): produced by extraction/grid_common.frame_diagnostics (unchanged) over every stimulus's feature array; see controls/frame_diagnostic.py. flag_coarse_frame_rate is the coarse-frame-grid mark (dagger) of Fig. 2 and Table 3; it excludes nothing from any count.",
+  "function": "grid_common.frame_diagnostics (released, unchanged)",
+  "flag_rule": "flag_coarse_frame_rate = n_same_frame_onset_pairs > 0 or n_frames_min < 10 or degenerate_row_share >= 0.01",
+  "date": "2026-09-23",
+  "grid_common_sha256": "78cad484f2cc62bcd970e056c4c70ccfd434d355e569181e831e4e68d440f10c",
+  "stimulus_metadata_sha256": {
+    "harmonicity": "073a703e09725bb20012e1af646cbd6cd3d579caab6f812e68e95a6e4a8237af",
+    "onset_sync": "455cbc486b20b45002b7f8279dbf03129b9caf7f0dad87453f16a80a4d01250d",
+    "temp_proximity": "a73a4ed339ce7289262ba41fc108a46b45b8137b76b2d07990ef563e261f630f",
+    "freq_proximity": "7f290519012b500f86154daa6569cf1a5f3cc93ba257d5c4a4d7c841419cf650",
+    "timbre_ablation": "e3609fd58f979e5a48bd53352612e47c250e6b10a057d32af4933369e3a8635d"
+  },
+  "n_frames": "shape[1] of each stimulus's [L,T,H] array (npy header)",
+  "readouts": {
+    "checkpoints": [
+      "musicgen_small",
+      "musicgen_medium",
+      "musicgen_large",
+      "magnet_small",
+      "magnet_medium",
+      "vampnet",
+      "acestep15",
+      "acestep15_xl",
+      "diffrhythm12",
+      "pupujepa_large",
+      "magenta_rt2_small",
+      "magenta_rt2_base",
+      "stableaudio3_medium",
+      "mert",
+      "mert_95m",
+      "muq"
+    ],
+    "front_ends": [
+      "fe_encodec32_pre",
+      "fe_encodec32_rvq",
+      "fe_lac_pre",
+      "fe_lac_rvq",
+      "fe_acestep_vae",
+      "fe_diffrhythm_vae",
+      "fe_pupujepa_logmel",
+      "fe_samel",
+      "fe_spectrostream",
+      "fe_spectrostream_rvq",
+      "cqt",
+      "gammatone",
+      "logmel"
+    ]
+  },
+  "cues": [
+    "harmonicity",
+    "onset_sync",
+    "temp_proximity",
+    "freq_proximity",
+    "timbre_ablation"
+  ],
+  "cells": {
+    "acestep15_xl|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "acestep15_xl|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 6,
+      "n_frames_max": 6,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1648
+    },
+    "acestep15_xl|onset_sync": {
+      "n_same_frame_onset_pairs": 576,
+      "n_frames_min": 19,
+      "n_frames_max": 19,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "acestep15_xl|temp_proximity": {
+      "n_same_frame_onset_pairs": 3144,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1992
+    },
+    "acestep15_xl|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "acestep15|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "acestep15|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 6,
+      "n_frames_max": 6,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1648
+    },
+    "acestep15|onset_sync": {
+      "n_same_frame_onset_pairs": 576,
+      "n_frames_min": 19,
+      "n_frames_max": 19,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "acestep15|temp_proximity": {
+      "n_same_frame_onset_pairs": 3144,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1992
+    },
+    "acestep15|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "cqt|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "cqt|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "cqt|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 113,
+      "n_frames_max": 113,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "cqt|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "cqt|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "diffrhythm12|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "diffrhythm12|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 10,
+      "n_frames_max": 10,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "diffrhythm12|onset_sync": {
+      "n_same_frame_onset_pairs": 576,
+      "n_frames_min": 32,
+      "n_frames_max": 32,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "diffrhythm12|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "diffrhythm12|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_acestep_vae|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_acestep_vae|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 12,
+      "n_frames_max": 12,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_acestep_vae|onset_sync": {
+      "n_same_frame_onset_pairs": 576,
+      "n_frames_min": 37,
+      "n_frames_max": 37,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_acestep_vae|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_acestep_vae|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_diffrhythm_vae|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_diffrhythm_vae|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 10,
+      "n_frames_max": 10,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_diffrhythm_vae|onset_sync": {
+      "n_same_frame_onset_pairs": 576,
+      "n_frames_min": 32,
+      "n_frames_max": 32,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_diffrhythm_vae|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_diffrhythm_vae|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 64,
+      "n_frames_max": 64,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_encodec32_pre|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_encodec32_pre|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_encodec32_pre|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_encodec32_pre|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_encodec32_pre|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_encodec32_rvq|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_encodec32_rvq|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_encodec32_rvq|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_encodec32_rvq|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_encodec32_rvq|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_lac_pre|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_lac_pre|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 29,
+      "n_frames_max": 29,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_lac_pre|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 87,
+      "n_frames_max": 87,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_lac_pre|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_lac_pre|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_lac_rvq|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_lac_rvq|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 29,
+      "n_frames_max": 29,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_lac_rvq|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 87,
+      "n_frames_max": 87,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_lac_rvq|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_lac_rvq|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_pupujepa_logmel|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 300,
+      "n_frames_max": 300,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_pupujepa_logmel|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 50,
+      "n_frames_max": 50,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_pupujepa_logmel|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_pupujepa_logmel|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 300,
+      "n_frames_max": 300,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_pupujepa_logmel|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 300,
+      "n_frames_max": 300,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_samel|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_samel|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 6,
+      "n_frames_max": 6,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1648
+    },
+    "fe_samel|onset_sync": {
+      "n_same_frame_onset_pairs": 768,
+      "n_frames_min": 17,
+      "n_frames_max": 17,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_samel|temp_proximity": {
+      "n_same_frame_onset_pairs": 5208,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1992
+    },
+    "fe_samel|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_spectrostream_rvq|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_spectrostream_rvq|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_spectrostream_rvq|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_spectrostream_rvq|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_spectrostream_rvq|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "fe_spectrostream|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "fe_spectrostream|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "fe_spectrostream|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "fe_spectrostream|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "fe_spectrostream|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "gammatone|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "gammatone|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "gammatone|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 113,
+      "n_frames_max": 113,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "gammatone|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "gammatone|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "logmel|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "logmel|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "logmel|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 113,
+      "n_frames_max": 113,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "logmel|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "logmel|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 226,
+      "n_frames_max": 226,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "magenta_rt2_base|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "magenta_rt2_base|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "magenta_rt2_base|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "magenta_rt2_base|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "magenta_rt2_base|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "magenta_rt2_small|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "magenta_rt2_small|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "magenta_rt2_small|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "magenta_rt2_small|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "magenta_rt2_small|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "magnet_medium|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "magnet_medium|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "magnet_medium|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "magnet_medium|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "magnet_medium|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "magnet_small|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "magnet_small|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "magnet_small|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "magnet_small|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "magnet_small|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "mert_95m|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "mert_95m|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 37,
+      "n_frames_max": 37,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "mert_95m|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 112,
+      "n_frames_max": 112,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "mert_95m|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "mert_95m|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "mert|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "mert|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 37,
+      "n_frames_max": 37,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "mert|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 112,
+      "n_frames_max": 112,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "mert|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "mert|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 224,
+      "n_frames_max": 224,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "muq|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "muq|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "muq|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "muq|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "muq|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "musicgen_large|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "musicgen_large|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "musicgen_large|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "musicgen_large|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "musicgen_large|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "musicgen_medium|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "musicgen_medium|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "musicgen_medium|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "musicgen_medium|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "musicgen_medium|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "musicgen_small|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "musicgen_small|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 25,
+      "n_frames_max": 25,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "musicgen_small|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "musicgen_small|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "musicgen_small|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 150,
+      "n_frames_max": 150,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "pupujepa_large|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "pupujepa_large|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 13,
+      "n_frames_max": 13,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "pupujepa_large|onset_sync": {
+      "n_same_frame_onset_pairs": 384,
+      "n_frames_min": 38,
+      "n_frames_max": 38,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "pupujepa_large|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "pupujepa_large|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 75,
+      "n_frames_max": 75,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "stableaudio3_medium|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "stableaudio3_medium|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 6,
+      "n_frames_max": 6,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1648
+    },
+    "stableaudio3_medium|onset_sync": {
+      "n_same_frame_onset_pairs": 768,
+      "n_frames_min": 17,
+      "n_frames_max": 17,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "stableaudio3_medium|temp_proximity": {
+      "n_same_frame_onset_pairs": 5208,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1992
+    },
+    "stableaudio3_medium|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 33,
+      "n_frames_max": 33,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    },
+    "vampnet|freq_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 2304
+    },
+    "vampnet|harmonicity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 29,
+      "n_frames_max": 29,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1648
+    },
+    "vampnet|onset_sync": {
+      "n_same_frame_onset_pairs": 192,
+      "n_frames_min": 87,
+      "n_frames_max": 87,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": true,
+      "n_stimuli": 1536
+    },
+    "vampnet|temp_proximity": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1992
+    },
+    "vampnet|timbre_ablation": {
+      "n_same_frame_onset_pairs": 0,
+      "n_frames_min": 173,
+      "n_frames_max": 173,
+      "degenerate_row_share": 0.0,
+      "flag_coarse_frame_rate": false,
+      "n_stimuli": 1050
+    }
+  },
+  "positive_controls": {
+    "description": "cells whose diagnostic was computed earlier with the same function; each pair is [earlier, this run]",
+    "n": 20,
+    "n_ok": 20,
+    "cells": {
+      "magenta_rt2_base|freq_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_base|harmonicity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          13,
+          13
+        ],
+        "n_frames_max": [
+          13,
+          13
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_base|onset_sync": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          384,
+          384
+        ],
+        "n_frames_min": [
+          38,
+          38
+        ],
+        "n_frames_max": [
+          38,
+          38
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "magenta_rt2_base|temp_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_base|timbre_ablation": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_small|freq_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_small|harmonicity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          13,
+          13
+        ],
+        "n_frames_max": [
+          13,
+          13
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_small|onset_sync": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          384,
+          384
+        ],
+        "n_frames_min": [
+          38,
+          38
+        ],
+        "n_frames_max": [
+          38,
+          38
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "magenta_rt2_small|temp_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "magenta_rt2_small|timbre_ablation": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "pupujepa_large|freq_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "pupujepa_large|harmonicity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          13,
+          13
+        ],
+        "n_frames_max": [
+          13,
+          13
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "pupujepa_large|onset_sync": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          384,
+          384
+        ],
+        "n_frames_min": [
+          38,
+          38
+        ],
+        "n_frames_max": [
+          38,
+          38
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "pupujepa_large|temp_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "pupujepa_large|timbre_ablation": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          75,
+          75
+        ],
+        "n_frames_max": [
+          75,
+          75
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "stableaudio3_medium|freq_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          33,
+          33
+        ],
+        "n_frames_max": [
+          33,
+          33
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      },
+      "stableaudio3_medium|harmonicity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          6,
+          6
+        ],
+        "n_frames_max": [
+          6,
+          6
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "stableaudio3_medium|onset_sync": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          768,
+          768
+        ],
+        "n_frames_min": [
+          17,
+          17
+        ],
+        "n_frames_max": [
+          17,
+          17
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "stableaudio3_medium|temp_proximity": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          5208,
+          5208
+        ],
+        "n_frames_min": [
+          33,
+          33
+        ],
+        "n_frames_max": [
+          33,
+          33
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          true,
+          true
+        ]
+      },
+      "stableaudio3_medium|timbre_ablation": {
+        "ok": true,
+        "n_same_frame_onset_pairs": [
+          0,
+          0
+        ],
+        "n_frames_min": [
+          33,
+          33
+        ],
+        "n_frames_max": [
+          33,
+          33
+        ],
+        "degenerate_row_share": [
+          0.0,
+          0.0
+        ],
+        "flag_coarse_frame_rate": [
+          false,
+          false
+        ]
+      }
+    }
+  },
+  "source_sha256": "f9da1f6b50c35a474fa3a8bbb34232d401ecacfdbf64fba0ed825e2d8e5576e9"
+}

@@ -1,0 +1,274 @@
+{
+ "rows": [
+  {
+   "endpoint": "auc",
+   "offset": -2,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.006267915036337168,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 9,
+     "below": 1
+    }
+   },
+   "musicgen_temporal": [
+    -0.5642833710901298,
+    0.1115032418689135,
+    -0.08071129500549185
+   ],
+   "temporal_fixed_absmax": 0.3814163565065294,
+   "temporal_learned_absmax": 0.8437087405536703
+  },
+  {
+   "endpoint": "auc",
+   "offset": -1,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.003508421312966803,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 1,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 7,
+     "below": 1
+    }
+   },
+   "musicgen_temporal": [
+    -0.6121836981806527,
+    0.045288907479769006,
+    -0.10951061316678076
+   ],
+   "temporal_fixed_absmax": 0.23879834642006828,
+   "temporal_learned_absmax": 0.37861454194357
+  },
+  {
+   "endpoint": "auc",
+   "offset": 0,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.003744561446122452,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 4,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 2
+    }
+   },
+   "musicgen_temporal": [
+    -0.7361801316344792,
+    -0.10876511939059938,
+    -0.22968001881993144
+   ],
+   "temporal_fixed_absmax": 0.0230840078728612,
+   "temporal_learned_absmax": 0.23490327149559195
+  },
+  {
+   "endpoint": "auc",
+   "offset": 1,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.004266303573755681,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 9,
+     "below": 1
+    }
+   },
+   "musicgen_temporal": [
+    0.18433010066336966,
+    0.06266423748516649,
+    0.19927643652695495
+   ],
+   "temporal_fixed_absmax": 0.024209997076034346,
+   "temporal_learned_absmax": 0.5407609494223299
+  },
+  {
+   "endpoint": "auc",
+   "offset": 2,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.0026813349114240825,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 6,
+     "below": 6
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 7,
+     "below": 0
+    }
+   },
+   "musicgen_temporal": [
+    0.16219274610555534,
+    0.11945526809356402,
+    0.23594814594803337
+   ],
+   "temporal_fixed_absmax": 0.05554774074572016,
+   "temporal_learned_absmax": 0.385846062699434
+  },
+  {
+   "endpoint": "rho9",
+   "offset": -2,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.006722323154832788,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 9,
+     "below": 2
+    }
+   },
+   "musicgen_temporal": [
+    -0.5122138193519109,
+    0.14060040510618496,
+    -0.042371032066868944
+   ],
+   "temporal_fixed_absmax": 0.3814163565065294,
+   "temporal_learned_absmax": 0.8437087405536703
+  },
+  {
+   "endpoint": "rho9",
+   "offset": -1,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.0036501064070765254,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 1,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 7,
+     "below": 1
+    }
+   },
+   "musicgen_temporal": [
+    -0.5561364824993067,
+    0.07641729594997461,
+    -0.07523472261215762
+   ],
+   "temporal_fixed_absmax": 0.23879834642006828,
+   "temporal_learned_absmax": 0.37861454194357
+  },
+  {
+   "endpoint": "rho9",
+   "offset": 0,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.003661037390396471,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 4,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 2
+    }
+   },
+   "musicgen_temporal": [
+    -0.685708642521519,
+    -0.0814158049510655,
+    -0.19850245464786342
+   ],
+   "temporal_fixed_absmax": 0.0230840078728612,
+   "temporal_learned_absmax": 0.23490327149559195
+  },
+  {
+   "endpoint": "rho9",
+   "offset": 1,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.0040647557677391255,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 5,
+     "below": 7
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 9,
+     "below": 1
+    }
+   },
+   "musicgen_temporal": [
+    0.15528889118070902,
+    0.060184288340696335,
+    0.18020237751895107
+   ],
+   "temporal_fixed_absmax": 0.024209997076034346,
+   "temporal_learned_absmax": 0.5407609494223299
+  },
+  {
+   "endpoint": "rho9",
+   "offset": 2,
+   "freq_best_fixed": "gammatone",
+   "freq_best_model": "mert",
+   "freq_fixed_minus_best": 0.0026874190284563726,
+   "freq_fixed_above_model_ci": true,
+   "counts": {
+    "freq_proximity": {
+     "n": 13,
+     "above": 6,
+     "below": 6
+    },
+    "temp_proximity": {
+     "n": 13,
+     "above": 7,
+     "below": 0
+    }
+   },
+   "musicgen_temporal": [
+    0.14262948488466967,
+    0.1140796993158945,
+    0.2170801964682065
+   ],
+   "temporal_fixed_absmax": 0.05554774074572016,
+   "temporal_learned_absmax": 0.385846062699434
+  }
+ ]
+}

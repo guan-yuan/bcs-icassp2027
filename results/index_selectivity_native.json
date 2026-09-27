@@ -1,0 +1,73 @@
+{
+ "estimand": "rho9(recorded) - rho9(mean trajectory)",
+ "features": "native token schedule",
+ "n_bootstrap": 10000,
+ "bootstrap_seed": 42,
+ "interval": "percentile 95%",
+ "draws_shared_with": "index_selectivity.json (same row structure and index draws)",
+ "cells": {
+  "musicgen_small": {
+   "readout": "musicgen_small",
+   "recorded": 0.3512510401669376,
+   "trajectory": 0.9566625247180802,
+   "delta": -0.6054114845511427,
+   "ci_low": -0.7249090662218023,
+   "ci_high": -0.488061548697228,
+   "resolves_above": false,
+   "resolves_below": true,
+   "n_anchors": 24,
+   "n_stimuli": 1992,
+   "n_bootstrap": 10000,
+   "bootstrap_seed": 42,
+   "n_finite_draws": 10000,
+   "share_variance_mean_trajectory": 0.13141827557700306,
+   "shape": [
+    9,
+    150,
+    1024
+   ]
+  },
+  "musicgen_medium": {
+   "readout": "musicgen_medium",
+   "recorded": 0.2751373235493207,
+   "trajectory": 0.9367596475669392,
+   "delta": -0.6616223240176186,
+   "ci_low": -0.7765940803443613,
+   "ci_high": -0.5467081408342415,
+   "resolves_above": false,
+   "resolves_below": true,
+   "n_anchors": 24,
+   "n_stimuli": 1992,
+   "n_bootstrap": 10000,
+   "bootstrap_seed": 42,
+   "n_finite_draws": 10000,
+   "share_variance_mean_trajectory": 0.15925665523572005,
+   "shape": [
+    9,
+    150,
+    1536
+   ]
+  },
+  "musicgen_large": {
+   "readout": "musicgen_large",
+   "recorded": 0.3041108929028179,
+   "trajectory": 0.9420957675297953,
+   "delta": -0.6379848746269774,
+   "ci_low": -0.7479149851365257,
+   "ci_high": -0.5296960607212806,
+   "resolves_above": false,
+   "resolves_below": true,
+   "n_anchors": 24,
+   "n_stimuli": 1992,
+   "n_bootstrap": 10000,
+   "bootstrap_seed": 42,
+   "n_finite_draws": 10000,
+   "share_variance_mean_trajectory": 0.184417959773293,
+   "shape": [
+    9,
+    150,
+    2048
+   ]
+  }
+ }
+}

@@ -1,0 +1,718 @@
+{
+ "keys": {
+  "muq": {
+   "key": "muq",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "depths": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+   ]
+  },
+  "acestep15": {
+   "key": "acestep15",
+   "t_native": 38,
+   "native_rate_hz": 12.666666666666666,
+   "layer_ids": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    23
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "depths": [
+    0.0,
+    0.21052631578947367,
+    0.42105263157894735,
+    0.631578947368421,
+    0.8421052631578947,
+    1.0
+   ]
+  },
+  "pupujepa_large": {
+   "key": "pupujepa_large",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    14,
+    17,
+    20,
+    23
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.15,
+    0.3,
+    0.45,
+    0.55,
+    0.7,
+    0.85,
+    1.0
+   ]
+  },
+  "logmel": {
+   "key": "logmel",
+   "t_native": 226,
+   "native_rate_hz": 75.33333333333333,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "cqt": {
+   "key": "cqt",
+   "t_native": 226,
+   "native_rate_hz": 75.33333333333333,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "magenta_rt2_small": {
+   "key": "magenta_rt2_small",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.2,
+    0.3,
+    0.5,
+    0.6,
+    0.7,
+    0.9,
+    1.0
+   ]
+  },
+  "gammatone": {
+   "key": "gammatone",
+   "t_native": 226,
+   "native_rate_hz": 75.33333333333333,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "acestep15_xl": {
+   "key": "acestep15_xl",
+   "t_native": 38,
+   "native_rate_hz": 12.666666666666666,
+   "layer_ids": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    31
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.14814814814814814,
+    0.2962962962962963,
+    0.4444444444444444,
+    0.5925925925925926,
+    0.7407407407407407,
+    0.8888888888888888,
+    1.0
+   ]
+  },
+  "fe_encodec32_pre": {
+   "key": "fe_encodec32_pre",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "diffrhythm12": {
+   "key": "diffrhythm12",
+   "t_native": 64,
+   "native_rate_hz": 21.333333333333332,
+   "layer_ids": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    15
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "depths": [
+    0.0,
+    0.15384615384615385,
+    0.3076923076923077,
+    0.46153846153846156,
+    0.6153846153846154,
+    0.7692307692307693,
+    1.0
+   ]
+  },
+  "fe_lac_rvq": {
+   "key": "fe_lac_rvq",
+   "t_native": 173,
+   "native_rate_hz": 57.666666666666664,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "fe_pupujepa_logmel": {
+   "key": "fe_pupujepa_logmel",
+   "t_native": 300,
+   "native_rate_hz": 100.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "fe_encodec32_rvq": {
+   "key": "fe_encodec32_rvq",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "fe_diffrhythm_vae": {
+   "key": "fe_diffrhythm_vae",
+   "t_native": 64,
+   "native_rate_hz": 21.333333333333332,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "fe_acestep_vae": {
+   "key": "fe_acestep_vae",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "fe_samel": {
+   "key": "fe_samel",
+   "t_native": 33,
+   "native_rate_hz": 11.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "stableaudio3_medium": {
+   "key": "stableaudio3_medium",
+   "t_native": 33,
+   "native_rate_hz": 11.0,
+   "layer_ids": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    14,
+    17,
+    20,
+    23
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.15,
+    0.3,
+    0.45,
+    0.55,
+    0.7,
+    0.85,
+    1.0
+   ]
+  },
+  "magnet_small": {
+   "key": "magnet_small",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    23
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.15,
+    0.3,
+    0.45,
+    0.6,
+    0.75,
+    0.9,
+    1.0
+   ]
+  },
+  "mert_95m": {
+   "key": "mert_95m",
+   "t_native": 224,
+   "native_rate_hz": 74.66666666666667,
+   "layer_ids": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "depths": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+   ]
+  },
+  "fe_lac_pre": {
+   "key": "fe_lac_pre",
+   "t_native": 173,
+   "native_rate_hz": 57.666666666666664,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "vampnet": {
+   "key": "vampnet",
+   "t_native": 173,
+   "native_rate_hz": 57.666666666666664,
+   "layer_ids": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    19
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "depths": [
+    0.0,
+    0.1875,
+    0.375,
+    0.5625,
+    0.75,
+    0.9375,
+    1.0
+   ]
+  },
+  "mert": {
+   "key": "mert",
+   "t_native": 224,
+   "native_rate_hz": 74.66666666666667,
+   "layer_ids": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "depths": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+   ]
+  },
+  "musicgen_medium": {
+   "key": "musicgen_medium",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    47
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.14634146341463414,
+    0.2926829268292683,
+    0.43902439024390244,
+    0.5853658536585366,
+    0.7317073170731707,
+    0.8780487804878049,
+    1.0
+   ]
+  },
+  "magnet_medium": {
+   "key": "magnet_medium",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    47
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.14634146341463414,
+    0.2926829268292683,
+    0.43902439024390244,
+    0.5853658536585366,
+    0.7317073170731707,
+    0.8780487804878049,
+    1.0
+   ]
+  },
+  "fe_spectrostream_rvq": {
+   "key": "fe_spectrostream_rvq",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0
+   ],
+   "nonin_cols": [
+    0
+   ],
+   "depths": [
+    0.0
+   ]
+  },
+  "musicgen_large": {
+   "key": "musicgen_large",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0,
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    47
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.14634146341463414,
+    0.2926829268292683,
+    0.43902439024390244,
+    0.5853658536585366,
+    0.7317073170731707,
+    0.8780487804878049,
+    1.0
+   ]
+  },
+  "magenta_rt2_base": {
+   "key": "magenta_rt2_base",
+   "t_native": 75,
+   "native_rate_hz": 25.0,
+   "layer_ids": [
+    0,
+    2,
+    5,
+    7,
+    10,
+    12,
+    14,
+    17,
+    19
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.17647058823529413,
+    0.29411764705882354,
+    0.47058823529411764,
+    0.5882352941176471,
+    0.7058823529411765,
+    0.8823529411764706,
+    1.0
+   ]
+  },
+  "musicgen_small": {
+   "key": "musicgen_small",
+   "t_native": 150,
+   "native_rate_hz": 50.0,
+   "layer_ids": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    23
+   ],
+   "nonin_cols": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "depths": [
+    0.0,
+    0.15,
+    0.3,
+    0.45,
+    0.6,
+    0.75,
+    0.9,
+    1.0
+   ]
+  }
+ }
+}

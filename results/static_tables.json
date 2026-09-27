@@ -1,0 +1,506 @@
+{
+ "freq_proximity": {
+  "fixed_all": {
+   "cqt": 0.9565,
+   "gammatone": 0.9966,
+   "logmel": 0.9134
+  },
+  "learned_all": {
+   "fe_acestep_vae": 0.8755,
+   "fe_diffrhythm_vae": 0.9275,
+   "fe_encodec32_pre": 0.9016,
+   "fe_encodec32_rvq": 0.8939,
+   "fe_lac_pre": 0.8756,
+   "fe_lac_rvq": 0.8654,
+   "fe_samel": 0.3869,
+   "fe_spectrostream_rvq": 0.9433
+  },
+  "fixed_extra_pupujepa_logspec": 0.9949
+ },
+ "harmonicity": {
+  "fixed_all": {
+   "cqt": 0.9743,
+   "gammatone": 1.0,
+   "logmel": 0.9743
+  },
+  "learned_all": {
+   "fe_acestep_vae": 0.8614,
+   "fe_diffrhythm_vae": 0.8614,
+   "fe_encodec32_pre": 0.7943,
+   "fe_encodec32_rvq": 0.2571,
+   "fe_lac_pre": 0.3729,
+   "fe_lac_rvq": 0.2371,
+   "fe_samel": 0.6957,
+   "fe_spectrostream_rvq": 0.8186
+  },
+  "fixed_extra_pupujepa_logspec": 0.9714
+ },
+ "onset_sync": {
+  "fixed_all": {
+   "cqt": 0.8888,
+   "gammatone": 0.9616,
+   "logmel": 0.9874
+  },
+  "learned_all": {
+   "fe_acestep_vae": 0.8453,
+   "fe_diffrhythm_vae": 0.8854,
+   "fe_encodec32_pre": 0.7567,
+   "fe_encodec32_rvq": 0.754,
+   "fe_lac_pre": 0.9639,
+   "fe_lac_rvq": 0.8596,
+   "fe_samel": 0.7807,
+   "fe_spectrostream_rvq": 0.9138
+  },
+  "fixed_extra_pupujepa_logspec": 0.9899
+ },
+ "temp_proximity": {
+  "fixed_all": {
+   "cqt": -0.0117,
+   "gammatone": 0.0231,
+   "logmel": 0.0093
+  },
+  "learned_all": {
+   "fe_acestep_vae": -0.1355,
+   "fe_diffrhythm_vae": -0.1073,
+   "fe_encodec32_pre": -0.0743,
+   "fe_encodec32_rvq": -0.0945,
+   "fe_lac_pre": 0.0959,
+   "fe_lac_rvq": 0.0507,
+   "fe_samel": 0.2349,
+   "fe_spectrostream_rvq": 0.0239
+  },
+  "fixed_extra_pupujepa_logspec": -0.2027
+ },
+ "stimulus_spec": {
+  "totals": {
+   "rendered": 7480,
+   "scored": 7040
+  },
+  "cues": {
+   "freq_proximity": {
+    "clusters": 24,
+    "generated_cells": 288,
+    "instances": 8,
+    "levels": [
+     0.3,
+     0.4,
+     0.7,
+     1.1,
+     1.6,
+     3.45,
+     4.65,
+     5.25,
+     6.6,
+     7.45,
+     11.35,
+     12.8
+    ],
+    "rendered": 2304,
+    "scored": 2304,
+    "scored_levels": [
+     0.3,
+     0.4,
+     0.7,
+     1.1,
+     1.6,
+     3.45,
+     4.65,
+     5.25,
+     6.6,
+     7.45,
+     11.35,
+     12.8
+    ],
+    "ungenerated_cells": 0
+   },
+   "harmonicity": {
+    "clusters": 25,
+    "generated_cells": 175,
+    "instances": 8,
+    "levels": [
+     0,
+     1,
+     1.5,
+     2,
+     3,
+     4,
+     6,
+     8,
+     12
+    ],
+    "rendered": 1648,
+    "scored": 1400,
+    "scored_levels": [
+     1,
+     1.5,
+     2,
+     3,
+     4,
+     6,
+     8
+    ],
+    "ungenerated_cells": 0
+   },
+   "onset_sync": {
+    "clusters": 24,
+    "generated_cells": 168,
+    "instances": 8,
+    "levels": [
+     0,
+     5,
+     10,
+     20,
+     40,
+     80,
+     160,
+     300
+    ],
+    "rendered": 1536,
+    "scored": 1344,
+    "scored_levels": [
+     5,
+     10,
+     20,
+     40,
+     80,
+     160,
+     300
+    ],
+    "ungenerated_cells": 0
+   },
+   "temp_proximity": {
+    "clusters": 24,
+    "generated_cells": 249,
+    "instances": 8,
+    "levels": [
+     1.0,
+     1.2,
+     1.5,
+     2.0,
+     2.5,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "rendered": 1992,
+    "scored": 1992,
+    "scored_levels": [
+     1.0,
+     1.2,
+     1.5,
+     2.0,
+     2.5,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "ungenerated_cells": 15
+   }
+  },
+  "macros": {
+   "\\NStimFreqAHi": {
+    "tex": "2016",
+    "value": 2015.9,
+    "derived_from": "freq_proximity: max metadata.stimuli[*].anchor_hz"
+   },
+   "\\NStimFreqALo": {
+    "tex": "141",
+    "value": 141.4,
+    "derived_from": "freq_proximity: min metadata.stimuli[*].anchor_hz"
+   },
+   "\\NStimFreqAnc": {
+    "tex": "24",
+    "value": [
+     "anchor_1000",
+     "anchor_1131.4",
+     "anchor_1269.9",
+     "anchor_141.4",
+     "anchor_1425.4",
+     "anchor_158.7",
+     "anchor_1600",
+     "anchor_178.2",
+     "anchor_1795.9",
+     "anchor_200",
+     "anchor_2015.9",
+     "anchor_224.5",
+     "anchor_252",
+     "anchor_282.8",
+     "anchor_317.5",
+     "anchor_356.4",
+     "anchor_400",
+     "anchor_449",
+     "anchor_500",
+     "anchor_565.7",
+     "anchor_635",
+     "anchor_712.7",
+     "anchor_800",
+     "anchor_898"
+    ],
+    "derived_from": "freq_proximity: distinct metadata.stimuli[*].cluster"
+   },
+   "\\NStimFreqHi": {
+    "tex": "12.8",
+    "value": 12.8,
+    "derived_from": "freq_proximity: max scored delta_f"
+   },
+   "\\NStimFreqIoi": {
+    "tex": "100",
+    "value": 0.1,
+    "derived_from": "freq_proximity: config.ioi_s in ms"
+   },
+   "\\NStimFreqLo": {
+    "tex": "0.3",
+    "value": 0.3,
+    "derived_from": "freq_proximity: min scored delta_f"
+   },
+   "\\NStimFreqLv": {
+    "tex": "12",
+    "value": [
+     0.3,
+     0.4,
+     0.7,
+     1.1,
+     1.6,
+     3.45,
+     4.65,
+     5.25,
+     6.6,
+     7.45,
+     11.35,
+     12.8
+    ],
+    "derived_from": "freq_proximity: scored levels of metadata.stimuli[*].delta_f"
+   },
+   "\\NStimHarmAHi": {
+    "tex": "400",
+    "value": 400.0,
+    "derived_from": "harmonicity: max metadata.stimuli[*].f0"
+   },
+   "\\NStimHarmALo": {
+    "tex": "100",
+    "value": 100.0,
+    "derived_from": "harmonicity: min metadata.stimuli[*].f0"
+   },
+   "\\NStimHarmAnc": {
+    "tex": "25",
+    "value": [
+     "f0_100_rk2",
+     "f0_100_rk3",
+     "f0_100_rk4",
+     "f0_100_rk5",
+     "f0_100_rk6",
+     "f0_141.4_rk2",
+     "f0_141.4_rk3",
+     "f0_141.4_rk4",
+     "f0_141.4_rk5",
+     "f0_141.4_rk6",
+     "f0_200_rk2",
+     "f0_200_rk3",
+     "f0_200_rk4",
+     "f0_200_rk5",
+     "f0_200_rk6",
+     "f0_282.8_rk2",
+     "f0_282.8_rk3",
+     "f0_282.8_rk4",
+     "f0_282.8_rk5",
+     "f0_282.8_rk6",
+     "f0_400_rk2",
+     "f0_400_rk3",
+     "f0_400_rk4",
+     "f0_400_rk5",
+     "f0_400_rk6"
+    ],
+    "derived_from": "harmonicity: distinct metadata.stimuli[*].cluster"
+   },
+   "\\NStimHarmHi": {
+    "tex": "8",
+    "value": 8,
+    "derived_from": "harmonicity: max scored mistuning_pct"
+   },
+   "\\NStimHarmLo": {
+    "tex": "1",
+    "value": 1,
+    "derived_from": "harmonicity: min scored mistuning_pct"
+   },
+   "\\NStimHarmLv": {
+    "tex": "7",
+    "value": [
+     1,
+     1.5,
+     2,
+     3,
+     4,
+     6,
+     8
+    ],
+    "derived_from": "harmonicity: scored levels of metadata.stimuli[*].mistuning_pct"
+   },
+   "\\NStimInst": {
+    "tex": "8",
+    "value": 8,
+    "derived_from": "freq_proximity: distinct metadata.stimuli[*].instance"
+   },
+   "\\NStimMistExcl": {
+    "tex": "12",
+    "value": 12,
+    "derived_from": "harmonicity: the level outside config.main_estimate_mistuning_pcts"
+   },
+   "\\NStimN": {
+    "tex": "7{,}480",
+    "value": 7480,
+    "derived_from": "sum of len(metadata.stimuli) over the four cues"
+   },
+   "\\NStimNHarm": {
+    "tex": "10",
+    "value": 10,
+    "derived_from": "harmonicity: config.n_harmonics"
+   },
+   "\\NStimOnsetAnc": {
+    "tex": "24",
+    "value": [
+     "A3_maj3",
+     "A3_p4",
+     "A3_tritone",
+     "A4_maj3",
+     "A4_p4",
+     "A4_tritone",
+     "B3_maj3",
+     "B3_p4",
+     "B3_tritone",
+     "C4_maj3",
+     "C4_p4",
+     "C4_tritone",
+     "D4_maj3",
+     "D4_p4",
+     "D4_tritone",
+     "E4_maj3",
+     "E4_p4",
+     "E4_tritone",
+     "F4_maj3",
+     "F4_p4",
+     "F4_tritone",
+     "G4_maj3",
+     "G4_p4",
+     "G4_tritone"
+    ],
+    "derived_from": "onset_sync: distinct metadata.stimuli[*].cluster"
+   },
+   "\\NStimOnsetHi": {
+    "tex": "300",
+    "value": 300,
+    "derived_from": "onset_sync: max scored async_ms"
+   },
+   "\\NStimOnsetLo": {
+    "tex": "5",
+    "value": 5,
+    "derived_from": "onset_sync: min scored async_ms"
+   },
+   "\\NStimOnsetLv": {
+    "tex": "7",
+    "value": [
+     5,
+     10,
+     20,
+     40,
+     80,
+     160,
+     300
+    ],
+    "derived_from": "onset_sync: scored levels of metadata.stimuli[*].async_ms"
+   },
+   "\\NStimRankHi": {
+    "tex": "6",
+    "value": 6,
+    "derived_from": "harmonicity: max mistuned_rank"
+   },
+   "\\NStimRankLo": {
+    "tex": "2",
+    "value": 2,
+    "derived_from": "harmonicity: min mistuned_rank"
+   },
+   "\\NStimRows": {
+    "tex": "7{,}040",
+    "value": 7040,
+    "derived_from": "sum of the scored rows over the four cues"
+   },
+   "\\NStimTempAHi": {
+    "tex": "200",
+    "value": 200,
+    "derived_from": "temp_proximity: max metadata.stimuli[*].base_ioi_ms"
+   },
+   "\\NStimTempALo": {
+    "tex": "50",
+    "value": 50,
+    "derived_from": "temp_proximity: min metadata.stimuli[*].base_ioi_ms"
+   },
+   "\\NStimTempAnc": {
+    "tex": "24",
+    "value": [
+     "ioi_100ms",
+     "ioi_109ms",
+     "ioi_116ms",
+     "ioi_123ms",
+     "ioi_131ms",
+     "ioi_139ms",
+     "ioi_148ms",
+     "ioi_157ms",
+     "ioi_167ms",
+     "ioi_177ms",
+     "ioi_188ms",
+     "ioi_200ms",
+     "ioi_50ms",
+     "ioi_53ms",
+     "ioi_56ms",
+     "ioi_60ms",
+     "ioi_64ms",
+     "ioi_68ms",
+     "ioi_72ms",
+     "ioi_76ms",
+     "ioi_81ms",
+     "ioi_86ms",
+     "ioi_91ms",
+     "ioi_97ms"
+    ],
+    "derived_from": "temp_proximity: distinct metadata.stimuli[*].cluster"
+   },
+   "\\NStimTempDrop": {
+    "tex": "15",
+    "value": 15,
+    "derived_from": "temp_proximity: anchors x scored levels minus the generated cells"
+   },
+   "\\NStimTempHi": {
+    "tex": "10",
+    "value": 10.0,
+    "derived_from": "temp_proximity: max scored ratio"
+   },
+   "\\NStimTempLo": {
+    "tex": "1",
+    "value": 1.0,
+    "derived_from": "temp_proximity: min scored ratio"
+   },
+   "\\NStimTempLv": {
+    "tex": "11",
+    "value": [
+     1.0,
+     1.2,
+     1.5,
+     2.0,
+     2.5,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     8.0,
+     10.0
+    ],
+    "derived_from": "temp_proximity: scored levels of metadata.stimuli[*].ratio"
+   }
+  }
+ }
+}

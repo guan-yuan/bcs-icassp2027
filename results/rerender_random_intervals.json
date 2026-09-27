@@ -1,0 +1,91 @@
+{
+ "description": "Trained-minus-random paired rho_9 contrasts on the re-rendered temporal set (cue tp_rr_main): per MusicGen size and random-decoder seed, the point difference and its 95% interval (bcs.score.paired_cell: two-stage cluster bootstrap, one shared draw per pair). The same contrasts are printed by controls/rerender_random.py.",
+ "cue": "tp_rr_main",
+ "n_bootstrap": 10000,
+ "bootstrap_seed": 42,
+ "source_sha256": "3fb182ac83f6ef43a9a0acfb19af2f432fb3125fa387b1183c23ca499a3f66a7",
+ "source_note": "sha256 of the scoring run's results.json from which these nine entries were copied unchanged",
+ "pairs": {
+  "trained_minus_randinit_small_s4242": {
+   "delta": -0.56843175975976,
+   "ci_low": -0.6628945460572888,
+   "ci_high": -0.4767299901068873,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_small",
+   "readout_b": "rerender_musicgen_small_randinit_s4242"
+  },
+  "trained_minus_randinit_small_s4243": {
+   "delta": -0.5754189716082964,
+   "ci_low": -0.6719571966161703,
+   "ci_high": -0.48217156951458695,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_small",
+   "readout_b": "rerender_musicgen_small_randinit_s4243"
+  },
+  "trained_minus_randinit_small_s4244": {
+   "delta": -0.5724527833657302,
+   "ci_low": -0.6682629088754116,
+   "ci_high": -0.48003120906132984,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_small",
+   "readout_b": "rerender_musicgen_small_randinit_s4244"
+  },
+  "trained_minus_randinit_medium_s4242": {
+   "delta": -0.6072426355482331,
+   "ci_low": -0.6924157697984448,
+   "ci_high": -0.523239392770198,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_medium",
+   "readout_b": "rerender_musicgen_medium_randinit_s4242"
+  },
+  "trained_minus_randinit_medium_s4243": {
+   "delta": -0.6193070389196148,
+   "ci_low": -0.7061873688322933,
+   "ci_high": -0.5341533857806923,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_medium",
+   "readout_b": "rerender_musicgen_medium_randinit_s4243"
+  },
+  "trained_minus_randinit_medium_s4244": {
+   "delta": -0.6125484045626616,
+   "ci_low": -0.6972686982874735,
+   "ci_high": -0.5291280486176576,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_medium",
+   "readout_b": "rerender_musicgen_medium_randinit_s4244"
+  },
+  "trained_minus_randinit_large_s4242": {
+   "delta": -0.5799778342288603,
+   "ci_low": -0.6546497916730079,
+   "ci_high": -0.5074356070975036,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_large",
+   "readout_b": "rerender_musicgen_large_randinit_s4242"
+  },
+  "trained_minus_randinit_large_s4243": {
+   "delta": -0.5849846336389165,
+   "ci_low": -0.6611279564357264,
+   "ci_high": -0.5109071301057045,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_large",
+   "readout_b": "rerender_musicgen_large_randinit_s4243"
+  },
+  "trained_minus_randinit_large_s4244": {
+   "delta": -0.584077569817119,
+   "ci_low": -0.6604621399880652,
+   "ci_high": -0.5099582589533527,
+   "n_clusters": 24,
+   "n_common_stimuli": 1992,
+   "readout_a": "rerender_musicgen_large",
+   "readout_b": "rerender_musicgen_large_randinit_s4244"
+  }
+ }
+}

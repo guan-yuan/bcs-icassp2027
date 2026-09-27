@@ -1,0 +1,396 @@
+# Stimulus grid: anchors, levels, clip lengths, exclusion rules, seeds.
+# Read by stimuli/generate_stimuli.py and by the scoring code (clip length per cue).
+random_seeds:
+  stimuli_base: 42
+  probe_seeds:
+  - 42
+  - 123
+  - 456
+  n_seeds: 3
+  bootstrap_seed: 42
+audio:
+  sample_rate: 48000
+  fade_ms: 20
+  amplitude_baseline: 0.3
+  amplitude_jitter: 0.02
+stimuli:
+  freq_proximity:
+    anchors_hz:
+    - 141.4
+    - 158.7
+    - 178.2
+    - 200.0
+    - 224.5
+    - 252.0
+    - 282.8
+    - 317.5
+    - 356.4
+    - 400.0
+    - 449.0
+    - 500.0
+    - 565.7
+    - 635.0
+    - 712.7
+    - 800.0
+    - 898.0
+    - 1000.0
+    - 1131.4
+    - 1269.9
+    - 1425.4
+    - 1600.0
+    - 1795.9
+    - 2015.9
+    delta_f_semitones:
+    - 0.3
+    - 0.4
+    - 0.7
+    - 1.1
+    - 1.6
+    - 3.45
+    - 4.65
+    - 5.25
+    - 6.6
+    - 7.45
+    - 11.35
+    - 12.8
+    tone_duration_s: 0.05
+    ioi_s: 0.1
+    sequence_duration_s: 3.0
+    n_instances: 8
+    target_rms: 0.15
+    pattern: ABA_
+    same_A_within_pattern: true
+    anchor_rule: round(200*2**(k/6),1) for k=-3..20; k=8 -> 500.0, k=14 -> 1000.0
+  temp_proximity:
+    base_ioi_ms_anchors:
+    - 50
+    - 53
+    - 56
+    - 60
+    - 64
+    - 68
+    - 72
+    - 76
+    - 81
+    - 86
+    - 91
+    - 97
+    - 100
+    - 109
+    - 116
+    - 123
+    - 131
+    - 139
+    - 148
+    - 157
+    - 167
+    - 177
+    - 188
+    - 200
+    ioi_ratios:
+    - 1.0
+    - 1.2
+    - 1.5
+    - 2.0
+    - 2.5
+    - 3.0
+    - 4.0
+    - 5.0
+    - 6.0
+    - 8.0
+    - 10.0
+    freq_hz: 500.0
+    tone_duration_s: 0.05
+    sequence_duration_s: 3.0
+    n_instances: 8
+    target_rms: 0.15
+    anchor_rule: round(50*4**(k/23)) ms for k=0..23; k=12 -> 100 ms. Lower bound 50 ms == tone_duration_s
+      (overlap guard).
+    eligibility_rule: base_ioi <= 1.5/(2+ratio) s; the 15 ineligible (anchor, ratio) cells are not generated
+    overlap_rule: base_ioi >= tone_duration_s
+  harmonicity:
+    f0_anchors:
+    - 100.0
+    - 141.4
+    - 200.0
+    - 282.8
+    - 400.0
+    mistuned_ranks:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    mistuning_pcts:
+    - 0
+    - 1
+    - 1.5
+    - 2
+    - 3
+    - 4
+    - 6
+    - 8
+    - 12
+    n_harmonics: 10
+    tone_duration_s: 0.5
+    n_instances: 8
+    target_rms: 0.15
+    phase: zero
+    erb_cap_rule:
+      formula: mist/100 * rank * f0 <= 0.75 * ERB(rank*f0)
+      erb: ERB(f) = 24.7*(4.37*f/1000 + 1)   [Glasberg & Moore 1990]
+      fraction: 0.75
+      note: main estimate uses the balanced intersection mist in {1,1.5,2,3,4,6,8}; mist=12% is not scored
+    main_estimate_mistuning_pcts:
+    - 1
+    - 1.5
+    - 2
+    - 3
+    - 4
+    - 6
+    - 8
+  onset_sync:
+    tone_configs:
+    - name: A3_maj3
+      root: A3
+      interval: maj3
+      semitones: 4
+      f1: 220.0
+      f2: 277.18
+      label: maj3_5:4_consonant
+    - name: A3_p4
+      root: A3
+      interval: p4
+      semitones: 5
+      f1: 220.0
+      f2: 293.66
+      label: p4_4:3_consonant
+    - name: A3_tritone
+      root: A3
+      interval: tritone
+      semitones: 6
+      f1: 220.0
+      f2: 311.13
+      label: tritone_7:5_dissonant
+    - name: B3_maj3
+      root: B3
+      interval: maj3
+      semitones: 4
+      f1: 246.94
+      f2: 311.12
+      label: maj3_5:4_consonant
+    - name: B3_p4
+      root: B3
+      interval: p4
+      semitones: 5
+      f1: 246.94
+      f2: 329.63
+      label: p4_4:3_consonant
+    - name: B3_tritone
+      root: B3
+      interval: tritone
+      semitones: 6
+      f1: 246.94
+      f2: 349.23
+      label: tritone_7:5_dissonant
+    - name: C4_maj3
+      root: C4
+      interval: maj3
+      semitones: 4
+      f1: 261.63
+      f2: 329.63
+      label: maj3_5:4_consonant
+    - name: C4_p4
+      root: C4
+      interval: p4
+      semitones: 5
+      f1: 261.63
+      f2: 349.23
+      label: p4_4:3_consonant
+    - name: C4_tritone
+      root: C4
+      interval: tritone
+      semitones: 6
+      f1: 261.63
+      f2: 370.0
+      label: tritone_7:5_dissonant
+    - name: D4_maj3
+      root: D4
+      interval: maj3
+      semitones: 4
+      f1: 293.66
+      f2: 369.99
+      label: maj3_5:4_consonant
+    - name: D4_p4
+      root: D4
+      interval: p4
+      semitones: 5
+      f1: 293.66
+      f2: 391.99
+      label: p4_4:3_consonant
+    - name: D4_tritone
+      root: D4
+      interval: tritone
+      semitones: 6
+      f1: 293.66
+      f2: 415.3
+      label: tritone_7:5_dissonant
+    - name: E4_maj3
+      root: E4
+      interval: maj3
+      semitones: 4
+      f1: 329.63
+      f2: 415.31
+      label: maj3_5:4_consonant
+    - name: E4_p4
+      root: E4
+      interval: p4
+      semitones: 5
+      f1: 329.63
+      f2: 440.0
+      label: p4_4:3_consonant
+    - name: E4_tritone
+      root: E4
+      interval: tritone
+      semitones: 6
+      f1: 329.63
+      f2: 466.17
+      label: tritone_7:5_dissonant
+    - name: F4_maj3
+      root: F4
+      interval: maj3
+      semitones: 4
+      f1: 349.23
+      f2: 440.0
+      label: maj3_5:4_consonant
+    - name: F4_p4
+      root: F4
+      interval: p4
+      semitones: 5
+      f1: 349.23
+      f2: 466.17
+      label: p4_4:3_consonant
+    - name: F4_tritone
+      root: F4
+      interval: tritone
+      semitones: 6
+      f1: 349.23
+      f2: 493.89
+      label: tritone_7:5_dissonant
+    - name: G4_maj3
+      root: G4
+      interval: maj3
+      semitones: 4
+      f1: 392.0
+      f2: 493.89
+      label: maj3_5:4_consonant
+    - name: G4_p4
+      root: G4
+      interval: p4
+      semitones: 5
+      f1: 392.0
+      f2: 523.26
+      label: p4_4:3_consonant
+    - name: G4_tritone
+      root: G4
+      interval: tritone
+      semitones: 6
+      f1: 392.0
+      f2: 554.37
+      label: tritone_7:5_dissonant
+    - name: A4_maj3
+      root: A4
+      interval: maj3
+      semitones: 4
+      f1: 440.0
+      f2: 554.37
+      label: maj3_5:4_consonant
+    - name: A4_p4
+      root: A4
+      interval: p4
+      semitones: 5
+      f1: 440.0
+      f2: 587.33
+      label: p4_4:3_consonant
+    - name: A4_tritone
+      root: A4
+      interval: tritone
+      semitones: 6
+      f1: 440.0
+      f2: 622.25
+      label: tritone_7:5_dissonant
+    async_ms:
+    - 0
+    - 5
+    - 10
+    - 20
+    - 40
+    - 80
+    - 160
+    - 300
+    tone_duration_s: 0.5
+    total_duration_s: 1.5
+    n_instances: 8
+    target_rms: 0.15
+    convention: aligned_onset_variable_offset
+    fade_ms_override: 2
+    anchor_rule: 8 roots (A3..A4) x 3 intervals (maj3 4st / p4 5st / tritone 6st); f2 = root*2**(st/12);
+  timbre_ablation:
+    timbres:
+    - id: pure_sine
+      type: sine
+    - id: harmonic_4
+      type: harmonic
+      n: 4
+    - id: harmonic_8
+      type: harmonic
+      n: 8
+    - id: band_noise
+      type: band_noise
+      bandwidth_octaves: 0.333
+    - id: stretched_e
+      type: stretched
+      partials:
+      - 1.0
+      - 2.71828182846
+    delta_f_semitones:
+    - 0.7
+    - 1.6
+    - 4.65
+    - 7.45
+    - 11.35
+    same_A_within_pattern: true
+    tone_duration_s: 0.05
+    ioi_s: 0.1
+    sequence_duration_s: 3.0
+    n_instances: 2
+    target_rms: 0.15
+    base_freq_hz_anchors:
+    - 141.4
+    - 158.7
+    - 178.2
+    - 200.0
+    - 224.5
+    - 252.0
+    - 282.8
+    - 317.5
+    - 356.4
+    - 400.0
+    - 449.0
+    - 500.0
+    - 565.7
+    - 635.0
+    - 712.7
+    - 800.0
+    - 898.0
+    - 1000.0
+    - 1131.4
+    - 1269.9
+    - 1425.4
+    nyquist_rule:
+      formula: n_max * anchor * 2**(dF_max/12) <= 0.95 * fs/2
+      n_max: 8
+      delta_f_max_st: 11.35
+      fs: 48000
+      limit_hz: 1479.52
+      note: applies uniformly to all timbres (keeps timbre x anchor balanced)

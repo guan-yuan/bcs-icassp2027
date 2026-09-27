@@ -1,0 +1,27 @@
+# pip install -r requirements.txt installs the scoring dependencies only
+# (bcs/, controls/, stimuli/). make_paper_numbers.py needs none of them:
+# Python >= 3.8, standard library only.
+#
+# Versions of the scoring environment used for the paper
+# (numpy 2.5.2 and scipy 1.18.1 need Python >= 3.12):
+numpy==2.5.2          # np.trapezoid (exact AUC) needs numpy >= 2.0
+scipy==1.18.1
+PyYAML==6.0.3
+soundfile==0.12.1     # stimuli/, controls/zero_waveform.py, controls/content_replacement.py
+
+# Feature extraction (extraction/) is not installed by this file: each model
+# family ran in its own environment (python 3.11.15), with the versions below.
+# They cannot share one environment. audiocraft 1.3.0 pins torch==2.1.0:
+# install torch 2.3.0, then `pip install --no-deps audiocraft==1.3.0`.
+# MusicGen, MAGNeT, EnCodec front-ends: torch 2.3.0, transformers 4.44.0, audiocraft 1.3.0
+#   (MusicGen: unmodified transformers, token-id forward; audiocraft: MAGNeT and the
+#    MusicGen native token schedule, extract_musicgen_native.py)
+# DSP front-ends (extract_dsp_frontends.py), PupuM2D-L mel filterbank (extract_pupujepa.py): librosa 0.10.2
+# MERT, MuQ:           torch 2.6.0, transformers 4.49.0, muq 0.1.0, nnAudio 0.3.3
+# VampNet, DAC/LAC:    torch 2.4.1, vampnet 0.0.1, lac 0.0.1
+# ACE-Step 1.5 / XL:   torch 2.6.0, transformers 4.57.6, diffusers 0.30.0
+# DiffRhythm:          torch 2.6.0, transformers 4.49.0, x-transformers 2.1.2, DiffRhythm code (DIFFRHYTHM_DIR)
+# PupuM2D-L:           torch 2.6.0, PupuJEPA code (PUPUJEPA_SRC)
+# Stable Audio 3:      torch 2.7.1, stable_audio_3 0.1.0 (github.com/Stability-AI/stable-audio-3,
+#                      commit a0b57f5483c4588f827f3552b7d5c6ca2a9687be)
+# Magenta-RT2:         jax 0.10.2, flax 0.12.8, magenta-realtime code (MAGENTA_RT_SRC)
